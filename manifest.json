@@ -1446,6 +1446,6 @@
     "No global session database or unrelated session export included"
   ],
   "transport_normalization": "Opaque call/response IDs mapped deterministically to transport-hex labels. UTF-8 base64 payloads decoded and scrubbed inline; tool command syntax may no longer be executable. Subagent and review file paths shortened. Record IDs unchanged.",
-  "manifest_sha256": "48bc63d2e0d29094682c7c4e1124fbb23b8fafe7c7dfce8e51518e5c2f08ebcf",
-  "manifest_sha256_after_rebuild": "48bc63d2e0d29094682c7c4e1124fbb23b8fafe7c7dfce8e51518e5c2f08ebcf"
+  "manifest_sha256": "1161a1fd89ccb19ad8919ff51d9cb7d93e86536f294f85f740f59438167bc4ee",
+  "manifest_sha256_after_rebuild": "1161a1fd89ccb19ad8919ff51d9cb7d93e86536f294f85f740f59438167bc4ee"
 }
