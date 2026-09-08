@@ -1435,8 +1435,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1489,
-      "sha256": "abd6aa86ba7a32791cab40c089be56916a92e1a5193a9b55e5bab9764b23401b",
+      "bytes": 4467,
+      "sha256": "ea6e7597d033f06e652f01d9531dc315e3b858c91138eb6ab3ba2c7709806bcc",
       "source_sha256": null,
       "transformed": false,
       "kind": "publication_approval_record"
