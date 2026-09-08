@@ -1,6 +1,6 @@
 # Archive and publication boundary
 
-Status: LOCAL REVIEW DRAFT. No remote or publication approval.
+Status: APPROVED FOR PUBLIC RELEASE to `Build-In-Public-University/pnp-research-base` with public visibility. Remote delivery and anonymous readback remain separate verification steps.
 
 ## What this is
 
@@ -33,7 +33,7 @@ PDF binaries are copied unchanged and are NOT covered by text-only credential sc
 1. Review the redacted conversation for incidental personal/third-party/private information that pattern scanners cannot classify.
 2. Confirm permission or an appropriate redistribution basis for every third-party PDF, quoted page and source note; otherwise replace the relevant copy with a citation and mark the omission.
 3. Inspect the complete Git tracked tree and rerun manifest/tests/scanning.
-4. Choose and explicitly approve the repository owner, name and visibility.
-5. Only then create/push a remote and independently verify the delivered commit.
+4. The repository owner, name and public visibility are approved by the user: `Build-In-Public-University/pnp-research-base`.
+5. Create/push the remote and independently verify the delivered commit, public API, raw README and critical files.
 
 A scanner pass is not public-release approval. A local commit is not publication. Claims about mathematical validity require independent adjudication; passing the experiment suite tests the bounded implemented models only.

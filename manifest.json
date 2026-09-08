@@ -1432,6 +1432,38 @@
       "kind": "direct_read_inventory_not_exhaustive",
       "source_sha256": null,
       "transformed": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 1489,
+      "sha256": "abd6aa86ba7a32791cab40c089be56916a92e1a5193a9b55e5bab9764b23401b",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "publication_approval_record"
+    },
+    {
+      "path": "ARCHIVE-BOUNDARY.md",
+      "bytes": 4325,
+      "sha256": "6b75044757a23b5127c758832bd587710832722c859e18a25967e9e9ae88a77a",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "publication_approval_record"
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 1330,
+      "sha256": "71949c502abcf8cfd4f0bd4a5dada18c8b78d613457350b21fd50325c6cb6abe",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "publication_approval_record"
+    },
+    {
+      "path": "verification/publication-approval.md",
+      "bytes": 934,
+      "sha256": "4cb3659e5a6e65d3fca01fb0265828d9b99fb0a6daf9c50822d28561712ca236",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "publication_approval_record"
     }
   ],
   "limitations": [

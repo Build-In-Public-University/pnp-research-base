@@ -1,6 +1,7 @@
-# Local P/NP research-review repository (unpublished draft)
+# P/NP research-review repository
 
-This is an **unpublished local draft**. It is not public and not approved for any remote copy.
+This repository is approved for public release to `Build-In-Public-University/pnp-research-base`.
+The approval covers the conversation archive and the publicly released PDF sources included here.
 
 Contents:
 - `conversation/` — the current chat session records used to build this repo, plus child session records where available.
@@ -11,12 +12,12 @@ Contents:
 - `README.md`, `ARCHIVE-BOUNDARY.md`, `RIGHTS.md` — status, scope, and rights caveats.
 
 Current publication status:
-- Local-only repository at `/Users/leoguinan/pnp-session-review`.
-- No remote configured. No push, upload, or external account authentication performed.
-- Actual publication target or visibility has NOT been chosen.
-- Do not treat this draft as approved for posting, sharing, or redistribution.
+- Target: `Build-In-Public-University/pnp-research-base`.
+- Intended visibility: public.
+- Local source remains at `/Users/leoguinan/pnp-session-review`.
+- Publication is authorized but not complete until remote creation, push, and anonymous readback succeed.
 
 User-facing summary for the current request:
 - This draft is intended to contain “the entire current chat session and all referenced artifacts” that are appropriate to preserve locally.
-- Some artifacts may still require final consistency review before any external handoff.
-- If you want a remote target later, you must explicitly approve the destination and visibility before any upload.
+- The local archive has passed its current test, manifest, and sanitizer checks.
+- Public release still requires independent verification of the remote branch, API, raw README, and critical files.
