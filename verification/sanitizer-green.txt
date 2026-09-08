@@ -1,0 +1,11 @@
+test_assignment (test_archive.Sanitation.test_assignment) ... ok
+test_bearer (test_archive.Sanitation.test_bearer) ... ok
+test_idempotence (test_archive.Sanitation.test_idempotence) ... ok
+test_math (test_archive.Sanitation.test_math) ... ok
+test_paths (test_archive.Sanitation.test_paths) ... ok
+test_vendor_secret (test_archive.Sanitation.test_vendor_secret) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

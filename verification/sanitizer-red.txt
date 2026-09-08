@@ -1,0 +1,45 @@
+test_assignment (test_archive.Sanitation.test_assignment) ... FAIL
+test_bearer (test_archive.Sanitation.test_bearer) ... FAIL
+test_idempotence (test_archive.Sanitation.test_idempotence) ... ok
+test_math (test_archive.Sanitation.test_math) ... ok
+test_paths (test_archive.Sanitation.test_paths) ... FAIL
+test_vendor_secret (test_archive.Sanitation.test_vendor_secret) ... FAIL
+
+======================================================================
+FAIL: test_assignment (test_archive.Sanitation.test_assignment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-session-review/tests/test_archive.py", line 14, in test_assignment
+    self.assertNotIn('someOpaqueSecretValue',sanitize('API_KEY=[REDACTED]'))
+AssertionError: 'someOpaqueSecretValue' unexpectedly found in 'API_KEY=[REDACTED]'
+
+======================================================================
+FAIL: test_bearer (test_archive.Sanitation.test_bearer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-session-review/tests/test_archive.py", line 12, in test_Bearer [REDACTED]('opaqueCredentialValue',sanitize('Authorization: Bearer [REDACTED]'))
+AssertionError: 'opaqueCredentialValue' unexpectedly found in 'Authorization: Bearer [REDACTED]'
+
+======================================================================
+FAIL: test_paths (test_archive.Sanitation.test_paths)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-session-review/tests/test_archive.py", line 16, in test_paths
+    self.assertEqual(sanitize('<HOME>/project'), '<HOME>/project')
+AssertionError: '<HOME>/project' != '<HOME>/project'
+- <HOME>/project
++ <HOME>/project
+
+
+======================================================================
+FAIL: test_vendor_secret (test_archive.Sanitation.test_vendor_secret)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-session-review/tests/test_archive.py", line 10, in test_vendor_secret
+    self.assertNotIn(value,sanitize(value))
+AssertionError: '[REDACTED CREDENTIAL]' unexpectedly found in '[REDACTED CREDENTIAL]'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=4)

@@ -1,0 +1,25 @@
+test_cold_threshold_and_fused_update_accounting (test_observation.ObservationTests.test_cold_threshold_and_fused_update_accounting) ... ok
+test_delivered_plus_dropped_mutations_recover_same_tick (test_observation.ObservationTests.test_delivered_plus_dropped_mutations_recover_same_tick) ... ok
+test_full_suite_shape_safe_policies_and_determinism (test_observation.ObservationTests.test_full_suite_shape_safe_policies_and_determinism) ... ok
+test_interior_gap_recovery (test_observation.ObservationTests.test_interior_gap_recovery) ... ok
+test_interval_decision_nontrivial_safe_false (test_observation.ObservationTests.test_interval_decision_nontrivial_safe_false) ... ok
+test_interval_exact_abstains_on_stale_zero_world (test_observation.ObservationTests.test_interval_exact_abstains_on_stale_zero_world) ... ok
+test_interval_sound_exhaustive_small_vectors (test_observation.ObservationTests.test_interval_sound_exhaustive_small_vectors) ... ok
+test_no_hidden_state_access_unchecked_lucky_vs_wrong (test_observation.ObservationTests.test_no_hidden_state_access_unchecked_lucky_vs_wrong) ... ok
+test_runner_provenance_and_no_overwrite (test_observation.ObservationTests.test_runner_provenance_and_no_overwrite) ... ok
+test_source_bound_and_world_determinism (test_observation.ObservationTests.test_source_bound_and_world_determinism) ... ok
+test_uncertified_but_sufficient_is_not_a_lucky_guess (test_observation.ObservationTests.test_uncertified_but_sufficient_is_not_a_lucky_guess) ... FAIL
+test_zero_change_checkpoint_is_paid_and_fresh (test_observation.ObservationTests.test_zero_change_checkpoint_is_paid_and_fresh) ... ok
+
+======================================================================
+FAIL: test_uncertified_but_sufficient_is_not_a_lucky_guess (test_observation.ObservationTests.test_uncertified_but_sufficient_is_not_a_lucky_guess)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 109, in test_uncertified_but_sufficient_is_not_a_lucky_guess
+    self.assertTrue(t.get('evidence_sufficient', False))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.479s
+
+FAILED (failures=1)

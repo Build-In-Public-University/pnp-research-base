@@ -1,0 +1,134 @@
+"""Bounded release experiment tests; run only this file for this lane."""
+import hashlib
+import json
+import math
+import os
+from pathlib import Path
+import subprocess
+import sys
+import tempfile
+import unittest
+from collections import Counter
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
+from pnp_architecture import release as r
+
+
+class ReleaseTests(unittest.TestCase):
+    def test_shared_actual_gcd(self):
+        c = Counter()
+        self.assertTrue(r.shared([5, 7, 11], c))
+        self.assertEqual(c['pair_tests'], 3)
+        self.assertGreater(c['modulo'], 3)
+        self.assertFalse(r.shared([5, 7, 5], Counter()))
+        self.assertFalse(r.shared([1, 3], Counter()))
+
+    def test_oracle_and_grid_safe_equivalence(self):
+        cells = list(r.cells())
+        self.assertEqual(len(cells), 164)
+        for cell in cells:
+            fixture = r.materialize(cell)
+            targets = [[r.oracle(a, budget) for budget in fixture['budgets']]
+                       for a in fixture['current']]
+            for policy in r.SAFE:
+                row = r.evaluate(fixture, policy)
+                self.assertEqual(row['decisions'], targets, (cell, policy))
+                self.assertEqual(row['unavailable'], 0)
+                self.assertEqual(row['false_accept'], 0)
+                self.assertEqual(row['false_reject'], 0)
+
+    def fixture(self, **kw):
+        return r.materialize(dict(n=4, size=8, seed=7, validity='all', local='all', fault='none', **kw))
+
+    def test_accounting_and_real_local_work(self):
+        f = self.fixture()
+        broad = r.evaluate(f, 'broad')
+        gate = r.evaluate(f, 'gate')
+        reuse = r.evaluate(f, 'attested')
+        self.assertEqual(broad['shared_checks'], 32)
+        self.assertEqual(gate['shared_checks'], 40)
+        self.assertEqual(reuse['shared_checks'], 8)
+        self.assertEqual(broad['duplicate_shared_checks'], 24)
+        self.assertEqual(gate['duplicate_shared_checks'], 32)
+        self.assertEqual(reuse['duplicate_shared_checks'], 0)
+        self.assertEqual(reuse['downstream']['sum_additions'], 256)
+        self.assertEqual(reuse['downstream']['local_tests'], 32)
+        self.assertEqual(reuse['downstream']['auth_ops'], 32)
+        self.assertGreater(reuse['downstream']['hash_bytes'], 0)
+        self.assertGreater(reuse['upstream']['hash_bytes'], 0)
+        self.assertGreater(reuse['communication']['evidence_bytes'], 0)
+        self.assertEqual(broad['communication']['payload_bytes'], sum(len(r.pack(a)) for a in f['current']) * 4)
+        self.assertEqual(reuse['exposure'], 32)
+        self.assertGreater(reuse['total_unit_weight'], reuse['compute_only'])
+
+    def test_gate_reduces_mixed_exposure(self):
+        f = r.materialize(dict(n=4, size=8, seed=7, validity='mixed', local='all', fault='none'))
+        self.assertEqual(r.evaluate(f, 'broad')['exposure'], 32)
+        self.assertEqual(r.evaluate(f, 'gate')['exposure'], 16)
+        self.assertEqual(r.evaluate(f, 'attested')['exposure'], 16)
+
+    def test_fault_fallback_and_local_contract(self):
+        for fault in ['mutation', 'dependency', 'version', 'scope', 'local_contract']:
+            f = r.materialize(dict(n=4, size=8, seed=7, validity='all', local='all', fault=fault))
+            row = r.evaluate(f, 'attested')
+            self.assertEqual(row['false_accept'] + row['false_reject'], 0)
+            self.assertEqual(row['fallbacks'], 0 if fault == 'local_contract' else 4)
+            if fault in ['mutation', 'local_contract']:
+                self.assertFalse(row['decisions'][0][0])
+
+    def test_tampered_attestation_and_missing_inputs(self):
+        artifact = self.fixture()['current'][0]
+        evidence = r.issue(artifact, Counter())
+        evidence['digest'] = '0' * 64
+        c = Counter()
+        self.assertTrue(r.receive(artifact, 100000, evidence, c))
+        self.assertEqual(c['fallbacks'], 1)
+        self.assertIsNone(r.receive(None, 100000, None, Counter()))
+        self.assertIsNone(r.receive(artifact, None, evidence, Counter()))
+
+    def test_unsafe_controls_are_real_false_accepts(self):
+        f = r.materialize(dict(n=16, size=8, seed=7, validity='mixed', local='none', fault='none'))
+        skip = r.evaluate(f, 'skip_local')
+        self.assertEqual(skip['false_accept'], 64)
+        self.assertEqual(skip['downstream'].get('local_tests', 0), 0)
+        f['budgets'] = [100000] * 16
+        weak = r.evaluate(f, 'weak_upstream')
+        self.assertEqual(weak['false_accept'], 64)
+        self.assertEqual(max(weak['false_accept_fanout']), 16)
+        self.assertEqual(weak['upstream'].get('pair_tests', 0), 0)
+        self.assertEqual(r.evaluate(f, 'attested')['false_accept'], 0)
+
+    def test_seed_changes_inputs_not_shape(self):
+        a = r.materialize(dict(n=1, size=8, seed=1, validity='all', local='all', fault='none'))
+        b = r.materialize(dict(n=1, size=8, seed=19, validity='all', local='all', fault='none'))
+        self.assertNotEqual(a['original'], b['original'])
+        self.assertEqual(a, r.materialize(a['cell']))
+
+    def test_frozen_protocol(self):
+        p = ROOT / 'docs/protocol-release-v1.md'
+        self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(), Path(str(p)+'.sha256').read_text().split()[0])
+
+    def test_runner_readback_no_overwrite_and_provenance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            prefixes = [Path(tmp)/'release_v1_a', Path(tmp)/'release_v1_b']
+            for prefix in prefixes:
+                result = subprocess.run([sys.executable, str(ROOT/'scripts/run_release.py'), '--prefix', str(prefix)], cwd=ROOT, text=True, capture_output=True)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertIn('820 rows', result.stdout)
+            for suffix in ['.json', '.md']:
+                self.assertEqual(prefixes[0].with_suffix(suffix).read_bytes(), prefixes[1].with_suffix(suffix).read_bytes())
+            receipt = json.loads(prefixes[0].with_suffix('.json').read_text())
+            self.assertEqual(len(receipt['rows']), 820)
+            self.assertEqual(len(receipt['fixtures']), 164)
+            for relative, digest in receipt['provenance']['sha256'].items():
+                self.assertEqual(hashlib.sha256((ROOT/relative).read_bytes()).hexdigest(), digest)
+            self.assertEqual(Path(receipt['provenance']['module_path']), ROOT/'src/pnp_architecture/release.py')
+            previous = prefixes[0].with_suffix('.json').read_bytes()
+            result = subprocess.run([sys.executable, str(ROOT/'scripts/run_release.py'), '--prefix', str(prefixes[0])], cwd=ROOT, text=True, capture_output=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertEqual(previous, prefixes[0].with_suffix('.json').read_bytes())
+
+
+if __name__ == '__main__':
+    unittest.main()

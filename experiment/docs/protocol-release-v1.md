@@ -1,0 +1,41 @@
+# Frozen protocol: staged release v1
+
+Freeze this file and its SHA-256 before implementing predicates or running results. Local, standard-library only; no network, installation, public release, or cryptographic truth-proof claim.
+
+## Hypothesis and falsifier
+
+Shared validation can be amortized across recipients only when content-bound shared evidence is applicable and its issuer is trusted. It does not establish recipient-local eligibility. Evidence may lose after hashing, authentication, and communication are charged. All three safe policies must exactly match an independent candidate-recipient oracle on every available primary/fault input. Any false accept, false reject, or unavailable result on those inputs falsifies safe equivalence. Report wins, ties and losses without tuning after execution.
+
+## Fixed workload
+
+Eight candidates per cell, vector lengths 8 and 32; recipient counts 1, 4, 16, 64; seeds 1, 7, 19. Generate distinct primes from the fixed interval 101..1999 and seeded sample/permutation. All-valid vectors contain distinct primes. Mixed vectors duplicate element zero into the last position on odd candidate indices. Seeds vary actual arithmetic and serialized payloads, not incident probabilities. Local compatibility is swept independently: all recipients budget 100000; half recipients alternate budgets 100000 and 0 (N=1 has the generous recipient); none budget 0. These are controlled extreme budget regimes, not estimates of compatibility in practice.
+
+The shared predicate is a vector of integers >=2 with every pair coprime. Every policy uses identical early-exit Euclidean GCD modulo loops, domain checks and pair iteration; no slower baseline algorithm. Local predicate computes the actual vector sum and compares to the current recipient budget, only after shared acceptance. Oracle uses Python math.gcd and sum independently, only after policy decisions, never exposed to a policy.
+
+Primary Cartesian sweep: recipient count x length x seed x shared-validity regime x local regime. Additional fault track: N=4,16; lengths=8,32; seed=7; mixed validity; half local compatibility; faults mutation, dependency, version, scope, local_contract. Faults affect candidate zero: mutation duplicates the first value into its last position AFTER approval; dependency/version/scope alter current metadata after approval; local_contract changes recipient zero's current budget to zero after approval. All policies receive exactly the same current candidate data and current local contracts. Gate decisions are made against original candidates, then downstream fault materialization is shared; mutations never repair originally rejected shared candidates. Thus upstream rejection remains sound in this bounded workload, not for arbitrary post-gate repairs.
+
+## Policies and explicit information
+
+- `broad`: no upstream shared check; deliver each full current artifact to each recipient. Independently check shared then local.
+- `gate`: upstream receives original payload, validates shared once, broadcasts a reject status for invalid artifacts; survivors' full current payload is delivered and independently shared+locally checked at every recipient. No reusable evidence.
+- `attested`: same sound upstream gate; survivors get full current payload plus reusable content digest and dependency/version/scope/predicate-scoped evidence. Check authentication, digest and metadata against current received data; on any mismatch recompute shared locally, never silently accept or abstain. On applicable evidence trust the issuer's shared assertion, then actually recompute the recipient-local predicate. Evidence asserts NO recipient-local contract.
+- `skip_local`: unsafe control identical to attested except deliberately omits local validation.
+- `weak_upstream`: injected adversarial control issues shared approval without checking pairwise coprimality (domain-only validator), then recipients reuse it with genuine local checks. It demonstrates correlated false acceptance under a common faulty validator, not measured incident probability.
+
+Evidence is **TRUSTED ATTESTATION**, NOT a succinct proof of mathematical truth. Use actual SHA-256 content hashes and HMAC-SHA256 authentication with a fixed public laboratory key for reproducibility. This is a simulated authenticated issuer: the public fixture key offers no deployed security. HMAC establishes origin/binding only conditional on secret-key custody; it cannot establish predicate correctness. Current dependency/version/scope metadata and current local budget are assumed authoritatively available; hidden freshness, dishonest context publishers and key compromise are outside safe guarantees. Metadata equality is applicability, not verification of real dependency contents.
+
+## Accounting
+
+Report counters split into setup, upstream, downstream and communication. Count actual domain tests, GCD pair tests, Euclidean modulo iterations, local sum additions, local comparisons, evidence metadata comparisons, authentication operations; content-hash bytes and HMAC message-input bytes separately. Count serialized artifact payload bytes per hop, evidence bytes per recipient, and one-byte gate decision per recipient per candidate. Each gated policy includes producer-to-upstream original payload delivery. Broad producer already holds materialized payload. No free hash or evidence delivery. HMAC message bytes exclude internal compression padding/key expansion; authentication operation count is separately visible. Count evidence-generation hashes/authentication upstream and every downstream verification.
+
+Setup reports vectors materialized, serialized bytes and recipient contracts provisioned, identical per cell. Generation assumes one unit per materialized integer separately from validation cost; actual prime generation, RNG, Python allocation, serialization CPU, oracle scoring, receipt serialization/provenance hashing, disk I/O, context discovery, key provisioning/rotation, network framing, encryption, retries, latency, parallel scheduling, machine energy and labor are excluded. Explicit setup byte counts are inventory, not additional transmission. The shared fixed prime-pool creation is unpriced, not called free end-to-end generation.
+
+Cost sensitivity: `compute_only` is the sum of counted predicate/control operations including authentication invocations, EXCLUDING per-byte hash/authentication/communication costs; `total_unit_weight` adds content-hash bytes + HMAC message bytes + all transmitted payload/evidence/status bytes. These are deliberately dimensionally mixed unit-weight models, not timing, money or energy measurements. Assumed generation units are separate and identical. Counters expose reweighting; neither scalar is a calibrated hardware metric.
+
+Track candidate-recipient full-payload exposures, accepted/rejected/unavailable, false accepts/rejects, per-candidate fanout of false acceptance, shared checks and duplicate shared checks (all checks after the first per candidate across stages), reused evidence and fallback recomputations. Filtered rejection is an observed sound gate status, not unavailability. Missing full payload or missing authoritative local contract yields unavailable (tested separately; not included in exact-equivalence claims).
+
+## Verification and persistence
+
+Tests first: missing-module setup failure must not be reported as behavioral RED; minimal stubs may expose expected failing behaviors before implementation. Test exact acceptance and costs, content mutation, stale dependency/version/scope, local contract mismatch, missing data, tampered evidence, unsafe correlated faults and deterministic CLI readback/no-overwrite. Run only tests/test_release.py; parent owns full suite.
+
+Runner must verify frozen protocol hash, embed all fixtures, decisions, oracle targets, counters, source/module paths and SHA-256 provenance. Write two independently executed byte-identical JSON receipts and Markdown summaries under distinct release_v1 prefixes using exclusive creation, never overwrite receipts. No timestamps/run IDs inside deterministic content. Read back both outputs and compare bytes. Include exact row/cell counts and representative wins AND losses. No edits outside owned release files; no commits.

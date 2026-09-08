@@ -1,0 +1,117 @@
+test_cold_threshold_and_fused_update_accounting (test_observation.ObservationTests.test_cold_threshold_and_fused_update_accounting) ... FAIL
+test_delivered_plus_dropped_mutations_recover_same_tick (test_observation.ObservationTests.test_delivered_plus_dropped_mutations_recover_same_tick) ... ERROR
+test_full_suite_shape_safe_policies_and_determinism (test_observation.ObservationTests.test_full_suite_shape_safe_policies_and_determinism) ... FAIL
+test_interior_gap_recovery (test_observation.ObservationTests.test_interior_gap_recovery) ... ERROR
+test_interval_decision_nontrivial_safe_false (test_observation.ObservationTests.test_interval_decision_nontrivial_safe_false) ... FAIL
+test_interval_exact_abstains_on_stale_zero_world (test_observation.ObservationTests.test_interval_exact_abstains_on_stale_zero_world) ... ok
+test_interval_sound_exhaustive_small_vectors (test_observation.ObservationTests.test_interval_sound_exhaustive_small_vectors) ... FAIL
+test_no_hidden_state_access_unchecked_lucky_vs_wrong (test_observation.ObservationTests.test_no_hidden_state_access_unchecked_lucky_vs_wrong) ... ERROR
+test_runner_provenance_and_no_overwrite (test_observation.ObservationTests.test_runner_provenance_and_no_overwrite) ... ERROR
+test_source_bound_and_world_determinism (test_observation.ObservationTests.test_source_bound_and_world_determinism) ... FAIL
+test_zero_change_checkpoint_is_paid_and_fresh (test_observation.ObservationTests.test_zero_change_checkpoint_is_paid_and_fresh) ... ERROR
+
+======================================================================
+ERROR: test_delivered_plus_dropped_mutations_recover_same_tick (test_observation.ObservationTests.test_delivered_plus_dropped_mutations_recover_same_tick)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 57, in test_delivered_plus_dropped_mutations_recover_same_tick
+    tick = r['ticks'][1]
+           ~~~~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_interior_gap_recovery (test_observation.ObservationTests.test_interior_gap_recovery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 76, in test_interior_gap_recovery
+    t = obs.run_policy(world, 'event_log', 'exact', 'dropped')['ticks'][1]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_no_hidden_state_access_unchecked_lucky_vs_wrong (test_observation.ObservationTests.test_no_hidden_state_access_unchecked_lucky_vs_wrong)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 93, in test_no_hidden_state_access_unchecked_lucky_vs_wrong
+    a = obs.run_policy(stable, 'poll_unchecked', 'exact', 'complete')['ticks'][1]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_runner_provenance_and_no_overwrite (test_observation.ObservationTests.test_runner_provenance_and_no_overwrite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 133, in test_runner_provenance_and_no_overwrite
+    spec.loader.exec_module(runner)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1130, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '<HOME>/pnp-network-architecture/scripts/run_observation.py'
+
+======================================================================
+ERROR: test_zero_change_checkpoint_is_paid_and_fresh (test_observation.ObservationTests.test_zero_change_checkpoint_is_paid_and_fresh)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 82, in test_zero_change_checkpoint_is_paid_and_fresh
+    t = obs.run_policy(w, 'event_log', 'exact', 'complete')['ticks'][1]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+FAIL: test_cold_threshold_and_fused_update_accounting (test_observation.ObservationTests.test_cold_threshold_and_fused_update_accounting)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 45, in test_cold_threshold_and_fused_update_accounting
+    self.assertEqual([t['output'] for t in result['ticks']], [False, True])
+AssertionError: Lists differ: [] != [False, True]
+
+Second list contains 2 additional elements.
+First extra element 0:
+False
+
+- []
++ [False, True]
+
+======================================================================
+FAIL: test_full_suite_shape_safe_policies_and_determinism (test_observation.ObservationTests.test_full_suite_shape_safe_policies_and_determinism)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 117, in test_full_suite_shape_safe_policies_and_determinism
+    self.assertEqual(len(a['worlds']), 24)
+AssertionError: 0 != 24
+
+======================================================================
+FAIL: test_interval_decision_nontrivial_safe_false (test_observation.ObservationTests.test_interval_decision_nontrivial_safe_false)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 21, in test_interval_decision_nontrivial_safe_false
+    self.assertEqual((output, guaranteed), (False, True))
+AssertionError: Tuples differ: (None, False) != (False, True)
+
+First differing element 0:
+None
+False
+
+- (None, False)
++ (False, True)
+
+======================================================================
+FAIL: test_interval_sound_exhaustive_small_vectors (test_observation.ObservationTests.test_interval_sound_exhaustive_small_vectors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 36, in test_interval_sound_exhaustive_small_vectors
+    self.assertEqual(guaranteed, len(possible) == 1)
+AssertionError: False != True
+
+======================================================================
+FAIL: test_source_bound_and_world_determinism (test_observation.ObservationTests.test_source_bound_and_world_determinism)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<HOME>/pnp-network-architecture/tests/test_observation.py", line 108, in test_source_bound_and_world_determinism
+    self.assertEqual(len(a['states']), 16)
+AssertionError: 0 != 16
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+FAILED (failures=5, errors=5)

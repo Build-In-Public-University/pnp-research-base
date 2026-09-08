@@ -1,0 +1,27 @@
+[
+  {
+    "id": "CLAIM-001",
+    "wording": "Operational lifecycle cost can differ by containing architecture while the local certificate relation is held fixed.",
+    "status": "open",
+    "evidence": "initial_receipt_is_arithmetic_only_not_empirical_support",
+    "correction": "docs/formal-boundary-and-prior-correction.md",
+    "falsifier": "Architecture-conditioned lifecycle cost is invariant after local verification work is controlled.",
+    "next_artifact": "first_attack.json"
+  },
+  {
+    "id": "CLAIM-002",
+    "wording": "Architecture-relative lifecycle cost is not the same thing as membership in standard P or NP.",
+    "status": "statement",
+    "evidence": "formal_definition_boundary",
+    "falsifier": "A precise reduction shows the proposed lifecycle label changes standard class membership without changing the formal model.",
+    "next_artifact": "formal_boundary_note.md"
+  },
+  {
+    "id": "CLAIM-003",
+    "wording": "Repeated validation is a maintenance/reproduction problem, not repeated reclassification of a language between P and NP.",
+    "status": "statement",
+    "evidence": "conceptual_analysis",
+    "falsifier": "A formal model of repeated validation adds no distinct cost or state beyond the original decision problem.",
+    "next_artifact": "revalidation_sweep.json"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "account": "marvin_panics",
+  "account_id": "1364210482387816449",
+  "app": "marvin-x",
+  "conversation_id": "2097297199004582026",
+  "posts": [
+    {
+      "id": "2097297199004582026",
+      "n": 1,
+      "readback": "verified",
+      "url": "https://x.com/marvin_panics/status/2097297199004582026"
+    },
+    {
+      "id": "2097297331599159631",
+      "n": 2,
+      "readback": "verified",
+      "url": "https://x.com/marvin_panics/status/2097297331599159631"
+    },
+    {
+      "id": "2097297407994102150",
+      "n": 3,
+      "readback": "verified",
+      "url": "https://x.com/marvin_panics/status/2097297407994102150"
+    },
+    {
+      "id": "2097297485123195236",
+      "n": 4,
+      "readback": "verified",
+      "url": "https://x.com/marvin_panics/status/2097297485123195236"
+    },
+    {
+      "id": "2097297551141519484",
+      "n": 5,
+      "readback": "verified",
+      "url": "https://x.com/marvin_panics/status/2097297551141519484"
+    },
+    {
+      "id": "2097297643420389422",
+      "n": 6,
+      "readback": "verified; Clay URL expanded and returned HTTP 200",
+      "url": "https://x.com/marvin_panics/status/2097297643420389422"
+    },
+    {
+      "id": "2097297716183216192",
+      "n": 7,
+      "readback": "verified",
+      "url": "https://x.com/marvin_panics/status/2097297716183216192"
+    },
+    {
+      "id": "2097297788891435032",
+      "n": 8,
+      "readback": "verified",
+      "url": "https://x.com/marvin_panics/status/2097297788891435032"
+    }
+  ],
+  "rail": "marvin-vps",
+  "root_url": "https://x.com/marvin_panics/status/2097297199004582026",
+  "source_report": "<HOME>/Downloads/millennium-analysis-report.md",
+  "status": "verified",
+  "verification": {
+    "author_id_verified": true,
+    "conversation_id_verified": true,
+    "exact_text_verified": true,
+    "media": false,
+    "method": "direct xurl read after every write",
+    "parent_chain_verified": true
+  }
+}

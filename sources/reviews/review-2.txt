@@ -1,0 +1,43 @@
+Implemented and executed locally in `<HOME>/pnp-network-architecture`. **No commits, installs, external calls, or publication.**
+
+### Verified results
+- **22 unittest tests passed** (`Ran 22 tests in 1.825s`, `OK`).
+- Two retained runs produced **byte-identical JSON receipts and summaries**.
+- Coverage: **30 graphs, 120 propagation cells, 60 containing witnesses, 30 CNF formulas, 90 schedules, 32,736 exhaustive assignment outcomes**.
+- All nine embedded source hashes matched on readback.
+- Historical `model.py` and `artifacts/first_attack.json` unchanged; `git diff --check` passed.
+
+### Findings
+- N=32 complete graph: **992 flood sends versus 31 routed sends**, with **992 BFS setup inspections** reported separately.
+- All connected spanning-tree routes tied at 31 sends; topology still changed rounds.
+- Local-only conjunction made **25 false global predictions**.
+- Centralized outcomes: **30 accepts, 20 witness rejections, 10 unavailable**, zero available-oracle disagreements.
+- CNF: **10 SAT, 20 UNSAT** cases. All 10 SAT cases consumed more search work with the full processor budget than serial first-success search.
+
+### Files
+Created:
+- `src/pnp_architecture/experiments_v2.py`
+- `tests/test_experiments_v2.py`
+- `scripts/run_experiments_v2.py`
+- `docs/protocol-v2.md` and `.sha256` — frozen before runs
+- `artifacts/experiments_v2.json`
+- `artifacts/experiments_v2-repeat.json`
+- Corresponding `*-summary.md` files
+- `artifacts/experiments_v2-verification.md` — commands, execution record, hashes, limitations
+
+Modified `README.md` with runnable commands and explicit arithmetic-only characterization of the legacy fixture; fixed `cli.py`’s missing `__main__` guard.
+
+### Exact execution
+```bash
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+PYTHONPATH=src python3 scripts/run_experiments_v2.py --output artifacts/experiments_v2.json --summary artifacts/experiments_v2-summary.md
+PYTHONPATH=src python3 scripts/run_experiments_v2.py --output artifacts/experiments_v2-repeat.json --summary artifacts/experiments_v2-repeat-summary.md
+cmp artifacts/experiments_v2.json artifacts/experiments_v2-repeat.json
+cmp artifacts/experiments_v2-summary.md artifacts/experiments_v2-repeat-summary.md
+```
+All final commands exited 0. Receipt SHA-256:
+`54d36defc25fe3d5218575459530709be5001d6fb34e84f215098ffd2d0ea505`
+
+**Limitations:** finite synthetic algorithms; serially simulated parallel scheduling, no measured hardware time/energy; setup and communication exclusions explicit; rejected witnesses are not UNSAT; no SAT lower-bound or P/NP separation claims. Review caught and regression-fixed centralized inspection accounting before retained runs. Parent’s concurrent ledger/formal-boundary files were left untouched.
+
+[NOTE: subagent modified files the parent previously read — re-read before editing: <HOME>/pnp-network-architecture/README.md, <HOME>/pnp-network-architecture/src/pnp_architecture/cli.py]

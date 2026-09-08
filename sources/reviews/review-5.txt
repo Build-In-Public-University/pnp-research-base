@@ -1,0 +1,29 @@
+**Completed and verified locally.** Frozen protocol preceded implementation/results; no installs, network, commits, README or claim edits.
+
+- **164 matched cells, 820 policy rows.** All **78,240 safe candidate-recipient decisions** matched the independent oracle: zero false accepts/rejects/unavailable.
+- **10 targeted tests passed** in 39.704s, including stale/mutated evidence fallback, scope/version/dependency changes, local mismatch, unsafe controls, missing inputs, runner readback/provenance and overwrite refusal. Only `tests/test_release.py` ran.
+- Two independently executed JSON receipts and Markdown summaries are **byte-identical**, exclusively created and source-hash verified.
+
+### Findings
+Across 144 primary cells, attested versus broad:
+- Compute-only: **108 wins / 36 losses**.
+- Total unit-weight: **54 wins / 90 losses**.
+- Representative win, N=64/size=32/all-valid: total **493,924 vs 2,207,296**; shared checks **8 vs 512**.
+- Representative loss, N=64/size=8/all-valid: total **338,914 vs 177,472**, despite much less predicate computation.
+- Injected skip-local and weak-upstream controls produced **9,540** and **3,456 false accepts** respectively; maximum common-mode fanout **64**. These are adversarial controls, not incident probabilities.
+
+**Trust/accounting:** explicitly **TRUSTED ATTESTATION**, not proof of truth. Public laboratory HMAC key simulates authenticated origin. Hash/authentication-input bytes and communication are charged separately; generation assumptions remain separate. Costs are uncalibrated unit-weight models, excluding serialization CPU, infrastructure/security provisioning, hidden-context discovery, energy and labor.
+
+### Exact files created
+- `src/pnp_architecture/release.py`
+- `scripts/run_release.py`
+- `tests/test_release.py`
+- `docs/protocol-release-v1.md`
+- `docs/protocol-release-v1.md.sha256`
+- `docs/release-v1-results.md`
+- `artifacts/release_v1_run1.json`
+- `artifacts/release_v1_run1.md`
+- `artifacts/release_v1_run2.json`
+- `artifacts/release_v1_run2.md`
+
+Each JSON is **7,492,047 bytes**; each summary **4,286 bytes**. Full findings, hashes, exclusions and honest TDD history are in `docs/release-v1-results.md`. No unresolved blockers.

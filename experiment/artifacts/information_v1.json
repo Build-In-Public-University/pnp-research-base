@@ -1,0 +1,120 @@
+{
+  "binary": {
+    "cases": 256,
+    "disagreements": 0,
+    "insufficient": 196,
+    "sufficient": 60
+  },
+  "boundary": "Finite exhaustive checks illustrate standard indistinguishability. No claim of efficient computation of observation, model, or response map; no wall-clock, sensor, AI, P/NP or novel-theorem result.",
+  "enumeration": {
+    "actions": [
+      0,
+      1,
+      2
+    ],
+    "allowed_and_feasible_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "binary_states": 4,
+    "observation_labels": [
+      0,
+      1
+    ],
+    "relational_states": 3
+  },
+  "relational": {
+    "cases": 32768,
+    "disagreements": 0,
+    "feasible": 7172,
+    "infeasible": 25596
+  },
+  "source_sha256": {
+    "docs/protocol-information-v1.md": "c87b18826e8e550cdfd1e5eee1c1e23cad71a437573869b4b650e39476348ec3",
+    "scripts/run_information.py": "0efa81797b11fb7a916483726e832cc3bf5eddaf5cd495c241eded0ab58813e0",
+    "src/pnp_architecture/information.py": "383dfbb9fb58d032632b305d39f44f0dffe82ea387c5fd65484ecd2b5963a06d",
+    "tests/test_information.py": "3cc901b805edb5de1c5119c4e6bc3ec3ee77c1cfb7de02a8bbd749b1806aef44"
+  },
+  "status": "executed_finite_information_boundary_audit",
+  "witnesses": {
+    "deferral_denied": {
+      "allowed_masks": [
+        5,
+        6
+      ],
+      "feasible_mask": 3,
+      "observations": [
+        0,
+        0
+      ],
+      "response": null
+    },
+    "deferral_permitted": {
+      "allowed_masks": [
+        5,
+        6
+      ],
+      "feasible_mask": 7,
+      "observations": [
+        0,
+        0
+      ],
+      "response": {
+        "0": 2
+      }
+    },
+    "pairwise_but_not_joint": {
+      "allowed_masks": [
+        3,
+        6,
+        5
+      ],
+      "feasible_mask": 7,
+      "observations": [
+        0,
+        0,
+        0
+      ],
+      "response": null
+    },
+    "threshold_insufficient": {
+      "observations": [
+        0,
+        0,
+        0
+      ],
+      "possible_states": [
+        48,
+        49,
+        50
+      ],
+      "predicate": "s < 50",
+      "required": [
+        true,
+        true,
+        false
+      ]
+    },
+    "threshold_sufficient": {
+      "observations": [
+        0,
+        0
+      ],
+      "possible_states": [
+        48,
+        49
+      ],
+      "predicate": "s < 50",
+      "required": [
+        true,
+        true
+      ]
+    }
+  }
+}

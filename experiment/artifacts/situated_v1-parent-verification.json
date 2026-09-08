@@ -1,0 +1,66 @@
+{
+  "amendment": "Two unused imports removed from release test only. Original test source archived; release_v1_verified1/2 differ from original receipts only in this test source hash. Protocol/implementation/counters unchanged.",
+  "artifact_sha256": {
+    "information_v1-repeat.json": "29fd6a983a534ac37ed67b0860aa34fed56d8ae9b7fd543403bc215db5d5d622",
+    "information_v1.json": "29fd6a983a534ac37ed67b0860aa34fed56d8ae9b7fd543403bc215db5d5d622",
+    "observation_v1-parent.json": "f0897e62eb45249a7decc8b4a20300e06a4547f360e310074b6d8c30c097a82a",
+    "observation_v1-repeat.json": "f0897e62eb45249a7decc8b4a20300e06a4547f360e310074b6d8c30c097a82a",
+    "observation_v1.json": "f0897e62eb45249a7decc8b4a20300e06a4547f360e310074b6d8c30c097a82a",
+    "release_v1-test-source.txt": "fe5acccc8e460ead2dab31b35adb1e2a82fb9fe78d2fe350b58aa2c59c52fe21",
+    "release_v1_parent.json": "f71a13eb4379b59a00db448ce6472bc8f891b020f81615585e93834d7c59bf2e",
+    "release_v1_run1.json": "f71a13eb4379b59a00db448ce6472bc8f891b020f81615585e93834d7c59bf2e",
+    "release_v1_run2.json": "f71a13eb4379b59a00db448ce6472bc8f891b020f81615585e93834d7c59bf2e",
+    "release_v1_verified1.json": "4fb85178fcb6885b644defdf844321273b0eaa8905cb2169c624834cbca1b2cb",
+    "release_v1_verified2.json": "4fb85178fcb6885b644defdf844321273b0eaa8905cb2169c624834cbca1b2cb",
+    "situated_v1-final-tests.txt": "a1fadb70e70776b583889882ed6471919e3eaeecb788b68d06d8ef6005f6b9eb"
+  },
+  "full_tests_passed": 76,
+  "historical_artifacts_unchanged": {
+    "artifacts/experiments_v2-parent-summary.md": "9de49c4c4ca47303415bd60eb25732a2023ca1619f0236f1780ab4341f7a3c05",
+    "artifacts/experiments_v2-parent.json": "54d36defc25fe3d5218575459530709be5001d6fb34e84f215098ffd2d0ea505",
+    "artifacts/experiments_v2-repeat-summary.md": "9de49c4c4ca47303415bd60eb25732a2023ca1619f0236f1780ab4341f7a3c05",
+    "artifacts/experiments_v2-repeat.json": "54d36defc25fe3d5218575459530709be5001d6fb34e84f215098ffd2d0ea505",
+    "artifacts/experiments_v2-summary.md": "9de49c4c4ca47303415bd60eb25732a2023ca1619f0236f1780ab4341f7a3c05",
+    "artifacts/experiments_v2-verification.md": "9a18eed9ae836a16b1d46358fb71946dec0b0d4a92bc1d40946e2d5eb36f4a01",
+    "artifacts/experiments_v2.json": "54d36defc25fe3d5218575459530709be5001d6fb34e84f215098ffd2d0ea505",
+    "artifacts/first_attack.json": "f1b33e7843017ef1a968f837f827fb55adb327055e14e5154dd10efbcfcd3847",
+    "artifacts/gates_v1-repeat.json": "72740b16e4b7042e4f7c4f3593f6a32b0c46cd3e9364e755927d8c6b162bdb3c",
+    "artifacts/gates_v1.json": "72740b16e4b7042e4f7c4f3593f6a32b0c46cd3e9364e755927d8c6b162bdb3c",
+    "artifacts/history_v1-repeat-summary.md": "fec213145e6672400bd8ec2de70d778f4d39a7183fb6ff4f4c421e6512acc02e",
+    "artifacts/history_v1-repeat.json": "fdab2c2bcb58864cf90e0260416e76b727dea6d0916de69b45a5213e157dd821",
+    "artifacts/history_v1-summary.md": "fec213145e6672400bd8ec2de70d778f4d39a7183fb6ff4f4c421e6512acc02e",
+    "artifacts/history_v1.json": "fdab2c2bcb58864cf90e0260416e76b727dea6d0916de69b45a5213e157dd821",
+    "artifacts/history_v1_1-repeat-summary.md": "f4200be3217c7a761bd76ee334b0f34386c1fc34e16af6533fac8b638d14b836",
+    "artifacts/history_v1_1-repeat.json": "962cf69681b6ebcdd767ff16ee40847034a5fd4e556a6414ec18caf446d1aba1",
+    "artifacts/history_v1_1-summary.md": "f4200be3217c7a761bd76ee334b0f34386c1fc34e16af6533fac8b638d14b836",
+    "artifacts/history_v1_1.json": "962cf69681b6ebcdd767ff16ee40847034a5fd4e556a6414ec18caf446d1aba1"
+  },
+  "information": {
+    "binary": {
+      "cases": 256,
+      "disagreements": 0,
+      "insufficient": 196,
+      "sufficient": 60
+    },
+    "relational": {
+      "cases": 32768,
+      "disagreements": 0,
+      "feasible": 7172,
+      "infeasible": 25596
+    }
+  },
+  "limits": "Local procedural freezes, trusted source/issuer assumptions, synthetic logical or mixed-unit cost models; no deployed network, hardware cost, novel theorem, P/NP or external-action authorization claim.",
+  "observation": {
+    "cells": 96,
+    "distinct_state_trajectory_hashes": 24,
+    "policy_tick_decisions": 6144
+  },
+  "release": {
+    "cells": 164,
+    "counter_audit_method": "No release module imports: independent primal eligibility via math.gcd, Euclidean division-depth counts, direct stage schedules from fixtures, canonical payload/body lengths and fixed 64-character hex MAC lengths. All upstream/downstream/communication counters matched.",
+    "independently_reconstructed_counter_rows": 820,
+    "policy_rows": 820,
+    "safe_decisions": 78240
+  },
+  "status": "parent_verified_local_only"
+}

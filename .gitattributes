@@ -1,0 +1,2 @@
+# Preserve original Markdown hard breaks and terminal blank lines in source notes.
+sources/documents/*.md whitespace=-blank-at-eol,-blank-at-eof

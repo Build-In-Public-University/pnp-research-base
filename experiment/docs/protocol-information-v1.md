@@ -1,0 +1,9 @@
+# Information-boundary finite audit v1 (prospective)
+
+Scope: finite illustration of standard indistinguishability/factorization arguments, not a novel theorem or an efficiency result. No sensor, AI, physical hardware or general P/NP claim.
+
+Freeze this protocol and SHA before execution. Binary-answer track: exhaust all binary observation maps and binary target functions on four labeled states. Compare constancy of target on observation fibers against enumeration of every binary response map. Relational-contract track: three labeled states, binary observations, three possible response actions; enumerate every allowed-action subset per state (including empty), every feasible/authorized-action subset, and every observation map. Compare intersection-based construction of an admissible response per attained observation with an independently enumerated full response-map oracle. No omniscient state supplied to a response map at invocation.
+
+Keep a concrete three-state witness where every pair of acceptable-action sets intersects but their total intersection is empty. This disproves a pairwise-only test for general relational contracts. Include a common deferral option control; deferral counts as success only when explicitly in the contract and feasible action set. Include identical observations for exact versus threshold example: states 48/49 are indistinguishable yet both satisfy <50; adding possible state 50 destroys threshold sufficiency. These state sets are DECLARED assumptions, not evidence that a real environment stays inside them.
+
+Counters report enumerated cases and disagreements only. Do not label checker operation counts as sensor cost or infer inexpensive construction of observation maps. Emit deterministic JSON and Markdown with protocol, implementation, runner and test hashes; verify resolved module path, reject protocol drift and existing outputs; retain repeat artifacts byte-identical. Preserve previous experiment files.
