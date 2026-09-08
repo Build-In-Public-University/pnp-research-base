@@ -167,8 +167,8 @@
     },
     {
       "path": "conversation/records.jsonl",
-      "bytes": 2401416,
-      "sha256": "623453eec9eec31685c5bc4df8cfa02b55eea0230a7aeced68ebf8c463efed09",
+      "bytes": 4480010,
+      "sha256": "dffc63dce4c36a12e28f5dce447ca997516a7ea4c099d3a46a5d96262053eb38",
       "source": "20260908_080154_06d6b1",
       "kind": "stored_records_redacted",
       "source_sha256": null,
@@ -176,8 +176,8 @@
     },
     {
       "path": "conversation/dialogue.md",
-      "bytes": 219898,
-      "sha256": "eccd0b3a1a13074da1c1beded6690ee5fa1b1319b2830058aa26c231c2f1c8c8",
+      "bytes": 414832,
+      "sha256": "74052345e4a7ad0673ff600487c3bd0afe97da0b8d04d904450d3edf2cbd07a9",
       "source": "20260908_080154_06d6b1",
       "kind": "readable_dialogue",
       "source_sha256": null,
@@ -1427,8 +1427,8 @@
     },
     {
       "path": "sources/read-inventory.json",
-      "bytes": 2768,
-      "sha256": "825ac0d1e87b2791950f39e33b10073b288336f051a0e0c47fc2a17e0946ac63",
+      "bytes": 802,
+      "sha256": "d27afdc80c9ab7190b261d201d58602f8cb1f39412232ebafb9b366d9f757c32",
       "source": "stored tool arguments",
       "kind": "direct_read_inventory_not_exhaustive",
       "source_sha256": null,
@@ -1445,5 +1445,7 @@
     "Web files are historical tool extractions, not newly fetched full pages",
     "No global session database or unrelated session export included"
   ],
-  "transport_normalization": "Opaque call/response IDs mapped deterministically to transport-hex labels. UTF-8 base64 payloads decoded and scrubbed inline; tool command syntax may no longer be executable. Subagent and review file paths shortened. Record IDs unchanged."
+  "transport_normalization": "Opaque call/response IDs mapped deterministically to transport-hex labels. UTF-8 base64 payloads decoded and scrubbed inline; tool command syntax may no longer be executable. Subagent and review file paths shortened. Record IDs unchanged.",
+  "manifest_sha256": "48bc63d2e0d29094682c7c4e1124fbb23b8fafe7c7dfce8e51518e5c2f08ebcf",
+  "manifest_sha256_after_rebuild": "48bc63d2e0d29094682c7c4e1124fbb23b8fafe7c7dfce8e51518e5c2f08ebcf"
 }
