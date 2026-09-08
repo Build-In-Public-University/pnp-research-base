@@ -1,0 +1,141 @@
+## Audit report: *Extending the Córdoba–Martínez-Zoroa IPM Blow-Up to Uniformly Space-Time Smooth Forcing*
+
+**Source inspected:** `/Users/leoguinan/Downloads/ipm.pdf` and the extracted text `ipm.txt`. The PDF is 57 pages, dated September 7, 2026. I did not independently reprove or formally verify the argument.
+
+### 1. Exact theorem and claimed result
+
+The central statement is **Theorem 2.1, p. 3**, with the construction completed in **Section 6, pp. 42–48**.
+
+For the forced periodic incompressible porous media equation
+\[
+\partial_t\rho+u_T(\rho)\cdot\nabla\rho=F
+\quad\text{on }[0,1)\times\mathbb T^2,
+\]
+the paper claims existence of:
+
+- smooth, odd, zero-mean initial data \(\rho_{\rm in}\in C^\infty(\mathbb T^2)\);
+- a smooth, odd, zero-mean force
+  \[
+  F\in C^\infty([0,1]\times\mathbb T^2);
+  \]
+- a solution satisfying
+  \[
+  \rho\in C^\infty([0,T]\times\mathbb T^2)
+  \quad\text{for every }T<1;
+  \]
+- a limiting density \(\rho_*\in C^\eta(\mathbb T^2)\) for every \(0\leq\eta<1\), with
+  \[
+  \rho(t)\to\rho_*\quad\text{in }C^\eta\text{ as }t\uparrow1;
+  \]
+- but nevertheless
+  \[
+  \|\nabla\rho(t)\|_{L^\infty}\to\infty,
+  \qquad
+  \|D_xu_T(\rho(t))\|_{L^\infty}\to\infty.
+  \]
+
+Thus the claimed singularity is loss of Lipschitz/\(C^1\) control at finite time, while the density remains bounded and converges in every sub-Lipschitz Hölder space.
+
+### 2. What is genuinely new relative to cited prior work
+
+The closest prior result is Córdoba–Martínez-Zoroa, cited as [1], especially their theorem and Remarks 1–2. The present paper explicitly attributes the core mechanism to that work (**pp. 1–3, especially pp. 3–4**):
+
+- multiscale parent/child induction;
+- transported phase;
+- high-frequency oscillatory packets;
+- finite velocity expansions;
+- phase-harmonic cancellation;
+- frequency-dependent packet amplitudes;
+- derivative-sensitive induction.
+
+Relative to [1], the paper claims these concrete extensions:
+
+1. **Periodic domain:** the construction is carried out on \(\mathbb T^2\), rather than \(\mathbb R^2\).
+2. **Jointly smooth forcing:** [1] is described as having a force in \(L^\infty_t C^\infty_x\), with higher time regularity only anticipated in Remark 1. This paper claims \(F\in C^\infty([0,1]\times\mathbb T^2)\), including at \(t=1\).
+3. **Nested Fourier cutoffs:** the cutoff parent \(P_{q+1}=S_{\mu_{q+1}}\rho^{(q)}\) is used to avoid derivative loss.
+4. **Exact cutoff commutator:** the cutoff error is not discarded; it is placed explicitly into the force.
+5. **Exact finite-stage identities and series:** the authors claim the solution is built by an explicit series and that no separate nonlinear compactness or nonconstructive limit is required. See equations (5), (154)–(157), (175), and Proposition 6.4.
+6. **Mixed time-space induction:** Sections 3–5 and Appendix A develop a two-pass induction intended to prove all mixed derivatives of the force.
+
+The paper also emphasizes a methodological analogy with mollification in convex integration (**Section 2.2, pp. 8–9; reference [39]**), but explicitly says this is only an analogy and does not make a convex-integration or weak-nonuniqueness claim.
+
+The strongest defensible novelty claim is therefore: **an alleged extension of the known forced-IPM blow-up mechanism to the torus with a force smooth jointly in space and time, together with a detailed cutoff-based exact-stage construction.** The paper does not claim to originate the underlying blow-up mechanism.
+
+### 3. Role and regularity of the forcing
+
+The force is central, not incidental.
+
+At each finite stage the authors define the force so that the constructed density solves the equation **exactly**. The force increment consists of:
+
+- the exact child residual;
+- the exact Fourier-cutoff commutator;
+- remaining multiplier remainders and non-corrected harmonics.
+
+See equations (5), (139)–(140), and (154)–(157), especially **pp. 4, 32–39**.
+
+The force is therefore **engineered from the solution construction**. This is an existential result for a specially designed external force, not blow-up under arbitrary, generic, or physically prescribed smooth forcing. The forcing is chosen to support the cascade while remaining small in successively higher derivative norms.
+
+The claimed regularity is unusually strong:
+
+- all spatial derivatives;
+- all time derivatives;
+- all mixed space-time derivatives;
+- uniform control through the endpoint \(t=1\).
+
+The mechanism is the decay estimate
+\[
+\|\partial_t^m G_{q+1}(t)\|_{C^k}
+\lesssim \lambda_{q+1}^{-1/4}
+\]
+for an increasing finite range of \(m+k\) at each scale; the exponent \(\beta_q\) decreases to zero so that every fixed derivative order is eventually covered. See (7), Proposition 5.13, equations (164), (176), and Proposition 6.4 (**pp. 5, 39–46**).
+
+Important qualification: the **force is smooth at \(t=1\)**, but the solution is only asserted to be classical on every interval \([0,T]\) with \(T<1\). The endpoint density is only asserted to lie in all \(C^\eta\), \(\eta<1\), not \(C^1\).
+
+### 4. What this does—and does not—say about Navier–Stokes
+
+It does **not** solve, address directly, or materially reduce the Clay Millennium Navier–Stokes problem.
+
+The paper studies **forced inviscid IPM**, a two-dimensional active-scalar model with a Darcy velocity given by a zero-order Fourier multiplier. It is not the three-dimensional incompressible Navier–Stokes equation, and the theorem is not an unforced result.
+
+Navier–Stokes appears only in contextual remarks and citations. The introduction notes related blow-up mechanisms for **forced hypodissipative Navier–Stokes** and generalized SQG (**pp. 1–2; references [7]–[8]), but those are separate equations and separate works. No implication from Theorem 2.1 to Navier–Stokes regularity or blow-up is established.
+
+In particular, the result does not provide:
+
+- finite-time blow-up for unforced Navier–Stokes;
+- finite-time blow-up for standard three-dimensional Navier–Stokes;
+- a counterexample to global regularity for the Clay formulation;
+- a transfer theorem from IPM to Navier–Stokes;
+- evidence for or against the Millennium Problem beyond analogy between certain multiscale mechanisms.
+
+Any news story presenting this as a Navier–Stokes solution would be mathematically misleading.
+
+### 5. Evidence of Lean and LLM involvement
+
+The paper is unusually explicit about AI assistance (**Introduction, pp. 2–3**):
+
+- Claude was used to identify and reproduce elements of Córdoba–Martínez-Zoroa’s proof.
+- Claude and Codex helped write the main body.
+- The models handled bookkeeping involving inductive orders and constants.
+- The authors state that the final work was produced with their ideas and “under the strict direction” of the authors.
+- The acknowledgments thank Anthropic (**p. 49**).
+
+The paper also mentions Lean, but only in connection with two **announced forthcoming works** on forced two-dimensional Boussinesq and forced three-dimensional Euler (**Section 1.1, p. 3**). It says those two proofs were “formally verified in Lean,” but gives literal placeholders:
+> `[BOUSSINESQ SHA-256]` and `[EULER SHA-256]`
+
+No Lean source, repository, commit, hash, build log, or formal artifact for the present IPM paper is supplied in the inspected PDF. Accordingly:
+
+- there is clear evidence of LLM involvement in drafting and proof-development assistance;
+- there is **no documentary evidence in this paper that the IPM theorem itself has been Lean-verified**;
+- the forthcoming Boussinesq/Euler Lean claim remains unverifiable from this document because the artifact identifiers are placeholders.
+
+### 6. Key caveats and falsifier-first assessment
+
+- **No independent proof verification:** The report reflects the paper’s stated definitions, construction, and internal proof narrative; I did not check every estimate or reproduce the full induction.
+- **Force-dependent theorem:** Because \(F\) is defined from the residuals, the result is not a robustness theorem for externally specified forcing.
+- **Heavy threshold architecture:** Many steps rely on unspecified “finite thresholds” such as \(\Lambda_{\rm sep}\), \(\Lambda_{\rm geom}\), \(\Lambda_{\rm flow}\), \(\Lambda_{\rm res}\), and \(\lambda_{\rm th,T}\). The paper argues these are finite and compatible, but the construction is not numerically instantiated.
+- **Endpoint distinction:** Smooth forcing through \(t=1\) does not mean the density remains smooth through \(t=1\). The claimed singularity is precisely the failure of \(C^1\) regularity.
+- **Model distinction:** Forced IPM is not Navier–Stokes, Euler, Boussinesq, or the Clay equation.
+- **Novelty should be stated narrowly:** The core packet-amplification idea is credited to prior work. The paper’s claimed contribution is the periodic and jointly space-time-smooth-force implementation, not a new general blow-up principle.
+- **Formal-verification claims need artifacts:** The explicit AI/Lean disclosure is valuable, but any claim of formal verification should await publicly inspectable Lean sources and reproducible builds.
+
+**Bottom line:** Read on its own terms, this is a claimed rigorous construction of finite-time gradient blow-up for a specially forced IPM equation on the torus, with a force smooth in all space-time derivatives. Its potentially significant contribution is the smooth-in-time periodic forcing extension of the Córdoba–Martínez-Zoroa mechanism. It is not a Navier–Stokes result, and the paper provides no Lean verification artifact for the IPM theorem itself.
