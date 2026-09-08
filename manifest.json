@@ -33,8 +33,7 @@
       "transport_normalized": true,
       "normalized_transport_hits": 8,
       "records_sha256": "dffc63dce4c36a12e28f5dce447ca997516a7ea4c099d3a46a5d96262053eb38",
-      "dialogue_sha256": "74052345e4a7ad0673ff600487c3bd0afe97da0b8d04d904450d3edf2cbd07a9",
-      "manifest_sha256_after_rebuild": "b6e6ef07b735517dfefb9cbc699eef402c52be3377397a201f96be4cf2deb1ad"
+      "dialogue_sha256": "74052345e4a7ad0673ff600487c3bd0afe97da0b8d04d904450d3edf2cbd07a9"
     },
     {
       "session_id": "20260908_080454_c29265",
@@ -1445,7 +1444,5 @@
     "Web files are historical tool extractions, not newly fetched full pages",
     "No global session database or unrelated session export included"
   ],
-  "transport_normalization": "Opaque call/response IDs mapped deterministically to transport-hex labels. UTF-8 base64 payloads decoded and scrubbed inline; tool command syntax may no longer be executable. Subagent and review file paths shortened. Record IDs unchanged.",
-  "manifest_sha256": "1161a1fd89ccb19ad8919ff51d9cb7d93e86536f294f85f740f59438167bc4ee",
-  "manifest_sha256_after_rebuild": "1161a1fd89ccb19ad8919ff51d9cb7d93e86536f294f85f740f59438167bc4ee"
+  "transport_normalization": "Opaque call/response IDs mapped deterministically to transport-hex labels. UTF-8 base64 payloads decoded and scrubbed inline; tool command syntax may no longer be executable. Subagent and review file paths shortened. Record IDs unchanged."
 }

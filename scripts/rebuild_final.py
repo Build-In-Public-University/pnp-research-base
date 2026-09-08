@@ -76,8 +76,6 @@ m['sessions'][0]['transport_normalized']=True
 m['sessions'][0]['normalized_transport_hits']=th
 m['sessions'][0]['records_sha256']=str(hashlib.sha256(rp.read_bytes()).hexdigest())
 m['sessions'][0]['dialogue_sha256']=str(hashlib.sha256(dp.read_bytes()).hexdigest())
-m['sessions'][0]['manifest_sha256_after_rebuild']=str(hashlib.sha256(Path(ROOT/'manifest.json').read_bytes()).hexdigest())
-
 (Path(ROOT/'manifest.json')).write_text(json.dumps(m,indent=2,ensure_ascii=False)+'\n')
 
 (rp.parent/'records.sha256').write_text(hashlib.sha256(rp.read_bytes()).hexdigest()+'\n')

@@ -12,3 +12,15 @@ build/
 .venv/
 venv/
 env/
+
+# Files that contain or point to local secrets and private paths.
+# Kept explicit so accidental credential commits are blocked at the
+# git level rather than relying only on the pre-commit scanner.
+.env
+.env.*
+.env.local
+.env.*.local
+*.pem
+*.key
+*.secret
+secret.*
