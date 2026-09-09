@@ -29,6 +29,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Branching adaptive observation-policy calibration v1: conditional stop/escalate policy with expected versus worst-case observation cost; results in `docs/branching-adaptive-observation-policy-v1-results.md`.
 - Loss-aware adaptive observation calibration v1: finite-loss stop-versus-observe decisions under common and rare residual risk; results in `docs/loss-aware-observation-v1-results.md`.
 - Dual-control observation/action calibration v1: compare immediate action, non-destructive inspection, and an informative intervention; results in `docs/dual-control-observation-action-v1-results.md`.
+- Dual-control policy phase diagram v1: sweep the fragile-state prior and verify the act/experiment/inspect/act policy regions; results in `docs/dual-control-policy-phase-diagram-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -265,6 +266,18 @@ interventional. A gentle touch reveals the hidden state but can damage a
 fragile object. At fragile prior 0.1 it is preferred (modeled cost 3 versus 6
 for inspection); at prior 0.5, non-destructive inspection is preferred (6
 versus 7). This is synthetic modeled cost, not a physical risk measurement.
+
+The dual-control phase diagram sweeps the fragile-state prior at resolution
+0.001. The lower envelope is immediate action through 0.011, gentle touch
+from 0.012 to 0.399, inspection from 0.4 to 0.95, and immediate action again
+from 0.951 onward. The analytic crossings are 1/90, 0.4, and 0.95. This is a
+synthetic modeled-cost phase diagram.
+
+```bash
+PYTHONPATH=src python3 scripts/run_dual_control_policy_phase_diagram_v1.py \
+  --output artifacts/dual_control_policy_phase_diagram_v1-local.json \
+  --summary artifacts/dual_control_policy_phase_diagram_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_dual_control_observation_action_v1.py \

@@ -1,0 +1,123 @@
+{
+  "checks": {
+    "0.0": {
+      "best": "immediate",
+      "costs": {
+        "immediate": 1.0,
+        "inspect": 6,
+        "touch": 2.0
+      }
+    },
+    "0.01": {
+      "best": "immediate",
+      "costs": {
+        "immediate": 2.0,
+        "inspect": 6,
+        "touch": 2.1
+      }
+    },
+    "0.012": {
+      "best": "touch",
+      "costs": {
+        "immediate": 2.2,
+        "inspect": 6,
+        "touch": 2.12
+      }
+    },
+    "0.1": {
+      "best": "touch",
+      "costs": {
+        "immediate": 11.0,
+        "inspect": 6,
+        "touch": 3.0
+      }
+    },
+    "0.399": {
+      "best": "touch",
+      "costs": {
+        "immediate": 40.900000000000006,
+        "inspect": 6,
+        "touch": 5.99
+      }
+    },
+    "0.4": {
+      "best": "inspect",
+      "costs": {
+        "immediate": 41.0,
+        "inspect": 6,
+        "touch": 6.0
+      }
+    },
+    "0.401": {
+      "best": "inspect",
+      "costs": {
+        "immediate": 41.1,
+        "inspect": 6,
+        "touch": 6.01
+      }
+    },
+    "0.949": {
+      "best": "inspect",
+      "costs": {
+        "immediate": 6.100000000000005,
+        "inspect": 6,
+        "touch": 11.49
+      }
+    },
+    "0.95": {
+      "best": "inspect",
+      "costs": {
+        "immediate": 6.000000000000004,
+        "inspect": 6,
+        "touch": 11.5
+      }
+    },
+    "0.951": {
+      "best": "immediate",
+      "costs": {
+        "immediate": 5.900000000000004,
+        "inspect": 6,
+        "touch": 11.51
+      }
+    },
+    "1.0": {
+      "best": "immediate",
+      "costs": {
+        "immediate": 1.0,
+        "inspect": 6,
+        "touch": 12.0
+      }
+    }
+  },
+  "grid_step": 0.001,
+  "intervals": [
+    [
+      "immediate",
+      0.0,
+      0.011
+    ],
+    [
+      "touch",
+      0.012,
+      0.399
+    ],
+    [
+      "inspect",
+      0.4,
+      0.95
+    ],
+    [
+      "immediate",
+      0.951,
+      1.0
+    ]
+  ],
+  "protocol_sha256": "19fb71d370c95cad1d89ef887c5e0a0028bc5aebd27f3ac6250bd45913c69a96",
+  "source_sha256": "188f31ffa38229562ee9151a8dabf989bcb6808824892889695c9207f86d522e",
+  "thresholds": {
+    "immediate_touch": 0.011111111111111112,
+    "inspect_immediate": 0.95,
+    "touch_inspect": 0.4
+  },
+  "units": "synthetic modeled cost"
+}

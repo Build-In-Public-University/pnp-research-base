@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 22286,
-      "sha256": "4bc2aed5448e9441d446d0503a9e4ef6a67c59445a45d6f2ab8a1d0f00427d77",
+      "bytes": 23053,
+      "sha256": "f6cddacde6885a38b6238aca9596c0fb66444b963733877227eda9e0f22f50a3",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2728,6 +2728,62 @@
       "transformed": false,
       "bytes": 233,
       "sha256": "28b08ec880a7dc4ef2db56aae1ad5d3344b48489c3e2ae90aa62fa8c553b1f4b"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/dual_control_policy_phase_diagram_v1.py",
+      "kind": "dual_control_policy_phase_diagram",
+      "transformed": false,
+      "bytes": 755,
+      "sha256": "188f31ffa38229562ee9151a8dabf989bcb6808824892889695c9207f86d522e"
+    },
+    {
+      "path": "experiment/scripts/run_dual_control_policy_phase_diagram_v1.py",
+      "kind": "dual_control_policy_phase_diagram",
+      "transformed": false,
+      "bytes": 1005,
+      "sha256": "5b2263c4399c47ca3976c95486dd4987c3b703f970e1d4925a88f5c2ffefb911"
+    },
+    {
+      "path": "experiment/tests/test_dual_control_policy_phase_diagram_v1.py",
+      "kind": "dual_control_policy_phase_diagram",
+      "transformed": false,
+      "bytes": 889,
+      "sha256": "44bb1529b8556ba173204f87d6d9f365b60d28b94d7ff692ca4c955acc86cab4"
+    },
+    {
+      "path": "experiment/docs/protocol-dual-control-policy-phase-diagram-v1.md",
+      "kind": "dual_control_policy_phase_diagram",
+      "transformed": false,
+      "bytes": 410,
+      "sha256": "19fb71d370c95cad1d89ef887c5e0a0028bc5aebd27f3ac6250bd45913c69a96"
+    },
+    {
+      "path": "experiment/docs/protocol-dual-control-policy-phase-diagram-v1.sha256",
+      "kind": "dual_control_policy_phase_diagram",
+      "transformed": false,
+      "bytes": 120,
+      "sha256": "d9342bc7b4680eac9321726c1c370c56a1960c619a86d2d96a1859509ece977e"
+    },
+    {
+      "path": "experiment/docs/dual-control-policy-phase-diagram-v1-results.md",
+      "kind": "dual_control_policy_phase_diagram",
+      "transformed": false,
+      "bytes": 972,
+      "sha256": "0a6507b73e0cad0788b8d68ba15129d286252a36c5b9e7187a64ce6a59fd135f"
+    },
+    {
+      "path": "experiment/artifacts/dual_control_policy_phase_diagram_v1_run1.json",
+      "kind": "dual_control_policy_phase_diagram",
+      "transformed": false,
+      "bytes": 2228,
+      "sha256": "8f3712fb29b44ccacff4e04e40681c2bff3839de05edc3fb6064159e9d2ed6b0"
+    },
+    {
+      "path": "experiment/artifacts/dual_control_policy_phase_diagram_v1_run1.md",
+      "kind": "dual_control_policy_phase_diagram",
+      "transformed": false,
+      "bytes": 263,
+      "sha256": "8aa47685ab3b9188c42614ef37b8120787f65cdefb7f6a6d91d4e24410f26b6b"
     }
   ],
   "limitations": [
