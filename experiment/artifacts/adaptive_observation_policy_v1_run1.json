@@ -1,0 +1,167 @@
+{
+  "best_policy": {
+    "actions": [
+      "local_group",
+      "local_parity"
+    ],
+    "cost": 4,
+    "identifiable": true
+  },
+  "candidates": [
+    {
+      "actions": [
+        "local_parity"
+      ],
+      "cost": 1,
+      "identifiable": false
+    },
+    {
+      "actions": [
+        "local_group"
+      ],
+      "cost": 3,
+      "identifiable": false
+    },
+    {
+      "actions": [
+        "local_group",
+        "local_parity"
+      ],
+      "cost": 4,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "local_parity",
+        "local_group"
+      ],
+      "cost": 4,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "privileged_exact"
+      ],
+      "cost": 6,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "local_parity",
+        "privileged_exact"
+      ],
+      "cost": 7,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "privileged_exact",
+        "local_parity"
+      ],
+      "cost": 7,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "local_group",
+        "privileged_exact"
+      ],
+      "cost": 9,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "privileged_exact",
+        "local_group"
+      ],
+      "cost": 9,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "local_group",
+        "local_parity",
+        "privileged_exact"
+      ],
+      "cost": 10,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "local_group",
+        "privileged_exact",
+        "local_parity"
+      ],
+      "cost": 10,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "local_parity",
+        "local_group",
+        "privileged_exact"
+      ],
+      "cost": 10,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "local_parity",
+        "privileged_exact",
+        "local_group"
+      ],
+      "cost": 10,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "privileged_exact",
+        "local_group",
+        "local_parity"
+      ],
+      "cost": 10,
+      "identifiable": true
+    },
+    {
+      "actions": [
+        "privileged_exact",
+        "local_parity",
+        "local_group"
+      ],
+      "cost": 10,
+      "identifiable": true
+    }
+  ],
+  "channels": {
+    "local_group": 3,
+    "local_parity": 1,
+    "passive": 0,
+    "privileged_exact": 6
+  },
+  "energy_units": "synthetic modeled cost",
+  "passive_identifiable": false,
+  "protocol_sha256": "b8040ee290e40f1236f55c05bc5a9832ea7a9975600f445eeca8942944aa8b9e",
+  "source_sha256": "cc228c41bbaef3016344954dd4ab1c58852170e1a10f71e6e54a13681c86af19",
+  "states": [
+    {
+      "group": 0,
+      "name": "A",
+      "parity": 0
+    },
+    {
+      "group": 0,
+      "name": "B",
+      "parity": 1
+    },
+    {
+      "group": 1,
+      "name": "C",
+      "parity": 0
+    },
+    {
+      "group": 1,
+      "name": "D",
+      "parity": 1
+    }
+  ]
+}

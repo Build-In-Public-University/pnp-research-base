@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 19030,
-      "sha256": "e36d825259e204b3422c84b9e9643a97d550a9e6787a27dafa108be6d17c1c4e",
+      "bytes": 19789,
+      "sha256": "3d519fb1613627c394fc695cb38163709ac9c063404634d8d911d898f7872b6b",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2504,6 +2504,62 @@
       "transformed": false,
       "bytes": 305,
       "sha256": "f50f902f4e2cff38bc1ca62a76762276dea7d73fc777dfa4663d8818367d8ee7"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/adaptive_observation_policy_v1.py",
+      "kind": "adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 1299,
+      "sha256": "cc228c41bbaef3016344954dd4ab1c58852170e1a10f71e6e54a13681c86af19"
+    },
+    {
+      "path": "experiment/scripts/run_adaptive_observation_policy_v1.py",
+      "kind": "adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 1127,
+      "sha256": "c671984e8ece17d5db03bab16c3317b9360db56fa9c58d7dff3124d53bdce628"
+    },
+    {
+      "path": "experiment/tests/test_adaptive_observation_policy_v1.py",
+      "kind": "adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 685,
+      "sha256": "8df1ef18f7f368e0a53abfc6008f142d08ec4cb143063645d3d38fe057893553"
+    },
+    {
+      "path": "experiment/docs/protocol-adaptive-observation-policy-v1.md",
+      "kind": "adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 683,
+      "sha256": "b8040ee290e40f1236f55c05bc5a9832ea7a9975600f445eeca8942944aa8b9e"
+    },
+    {
+      "path": "experiment/docs/protocol-adaptive-observation-policy-v1.sha256",
+      "kind": "adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 114,
+      "sha256": "95de42730b97ee4b031898cfc94897c105382d17d4ba2273b357e008356bacdb"
+    },
+    {
+      "path": "experiment/docs/adaptive-observation-policy-v1-results.md",
+      "kind": "adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 1519,
+      "sha256": "766a9da3a9430862447d1cf9d4a5c735cd59b112f40d4f7dfb2689a341793615"
+    },
+    {
+      "path": "experiment/artifacts/adaptive_observation_policy_v1_run1.json",
+      "kind": "adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 2901,
+      "sha256": "cdfd1a4f686ba8626ea2fe9b33f514de19788e9caef4649055f0bbcfcd5c9ae6"
+    },
+    {
+      "path": "experiment/artifacts/adaptive_observation_policy_v1_run1.md",
+      "kind": "adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 276,
+      "sha256": "b87b0b1b1e5c91e4e2413a2f0ae97e4e4f2ec22b1920c6da6394b6357c55443f"
     }
   ],
   "limitations": [

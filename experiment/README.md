@@ -25,6 +25,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Fixed-contract architecture calibration v1: raw mask, materialized count, sparse set, and event-log tradeoffs; results in `docs/fixed-contract-architecture-v1-results.md`.
 - Physical fixed-contract architecture benchmark v1: local wall/CPU timing, allocation proxy, and logical I/O across size/workload ratios; results in `docs/physical-architecture-benchmark-v1-results.md`.
 - Interactive observation-policy calibration v1: passive versus privileged/active energy identifiability under different authorized observation actions; results in `docs/interactive-observation-policy-v1-results.md`.
+- Adaptive observation-policy calibration v1: finite policy search for the minimum-cost sufficient channel composition; results in `docs/adaptive-observation-policy-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -235,6 +236,18 @@ different energy labels. Passive transcripts cannot identify energy; privileged
 telemetry and active calibration can, at modeled observation cost and with
 measurement perturbation. This is a structural synthetic result, not an energy
 measurement.
+
+The adaptive observation calibration holds a four-state exact-identification
+contract fixed while composing complementary channels. Either coarse channel
+alone is insufficient; `local_group -> local_parity` identifies all states at
+modeled cost 4, while `privileged_exact` costs 6. This is a bounded finite
+policy result, not a general optimal decision-tree solver.
+
+```bash
+PYTHONPATH=src python3 scripts/run_adaptive_observation_policy_v1.py \
+  --output artifacts/adaptive_observation_policy_v1-local.json \
+  --summary artifacts/adaptive_observation_policy_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_interactive_observation_policy_v1.py \
