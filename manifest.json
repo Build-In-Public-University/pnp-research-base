@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 7935,
-      "sha256": "21a243d0c5eb29ab8835f205e950646e03bc12ee448ae1b5ed3c3730efeaaa72",
+      "bytes": 8893,
+      "sha256": "ffb7ece70ca74da8b21751cd6fb8b5c4251b0516a0656a2e9c9ab78794d9f3cb",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -1544,6 +1544,86 @@
       "source_sha256": null,
       "transformed": false,
       "kind": "dynamic_dependency_experiment"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/dynamic_v2.py",
+      "bytes": 5714,
+      "sha256": "5083c026c40d6fbce4662df88775509a0091f5d03b4d90193988f944201624b6",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dynamic_dependency_consequence_experiment"
+    },
+    {
+      "path": "experiment/scripts/run_dynamic_v2.py",
+      "bytes": 3789,
+      "sha256": "6a9be32791ee73a2c0e804015815b0b36a4ae91ebd67e8c3c7b6a0d16c6c41a1",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dynamic_dependency_consequence_experiment"
+    },
+    {
+      "path": "experiment/tests/test_dynamic_v2.py",
+      "bytes": 2225,
+      "sha256": "e9303e7233d1118913aebcc978755691efa05ddcf81ddf589f30064982570be2",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dynamic_dependency_consequence_experiment"
+    },
+    {
+      "path": "experiment/docs/protocol-dynamic-dependencies-v2.md",
+      "bytes": 1847,
+      "sha256": "45e9e56de38ce69056e8aef9d033111b4a8c7daeee3eb62c26877d45c4f26ec6",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dynamic_dependency_consequence_experiment"
+    },
+    {
+      "path": "experiment/docs/protocol-dynamic-dependencies-v2.sha256",
+      "bytes": 65,
+      "sha256": "c23ff44d7adb62e1861961986bcc60b4133759b54d4f0389f71107c810a2d87f",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dynamic_dependency_consequence_experiment"
+    },
+    {
+      "path": "experiment/docs/dynamic-v2-results.md",
+      "bytes": 5019,
+      "sha256": "335a2f0000cb854ac2f5f6140e80f9b8644827a8cd8ea0361418ae703c5b4d2e",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dynamic_dependency_consequence_experiment"
+    },
+    {
+      "path": "experiment/artifacts/dynamic_v2_run1.json",
+      "bytes": 5127490,
+      "sha256": "dbd0e08ed9481bfbeec0cb16ea44b0df656026af239532a33cca2ea968aa63d0",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dynamic_dependency_consequence_experiment"
+    },
+    {
+      "path": "experiment/artifacts/dynamic_v2_run1.md",
+      "bytes": 1524,
+      "sha256": "4d1637d71157a9a3a734e81e941fbb9ec7390dcbfb97c3a498a417e13553791b",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dynamic_dependency_consequence_experiment"
+    },
+    {
+      "path": "experiment/artifacts/dynamic_v2_run2.json",
+      "bytes": 5127490,
+      "sha256": "dbd0e08ed9481bfbeec0cb16ea44b0df656026af239532a33cca2ea968aa63d0",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dynamic_dependency_consequence_experiment"
+    },
+    {
+      "path": "experiment/artifacts/dynamic_v2_run2.md",
+      "bytes": 1524,
+      "sha256": "4d1637d71157a9a3a734e81e941fbb9ec7390dcbfb97c3a498a417e13553791b",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dynamic_dependency_consequence_experiment"
     }
   ],
   "limitations": [

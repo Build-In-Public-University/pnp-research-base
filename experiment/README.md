@@ -10,6 +10,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 
 - v2: executed, bounded synthetic algorithm experiments, not a complexity-theoretic result.
 - Dynamic dependency repair v1: executed, bounded synthetic repair/invalidation experiment; results in `docs/dynamic-v1-results.md`.
+- Dynamic dependency consequence v2: executed, bounded synthetic delayed-validation and stale-consequence experiment; results in `docs/dynamic-v2-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -25,6 +26,22 @@ the dependency change was hidden; certificate repair returned zero wrong outputs
 but had higher modeled operation cost than cold recomputation in this fixture.
 The unchecked control returned 1,044 wrong outputs. These are finite synthetic
 results, not runtime or P/NP evidence.
+
+## Latest: consequence-aware validation
+
+`docs/dynamic-v2-results.md` extends v1 with partial/delayed certificate
+availability and deterministic downstream consequences for stale reuse. Across
+288 cells, complete certificate repair had zero wrong outputs; delayed
+certificates had 293; visible selective repair had 766; unchecked reuse had
+2,088. At zero consequence penalty, unchecked reuse was cheapest; at penalty
+1,000, certificate repair won 96 cells and delayed validation won 50. These are
+fixture-specific modeled costs, not incident probabilities or deployment data.
+
+```bash
+PYTHONPATH=src python3 scripts/run_dynamic_v2.py \
+  --output artifacts/dynamic_v2-local.json \
+  --summary artifacts/dynamic_v2-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_dynamic.py \
@@ -113,10 +130,11 @@ PYTHONPATH=src python3 scripts/run_history.py \
   --summary artifacts/history_v1_1-local-summary.md
 ```
 
-Changing dependency edges are now executed in dynamic v1. Delayed or partial
-certificate delivery, explicit stale-result consequences, learned policy
-adaptation and action-access boundaries remain open. Old v2, gate and history
-receipts are unchanged.
+Changing dependency edges and delayed certificate delivery are now executed in
+dynamic v1/v2. Calibration against one concrete application, partial delivery
+failure, explicit human/downstream consequences, learned policy adaptation and
+action-access boundaries remain open. Old v2, gate and history receipts are
+unchanged.
 
 ## Sources
 
