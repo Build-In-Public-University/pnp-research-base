@@ -23,6 +23,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Contract-relative state complexity v1: future-equivalence classes and lifecycle cost tuple; results in `docs/contract-relative-state-complexity-v1-results.md`.
 - Parameterized contract-state scaling v1: `K_G(n)`, semantic bits, distinguishing depth, and lifecycle axes; results in `docs/parameterized-contract-state-scaling-v1-results.md`.
 - Fixed-contract architecture calibration v1: raw mask, materialized count, sparse set, and event-log tradeoffs; results in `docs/fixed-contract-architecture-v1-results.md`.
+- Physical fixed-contract architecture benchmark v1: local wall/CPU timing, allocation proxy, and logical I/O across size/workload ratios; results in `docs/physical-architecture-benchmark-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -218,6 +219,20 @@ keeps the same semantic mask but makes the global query constant-time; a sparse
 set changes physical representation; and an event log shifts work to replay.
 All four remain oracle-exact. The result is a resource vector, not a universal
 ranking.
+
+The physical benchmark measures the same four architectures at `n = 128, 512,
+2048, 8192` and query/update ratios `0.1, 1, 10, 100`. It records local wall and
+CPU time, tracemalloc peak allocation, instrumented logical I/O, and exactness.
+At `n=8192, r=100`, raw/counter/sparse/event-log wall medians were 30.0 ms,
+14.8 ms, 14.3 ms, and 661.7 ms. At `n=128, r=0.1`, they were 9.9, 14.3, 4.9,
+and 6.5 microseconds. This is a local calibration, not an energy measurement
+or universal crossover; no package-power counter was used.
+
+```bash
+PYTHONPATH=src python3 scripts/run_physical_architecture_benchmark_v1.py \
+  --output artifacts/physical_architecture_benchmark_v1-local.json \
+  --summary artifacts/physical_architecture_benchmark_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_fixed_contract_architecture_v1.py \

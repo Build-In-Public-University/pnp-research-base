@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 17232,
-      "sha256": "ae74ee9e591bf077f6da357690dd913a95a194650adfb556eef54a9cc1f6c0e0",
+      "bytes": 18188,
+      "sha256": "3df35df4fc9602af5a680f3563d331b5ea06d0e2cbaa245a9ae889dfca548678",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2392,6 +2392,62 @@
       "kind": "fixed_contract_architecture_calibration",
       "bytes": 1606,
       "sha256": "447e8c20038d059610a43c9dd7e55b5f70fc2b0f0d9873ad1a27aeab2b1c71d1"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/physical_architecture_benchmark_v1.py",
+      "kind": "physical_architecture_benchmark",
+      "transformed": false,
+      "bytes": 2714,
+      "sha256": "ff8524be1093ab7158d373371e5bdfc835bcc5b85d0b46236dfd651cc1c8aad7"
+    },
+    {
+      "path": "experiment/scripts/run_physical_architecture_benchmark_v1.py",
+      "kind": "physical_architecture_benchmark",
+      "transformed": false,
+      "bytes": 1403,
+      "sha256": "8a58c7560634e07b4868e87faa5c1d0a7fffe01924a49df32265a48de4b6e008"
+    },
+    {
+      "path": "experiment/tests/test_physical_architecture_benchmark_v1.py",
+      "kind": "physical_architecture_benchmark",
+      "transformed": false,
+      "bytes": 933,
+      "sha256": "4eeb5eb4fd7ceb478b73444ef1ada6bbc7b3c11ccdfe06e12340a2a37982e74c"
+    },
+    {
+      "path": "experiment/docs/protocol-physical-architecture-benchmark-v1.md",
+      "kind": "physical_architecture_benchmark",
+      "transformed": false,
+      "bytes": 842,
+      "sha256": "b1858255726bb35a4f1c7766b11ad10117e7a14b75849f3197a489e69a4da3ea"
+    },
+    {
+      "path": "experiment/docs/protocol-physical-architecture-benchmark-v1.sha256",
+      "kind": "physical_architecture_benchmark",
+      "transformed": false,
+      "bytes": 118,
+      "sha256": "4a6517fd594d8f017355d4569ed8520e30ba4663c671c8a2638bcd6591c091b8"
+    },
+    {
+      "path": "experiment/docs/physical-architecture-benchmark-v1-results.md",
+      "kind": "physical_architecture_benchmark",
+      "transformed": false,
+      "bytes": 2434,
+      "sha256": "44f31be3f76980a6fd0d5b130af1c092996038126fefff928ea734f038adfdf0"
+    },
+    {
+      "path": "experiment/artifacts/physical_architecture_benchmark_v1_run1.json",
+      "kind": "physical_architecture_benchmark",
+      "transformed": false,
+      "bytes": 16548,
+      "sha256": "405538fcf66bd1805065bbaf65452718a3f50e4860b2ad95b3b12f9e8c1c222a"
+    },
+    {
+      "path": "experiment/artifacts/physical_architecture_benchmark_v1_run1.md",
+      "kind": "physical_architecture_benchmark",
+      "transformed": false,
+      "bytes": 4882,
+      "sha256": "13de3d4b05f9fbda70de403ec8651a97b8787def3fb4a281add9632116bbce87"
     }
   ],
   "limitations": [
