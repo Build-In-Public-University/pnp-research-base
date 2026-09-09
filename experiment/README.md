@@ -22,6 +22,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Recursive history-sufficiency calibration v1: decision, update, and continuation factorization; results in `docs/recursive-history-sufficiency-v1-results.md`.
 - Contract-relative state complexity v1: future-equivalence classes and lifecycle cost tuple; results in `docs/contract-relative-state-complexity-v1-results.md`.
 - Parameterized contract-state scaling v1: `K_G(n)`, semantic bits, distinguishing depth, and lifecycle axes; results in `docs/parameterized-contract-state-scaling-v1-results.md`.
+- Fixed-contract architecture calibration v1: raw mask, materialized count, sparse set, and event-log tradeoffs; results in `docs/fixed-contract-architecture-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -210,6 +211,19 @@ The parameterized mask family separates state count from state information and
 operational cost: `K_G(n)=2^n`, `I_G(n)=n`, one-bit modeled updates, and n-bit
 decision scans. Maximum distinguishing depth is n in this family. These are
 exact family results and modeled costs, not universal asymptotic claims.
+
+The fixed-contract architecture calibration holds `G_n` constant while varying
+representation. A raw mask scans n bits; a mask plus unresolved-count index
+keeps the same semantic mask but makes the global query constant-time; a sparse
+set changes physical representation; and an event log shifts work to replay.
+All four remain oracle-exact. The result is a resource vector, not a universal
+ranking.
+
+```bash
+PYTHONPATH=src python3 scripts/run_fixed_contract_architecture_v1.py \
+  --output artifacts/fixed_contract_architecture_v1-local.json \
+  --summary artifacts/fixed_contract_architecture_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_parameterized_state_scaling_v1.py \

@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 16446,
-      "sha256": "a69bee91e508888315e934e51bd30bfa2a5d19c170d55e6816178a118be8e5d6",
+      "bytes": 17232,
+      "sha256": "ae74ee9e591bf077f6da357690dd913a95a194650adfb556eef54a9cc1f6c0e0",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2328,6 +2328,70 @@
       "kind": "parameterized_contract_state_scaling_calibration",
       "bytes": 574,
       "sha256": "3038befdf0f5586dac7cfdd2cd753655d2c98745e26967526719021e943df2b0"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/fixed_contract_architecture_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fixed_contract_architecture_calibration",
+      "bytes": 2370,
+      "sha256": "796af33e55dd2e69c2cabc87ec718ee66d3aa202b54450e07bc89490e2381c8c"
+    },
+    {
+      "path": "experiment/scripts/run_fixed_contract_architecture_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fixed_contract_architecture_calibration",
+      "bytes": 1490,
+      "sha256": "9d4762b05d7c8ad1dfdaf8277192c50938ead6113a84d0baa1cb2535b7415294"
+    },
+    {
+      "path": "experiment/tests/test_fixed_contract_architecture_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fixed_contract_architecture_calibration",
+      "bytes": 741,
+      "sha256": "b48f4c8e494683c3cc9f18f348d1cbdf1075b35715358d9612c30021abb4b133"
+    },
+    {
+      "path": "experiment/docs/protocol-fixed-contract-architecture-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fixed_contract_architecture_calibration",
+      "bytes": 838,
+      "sha256": "c06cc13c51192115551818ecd1000b6513ce6762534952480c475a8fdaf3984e"
+    },
+    {
+      "path": "experiment/docs/protocol-fixed-contract-architecture-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fixed_contract_architecture_calibration",
+      "bytes": 114,
+      "sha256": "73f96846961d9d8785033a79ee771f7049a787a90e193f7cced33c5b7c13ce63"
+    },
+    {
+      "path": "experiment/docs/fixed-contract-architecture-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fixed_contract_architecture_calibration",
+      "bytes": 2229,
+      "sha256": "51a2db0ef554504c6de5de467662b78c063b18879b4636a4c7f907cd46fced7b"
+    },
+    {
+      "path": "experiment/artifacts/fixed_contract_architecture_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fixed_contract_architecture_calibration",
+      "bytes": 4925,
+      "sha256": "a6a1f32304a1840297fc80b401c1b568af064964c2463df56060ebda710f4589"
+    },
+    {
+      "path": "experiment/artifacts/fixed_contract_architecture_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fixed_contract_architecture_calibration",
+      "bytes": 1606,
+      "sha256": "447e8c20038d059610a43c9dd7e55b5f70fc2b0f0d9873ad1a27aeab2b1c71d1"
     }
   ],
   "limitations": [
