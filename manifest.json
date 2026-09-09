@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 13522,
-      "sha256": "e8bb1c73c5a0ddbeebd036382e43bb74c2f5a0bd8ecdfae24e3b8121f2a5f693",
+      "bytes": 14259,
+      "sha256": "41156d6f47c602c048663457aeab25d2c74ebe9b67b51f5eb75565512ae1b612",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2072,6 +2072,70 @@
       "kind": "archive_release_contract_calibration",
       "bytes": 428,
       "sha256": "da5771ed35eedfffe93e4c6bb4117b10fe033b3aa5404a941bd44d96abfbdb38"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/history_sufficiency_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "history_sufficiency_calibration",
+      "bytes": 2224,
+      "sha256": "a9bf6b686d5c26d7c62265d57eeec2b869e881ba54c6b38f6380bf2bb664c9ed"
+    },
+    {
+      "path": "experiment/scripts/run_history_sufficiency_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "history_sufficiency_calibration",
+      "bytes": 1539,
+      "sha256": "47919ab80b2e44ae5d1cdf075e3d48e5ab7d0fec7ec90ee9be56d219e80ec720"
+    },
+    {
+      "path": "experiment/tests/test_history_sufficiency_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "history_sufficiency_calibration",
+      "bytes": 916,
+      "sha256": "5e426c433f864ede79dcda6b6b7cb9fc6ac16dc508e414ba64fe6875d11bf08e"
+    },
+    {
+      "path": "experiment/docs/protocol-history-sufficiency-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "history_sufficiency_calibration",
+      "bytes": 1167,
+      "sha256": "b38a2d24ef578c37da3cbefd80153333f67375a5712433d54861a47a68f038cb"
+    },
+    {
+      "path": "experiment/docs/protocol-history-sufficiency-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "history_sufficiency_calibration",
+      "bytes": 106,
+      "sha256": "85f12e919a4cf47df508dce58e866a2aecaf17e5aefd037957cae33f2d3fd349"
+    },
+    {
+      "path": "experiment/docs/history-sufficiency-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "history_sufficiency_calibration",
+      "bytes": 2716,
+      "sha256": "84135163a8f654c7ec036d6515acc64756abb6df38047352db549b19ba51f3fa"
+    },
+    {
+      "path": "experiment/artifacts/history_sufficiency_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "history_sufficiency_calibration",
+      "bytes": 3397,
+      "sha256": "b9dae6fd4fc9733568cb4b069bc10292aa233a636292505c2ace1da3098bf7b0"
+    },
+    {
+      "path": "experiment/artifacts/history_sufficiency_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "history_sufficiency_calibration",
+      "bytes": 517,
+      "sha256": "d6532cd2dfeb8d5bbb35e03546a3a8872409218ef9955d70d05e7d4a59b0726d"
     }
   ],
   "limitations": [
