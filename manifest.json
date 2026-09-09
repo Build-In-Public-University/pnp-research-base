@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 11951,
-      "sha256": "dae8bc0d46101c16c72c76bec8f623c7a932085cc68a2182363dceb27712a1b3",
+      "bytes": 12699,
+      "sha256": "a8cb3654db3b8ff2cc61feb71d1429fb0f19f4eabba5df502f69325def763edf",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -1944,6 +1944,70 @@
       "kind": "semantic_interaction_calibration",
       "bytes": 769,
       "sha256": "725e8b0f5423eaa133c51dc6a81dea034b5d80f3c7dc6088be9ecb733b1e5600"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/archive_transition_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_transition_interaction_calibration",
+      "bytes": 2867,
+      "sha256": "0d81b4c02fb1e918d18e3cc46eff08ecc0c81273b92dbb9bfbf9ef554bea8246"
+    },
+    {
+      "path": "experiment/scripts/run_archive_transition_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_transition_interaction_calibration",
+      "bytes": 1549,
+      "sha256": "7fd31d9180a9d8be27ab356f81b14abe61bb83397be7ef8342473759396cba56"
+    },
+    {
+      "path": "experiment/tests/test_archive_transition_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_transition_interaction_calibration",
+      "bytes": 905,
+      "sha256": "86dade927d2086284e4dae3b8c4d7e0bb932c88d48713d295090a31fcdf37599"
+    },
+    {
+      "path": "experiment/docs/protocol-archive-transition-interaction-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_transition_interaction_calibration",
+      "bytes": 1340,
+      "sha256": "56b38cf845aef11a9d1b12b7871549781568998348f2227fbc32ddaa89fe4449"
+    },
+    {
+      "path": "experiment/docs/protocol-archive-transition-interaction-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_transition_interaction_calibration",
+      "bytes": 117,
+      "sha256": "a1f6281bb0ef11843e7248126fbfb7cd8e178963081fcc3e643a2e2d7cb305df"
+    },
+    {
+      "path": "experiment/docs/archive-transition-interaction-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_transition_interaction_calibration",
+      "bytes": 2526,
+      "sha256": "1f5fa98f9e4074af757c47ec5a854943fbcb37ba2105879eacf85678d680fc80"
+    },
+    {
+      "path": "experiment/artifacts/archive_transition_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_transition_interaction_calibration",
+      "bytes": 2044,
+      "sha256": "431bc77e4ab5878d11c815bb31f6ddc1b6ed9eadbdd866ccca7d3e31d0726f70"
+    },
+    {
+      "path": "experiment/artifacts/archive_transition_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_transition_interaction_calibration",
+      "bytes": 518,
+      "sha256": "7bbf15535b15c693943dccc55a2ff136c23b7c357bad57a984233e8dc18ba90a"
     }
   ],
   "limitations": [

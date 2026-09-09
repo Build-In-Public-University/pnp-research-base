@@ -16,6 +16,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Dense-coupling calibration v1: measured multi-input join and reverse-index costs; results in `docs/dense-coupling-v1-results.md`.
 - Overlapping-updates calibration v1: measured union versus summed invalidation sets; results in `docs/overlapping-updates-v1-results.md`.
 - Semantic-interaction calibration v1: explicit joint-constraint counterexample to fixed-union repair; results in `docs/semantic-interaction-v1-results.md`.
+- Archive-transition calibration v1: application-specific state-versus-transition interaction; results in `docs/archive-transition-interaction-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -166,6 +167,19 @@ was exact in the disjoint/adjacent controls but missed one explicit joint
 constraint in every joint/cluster cell. Interaction-aware repair restored
 exactness. This is a synthetic counterexample to fixed-union sufficiency, not a
 claim about inferred real-world semantics.
+
+The archive/release transition calibration separates missing state indexing from
+transition-relative semantics. Isolated manifest or compatibility changes are
+handled by singleton and state-complete repair. A simultaneous change activates
+an explicit `migration-approval` artifact that only transition-aware repair
+captures. The result is application-specific and bounded to the frozen release
+contract.
+
+```bash
+PYTHONPATH=src python3 scripts/run_archive_transition_v1.py \
+  --output artifacts/archive_transition_v1-local.json \
+  --summary artifacts/archive_transition_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_interaction_v1.py \
