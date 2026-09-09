@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 21493,
-      "sha256": "0bd76f537a221001c101cc189744d1d5a6e6ce78fce767010aab97f9c6030e0a",
+      "bytes": 22286,
+      "sha256": "4bc2aed5448e9441d446d0503a9e4ef6a67c59445a45d6f2ab8a1d0f00427d77",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2672,6 +2672,62 @@
       "transformed": false,
       "bytes": 276,
       "sha256": "9c4a78f6dc62d73816cacb611233a23cac4be3bedc0e8b81816f632c1bd3f1a6"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/dual_control_observation_action_v1.py",
+      "kind": "dual_control_observation_action",
+      "transformed": false,
+      "bytes": 809,
+      "sha256": "5eff490e1d6c2172d67e48c8aa1443e07b897f99e27656c882bce55954025a3f"
+    },
+    {
+      "path": "experiment/scripts/run_dual_control_observation_action_v1.py",
+      "kind": "dual_control_observation_action",
+      "transformed": false,
+      "bytes": 1084,
+      "sha256": "b18f49c6dd48193a4f591231a64716c9b76986558b7ba3a27d7d3e0b0dd9958d"
+    },
+    {
+      "path": "experiment/tests/test_dual_control_observation_action_v1.py",
+      "kind": "dual_control_observation_action",
+      "transformed": false,
+      "bytes": 803,
+      "sha256": "71ebd7ec26027ff32951436d45dccbe07b3ec1a22b85f54a9cfbedbb8f070468"
+    },
+    {
+      "path": "experiment/docs/protocol-dual-control-observation-action-v1.md",
+      "kind": "dual_control_observation_action",
+      "transformed": false,
+      "bytes": 586,
+      "sha256": "0153613443686b8eddb72dcc7c33b1bf048dbe1b72f4e212af9d9e331ab25847"
+    },
+    {
+      "path": "experiment/docs/protocol-dual-control-observation-action-v1.sha256",
+      "kind": "dual_control_observation_action",
+      "transformed": false,
+      "bytes": 118,
+      "sha256": "2d69d8095c603ac741775bb940a14a530fd97805386753fc916a2faad89cdf22"
+    },
+    {
+      "path": "experiment/docs/dual-control-observation-action-v1-results.md",
+      "kind": "dual_control_observation_action",
+      "transformed": false,
+      "bytes": 1286,
+      "sha256": "25642afa532e818ce86882fea28e9058cefdd29a4006b2b168e1eb47cf412dfb"
+    },
+    {
+      "path": "experiment/artifacts/dual_control_observation_action_v1_run1.json",
+      "kind": "dual_control_observation_action",
+      "transformed": false,
+      "bytes": 1019,
+      "sha256": "9ff434001c7bcfc6bc957280a4ec42f21e140c7c373b94a35bed6d34df51b2ea"
+    },
+    {
+      "path": "experiment/artifacts/dual_control_observation_action_v1_run1.md",
+      "kind": "dual_control_observation_action",
+      "transformed": false,
+      "bytes": 233,
+      "sha256": "28b08ec880a7dc4ef2db56aae1ad5d3344b48489c3e2ae90aa62fa8c553b1f4b"
     }
   ],
   "limitations": [

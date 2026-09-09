@@ -1,0 +1,38 @@
+{
+  "constants": {
+    "correct_action_cost": 1,
+    "inspect_cost": 5,
+    "touch_cost": 1,
+    "touch_damage": 10,
+    "wrong_action_loss": 100
+  },
+  "protocol_sha256": "0153613443686b8eddb72dcc7c33b1bf048dbe1b72f4e212af9d9e331ab25847",
+  "scenarios": {
+    "common_fragile": {
+      "best_cost": 6,
+      "best_policy": "inspect_then_act",
+      "fragile_prior": 0.5,
+      "touch_changes_state": true,
+      "touch_observes": true,
+      "values": {
+        "act_immediately": 51.0,
+        "gentle_touch_then_act": 7.0,
+        "inspect_then_act": 6
+      }
+    },
+    "rare_fragile": {
+      "best_cost": 3.0,
+      "best_policy": "gentle_touch_then_act",
+      "fragile_prior": 0.1,
+      "touch_changes_state": true,
+      "touch_observes": true,
+      "values": {
+        "act_immediately": 11.0,
+        "gentle_touch_then_act": 3.0,
+        "inspect_then_act": 6
+      }
+    }
+  },
+  "source_sha256": "5eff490e1d6c2172d67e48c8aa1443e07b897f99e27656c882bce55954025a3f",
+  "units": "synthetic modeled cost"
+}
