@@ -15,6 +15,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Fan-out calibration v1: measured dependency geometry over layered archive-derived records; results in `docs/fanout-v1-results.md`.
 - Dense-coupling calibration v1: measured multi-input join and reverse-index costs; results in `docs/dense-coupling-v1-results.md`.
 - Overlapping-updates calibration v1: measured union versus summed invalidation sets; results in `docs/overlapping-updates-v1-results.md`.
+- Semantic-interaction calibration v1: explicit joint-constraint counterexample to fixed-union repair; results in `docs/semantic-interaction-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -159,6 +160,18 @@ Overlapping updates are measured separately. Across 24 cells, disjoint changes
 had zero overlap savings, while adjacent/clustered changes saved up to 9 repair
 records when join width was 4. Every indexed result remained mechanically exact.
 Repair scope followed the union of affected sets, not their isolated sum.
+
+Semantic interaction is measured separately. In 12 cells, ordinary union repair
+was exact in the disjoint/adjacent controls but missed one explicit joint
+constraint in every joint/cluster cell. Interaction-aware repair restored
+exactness. This is a synthetic counterexample to fixed-union sufficiency, not a
+claim about inferred real-world semantics.
+
+```bash
+PYTHONPATH=src python3 scripts/run_interaction_v1.py \
+  --output artifacts/interaction_v1-local.json \
+  --summary artifacts/interaction_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_overlap_v1.py \

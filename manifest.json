@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 11279,
-      "sha256": "84c197cfd3bb6a64af9cf588ddccb2e5cdb46c38983d4ae26b5531ea2fd3ba5e",
+      "bytes": 11951,
+      "sha256": "dae8bc0d46101c16c72c76bec8f623c7a932085cc68a2182363dceb27712a1b3",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -1880,6 +1880,70 @@
       "kind": "overlapping_updates_calibration",
       "bytes": 1096,
       "sha256": "2cea44a3c837b52da35e4a946437b7d4b2c1bf5bdcc12adba65cdbaf5fd43946"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/interaction_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "semantic_interaction_calibration",
+      "bytes": 2665,
+      "sha256": "eb4d038bc44be86a1de97bf158d33c77f932bb327eca35f35bd3f765d480fe88"
+    },
+    {
+      "path": "experiment/scripts/run_interaction_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "semantic_interaction_calibration",
+      "bytes": 1549,
+      "sha256": "01c139945a3301da590e5593e647ebbe9fdd315e62a82abb3f6aea0732e78510"
+    },
+    {
+      "path": "experiment/tests/test_interaction_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "semantic_interaction_calibration",
+      "bytes": 1066,
+      "sha256": "07c0bd667964ee50ee440b34701adc257f996e4a636cde413a49c5db740f1ad2"
+    },
+    {
+      "path": "experiment/docs/protocol-semantic-interaction-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "semantic_interaction_calibration",
+      "bytes": 936,
+      "sha256": "9179cf472db4a73e814adf13c85fc056a6994ea798223a83e3cfcff872ea786b"
+    },
+    {
+      "path": "experiment/docs/protocol-semantic-interaction-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "semantic_interaction_calibration",
+      "bytes": 107,
+      "sha256": "edbd4dbfac48c45f139778edfd0f6afa5502fddae53e0700367d8eb2d2659ebc"
+    },
+    {
+      "path": "experiment/docs/semantic-interaction-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "semantic_interaction_calibration",
+      "bytes": 2273,
+      "sha256": "fd8c63575200d68cba532f942c80e3b2201e6fa3a4d2a53eca853e3671cee38c"
+    },
+    {
+      "path": "experiment/artifacts/interaction_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "semantic_interaction_calibration",
+      "bytes": 6078,
+      "sha256": "1faf2908081ee82921d3c0419ce4f64d883ef3652b63370496f41e9cfb13371e"
+    },
+    {
+      "path": "experiment/artifacts/interaction_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "semantic_interaction_calibration",
+      "bytes": 769,
+      "sha256": "725e8b0f5423eaa133c51dc6a81dea034b5d80f3c7dc6088be9ecb733b1e5600"
     }
   ],
   "limitations": [
