@@ -26,6 +26,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Physical fixed-contract architecture benchmark v1: local wall/CPU timing, allocation proxy, and logical I/O across size/workload ratios; results in `docs/physical-architecture-benchmark-v1-results.md`.
 - Interactive observation-policy calibration v1: passive versus privileged/active energy identifiability under different authorized observation actions; results in `docs/interactive-observation-policy-v1-results.md`.
 - Adaptive observation-policy calibration v1: finite policy search for the minimum-cost sufficient channel composition; results in `docs/adaptive-observation-policy-v1-results.md`.
+- Branching adaptive observation-policy calibration v1: conditional stop/escalate policy with expected versus worst-case observation cost; results in `docs/branching-adaptive-observation-policy-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -242,6 +243,19 @@ contract fixed while composing complementary channels. Either coarse channel
 alone is insufficient; `local_group -> local_parity` identifies all states at
 modeled cost 4, while `privileged_exact` costs 6. This is a bounded finite
 policy result, not a general optimal decision-tree solver.
+
+The branching adaptive calibration adds conditional stopping and escalation.
+Two states resolve after the first cheap observation, two after a second local
+observation, and one requires privileged telemetry. The policy is exact with
+worst-case modeled cost 9 and uniform-prior expected cost 3.4, versus cost 6
+for always using privileged telemetry. Expected and worst-case observation
+costs are therefore kept separate.
+
+```bash
+PYTHONPATH=src python3 scripts/run_branching_adaptive_observation_policy_v1.py \
+  --output artifacts/branching_adaptive_observation_policy_v1-local.json \
+  --summary artifacts/branching_adaptive_observation_policy_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_adaptive_observation_policy_v1.py \

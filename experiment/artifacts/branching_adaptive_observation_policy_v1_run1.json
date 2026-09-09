@@ -1,0 +1,105 @@
+{
+  "channels": {
+    "cheap_local": 1,
+    "privileged_exact": 6,
+    "second_local": 2
+  },
+  "energy_units": "synthetic modeled cost",
+  "policy": {
+    "always_privileged_cost": 6,
+    "cost_by_state": {
+      "A": 1,
+      "B": 1,
+      "C": 3,
+      "D": 3,
+      "E": 9
+    },
+    "expected_cost": 3.4000000000000004,
+    "identifiable": true,
+    "prior": {
+      "A": 0.2,
+      "B": 0.2,
+      "C": 0.2,
+      "D": 0.2,
+      "E": 0.2
+    },
+    "transcripts": {
+      "A": [
+        [
+          "cheap_local",
+          "easy_A"
+        ]
+      ],
+      "B": [
+        [
+          "cheap_local",
+          "easy_B"
+        ]
+      ],
+      "C": [
+        [
+          "cheap_local",
+          "uncertain"
+        ],
+        [
+          "second_local",
+          "local_C"
+        ]
+      ],
+      "D": [
+        [
+          "cheap_local",
+          "uncertain"
+        ],
+        [
+          "second_local",
+          "local_D"
+        ]
+      ],
+      "E": [
+        [
+          "cheap_local",
+          "uncertain"
+        ],
+        [
+          "second_local",
+          "local_uncertain"
+        ],
+        [
+          "privileged_exact",
+          "E"
+        ]
+      ]
+    },
+    "worst_cost": 9
+  },
+  "protocol_sha256": "33e1dc7c62a31c4f4f676bc1e69e6ba7b912f5cd05294c0e8763e808e6d1b726",
+  "source_sha256": "3a9b4619deb2024739631a6df97ddb6f062c0b71fcd23af11acb8588707f8d85",
+  "states": [
+    {
+      "first": "easy_A",
+      "name": "A",
+      "second": "unused"
+    },
+    {
+      "first": "easy_B",
+      "name": "B",
+      "second": "unused"
+    },
+    {
+      "first": "uncertain",
+      "name": "C",
+      "second": "local_C"
+    },
+    {
+      "first": "uncertain",
+      "name": "D",
+      "second": "local_D"
+    },
+    {
+      "first": "uncertain",
+      "name": "E",
+      "second": "local_uncertain"
+    }
+  ]
+}

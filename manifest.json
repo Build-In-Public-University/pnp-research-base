@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 19789,
-      "sha256": "3d519fb1613627c394fc695cb38163709ac9c063404634d8d911d898f7872b6b",
+      "bytes": 20661,
+      "sha256": "e8981d3fb9034a0e56dc657e6fea579459f6bbd8745f1d07e8af6c9c841d57bb",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2560,6 +2560,62 @@
       "transformed": false,
       "bytes": 276,
       "sha256": "b87b0b1b1e5c91e4e2413a2f0ae97e4e4f2ec22b1920c6da6394b6357c55443f"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/branching_adaptive_observation_policy_v1.py",
+      "kind": "branching_adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 1154,
+      "sha256": "3a9b4619deb2024739631a6df97ddb6f062c0b71fcd23af11acb8588707f8d85"
+    },
+    {
+      "path": "experiment/scripts/run_branching_adaptive_observation_policy_v1.py",
+      "kind": "branching_adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 1134,
+      "sha256": "295a7b4b6907f5d51d10fb0c22ee8313be737e431653e4f1897651fa47d744a2"
+    },
+    {
+      "path": "experiment/tests/test_branching_adaptive_observation_policy_v1.py",
+      "kind": "branching_adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 825,
+      "sha256": "101da352ccbb442515bbaa8df5cadfde7d3d862fdce7da32d16bf7094104d6dc"
+    },
+    {
+      "path": "experiment/docs/protocol-branching-adaptive-observation-policy-v1.md",
+      "kind": "branching_adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 571,
+      "sha256": "33e1dc7c62a31c4f4f676bc1e69e6ba7b912f5cd05294c0e8763e808e6d1b726"
+    },
+    {
+      "path": "experiment/docs/protocol-branching-adaptive-observation-policy-v1.sha256",
+      "kind": "branching_adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 124,
+      "sha256": "aa89bcb4f5873dd9d95f1411abc25184376c851aecfa9d6ff58297808e6b2d19"
+    },
+    {
+      "path": "experiment/docs/branching-adaptive-observation-policy-v1-results.md",
+      "kind": "branching_adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 1325,
+      "sha256": "a7cd1e7f7d6cc15cf5327b0c7ef17bdc8975dbfefbeb6b928290d7fa9ee73427"
+    },
+    {
+      "path": "experiment/artifacts/branching_adaptive_observation_policy_v1_run1.json",
+      "kind": "branching_adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 1842,
+      "sha256": "a2d02fc87e1795668d5f98bc5c9560e870928718dfedcbc50e375368c3172111"
+    },
+    {
+      "path": "experiment/artifacts/branching_adaptive_observation_policy_v1_run1.md",
+      "kind": "branching_adaptive_observation_policy",
+      "transformed": false,
+      "bytes": 241,
+      "sha256": "acae7b8d9ba3a1ac64b63e8ca052df53206db7d92411dd9cc65b42fac2eb15b8"
     }
   ],
   "limitations": [
