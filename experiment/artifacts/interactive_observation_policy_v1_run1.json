@@ -1,0 +1,141 @@
+{
+  "energy_units": "synthetic",
+  "policies": {
+    "calibration": {
+      "identifiable": true,
+      "measurement_perturbation": true,
+      "observation_cost": 11,
+      "policy": "calibration",
+      "transcripts": {
+        "high_power": [
+          [
+            "passive",
+            [
+              "same_time",
+              "same_cpu",
+              "same_bytes"
+            ]
+          ],
+          [
+            "calibrate",
+            [
+              "calibrated_energy_class=high"
+            ]
+          ]
+        ],
+        "low_power": [
+          [
+            "passive",
+            [
+              "same_time",
+              "same_cpu",
+              "same_bytes"
+            ]
+          ],
+          [
+            "calibrate",
+            [
+              "calibrated_energy_class=low"
+            ]
+          ]
+        ]
+      }
+    },
+    "passive": {
+      "identifiable": false,
+      "measurement_perturbation": false,
+      "observation_cost": 1,
+      "policy": "passive",
+      "transcripts": {
+        "high_power": [
+          [
+            "passive",
+            [
+              "same_time",
+              "same_cpu",
+              "same_bytes"
+            ]
+          ]
+        ],
+        "low_power": [
+          [
+            "passive",
+            [
+              "same_time",
+              "same_cpu",
+              "same_bytes"
+            ]
+          ]
+        ]
+      }
+    },
+    "privileged": {
+      "identifiable": true,
+      "measurement_perturbation": true,
+      "observation_cost": 4,
+      "policy": "privileged",
+      "transcripts": {
+        "high_power": [
+          [
+            "passive",
+            [
+              "same_time",
+              "same_cpu",
+              "same_bytes"
+            ]
+          ],
+          [
+            "privileged",
+            [
+              "same_time",
+              "same_cpu",
+              "same_bytes",
+              "energy=2.0"
+            ]
+          ]
+        ],
+        "low_power": [
+          [
+            "passive",
+            [
+              "same_time",
+              "same_cpu",
+              "same_bytes"
+            ]
+          ],
+          [
+            "privileged",
+            [
+              "same_time",
+              "same_cpu",
+              "same_bytes",
+              "energy=1.0"
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  "protocol_sha256": "9e970957bba05f29210fbf336053f04a9d7e205e2614d305e88352b11e13c393",
+  "source_sha256": "741ea9adabdc527a8af20a5b8ec51de0474a65a63283309525dd08cd7bd16148",
+  "states": [
+    {
+      "energy": 1.0,
+      "name": "low_power",
+      "visible": [
+        "same_time",
+        "same_cpu",
+        "same_bytes"
+      ]
+    },
+    {
+      "energy": 2.0,
+      "name": "high_power",
+      "visible": [
+        "same_time",
+        "same_cpu",
+        "same_bytes"
+      ]
+    }
+  ]
+}

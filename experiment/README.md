@@ -24,6 +24,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Parameterized contract-state scaling v1: `K_G(n)`, semantic bits, distinguishing depth, and lifecycle axes; results in `docs/parameterized-contract-state-scaling-v1-results.md`.
 - Fixed-contract architecture calibration v1: raw mask, materialized count, sparse set, and event-log tradeoffs; results in `docs/fixed-contract-architecture-v1-results.md`.
 - Physical fixed-contract architecture benchmark v1: local wall/CPU timing, allocation proxy, and logical I/O across size/workload ratios; results in `docs/physical-architecture-benchmark-v1-results.md`.
+- Interactive observation-policy calibration v1: passive versus privileged/active energy identifiability under different authorized observation actions; results in `docs/interactive-observation-policy-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -227,6 +228,19 @@ At `n=8192, r=100`, raw/counter/sparse/event-log wall medians were 30.0 ms,
 14.8 ms, 14.3 ms, and 661.7 ms. At `n=128, r=0.1`, they were 9.9, 14.3, 4.9,
 and 6.5 microseconds. This is a local calibration, not an energy measurement
 or universal crossover; no package-power counter was used.
+
+The interactive observation-policy calibration makes the measurement boundary
+explicit. Two synthetic hidden states have identical ordinary observations but
+different energy labels. Passive transcripts cannot identify energy; privileged
+telemetry and active calibration can, at modeled observation cost and with
+measurement perturbation. This is a structural synthetic result, not an energy
+measurement.
+
+```bash
+PYTHONPATH=src python3 scripts/run_interactive_observation_policy_v1.py \
+  --output artifacts/interactive_observation_policy_v1-local.json \
+  --summary artifacts/interactive_observation_policy_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_physical_architecture_benchmark_v1.py \

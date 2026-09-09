@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 18188,
-      "sha256": "3df35df4fc9602af5a680f3563d331b5ea06d0e2cbaa245a9ae889dfca548678",
+      "bytes": 19030,
+      "sha256": "e36d825259e204b3422c84b9e9643a97d550a9e6787a27dafa108be6d17c1c4e",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2448,6 +2448,62 @@
       "transformed": false,
       "bytes": 4882,
       "sha256": "13de3d4b05f9fbda70de403ec8651a97b8787def3fb4a281add9632116bbce87"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/interactive_observation_policy_v1.py",
+      "kind": "interactive_observation_policy",
+      "transformed": false,
+      "bytes": 1161,
+      "sha256": "741ea9adabdc527a8af20a5b8ec51de0474a65a63283309525dd08cd7bd16148"
+    },
+    {
+      "path": "experiment/scripts/run_interactive_observation_policy_v1.py",
+      "kind": "interactive_observation_policy",
+      "transformed": false,
+      "bytes": 1159,
+      "sha256": "c4099d1183842fc209033777950458cf9e48a797d9a74b034a3015df10381022"
+    },
+    {
+      "path": "experiment/tests/test_interactive_observation_policy_v1.py",
+      "kind": "interactive_observation_policy",
+      "transformed": false,
+      "bytes": 832,
+      "sha256": "a8a3ce6bb7c834a6f77d29a4d9a2a1b127c2bfc1bbc290fbaabfa2b3be1f971b"
+    },
+    {
+      "path": "experiment/docs/protocol-interactive-observation-policy-v1.md",
+      "kind": "interactive_observation_policy",
+      "transformed": false,
+      "bytes": 608,
+      "sha256": "9e970957bba05f29210fbf336053f04a9d7e205e2614d305e88352b11e13c393"
+    },
+    {
+      "path": "experiment/docs/protocol-interactive-observation-policy-v1.sha256",
+      "kind": "interactive_observation_policy",
+      "transformed": false,
+      "bytes": 117,
+      "sha256": "e4571783fc60d022cf6f2ca627b924b220b205dde1eb2171c374c3829b9f45ca"
+    },
+    {
+      "path": "experiment/docs/interactive-observation-policy-v1-results.md",
+      "kind": "interactive_observation_policy",
+      "transformed": false,
+      "bytes": 1656,
+      "sha256": "9cb7a4f8e394f72f6b7aa910f736fedf79dd712452ff94eb51936e4c682b87f0"
+    },
+    {
+      "path": "experiment/artifacts/interactive_observation_policy_v1_run1.json",
+      "kind": "interactive_observation_policy",
+      "transformed": false,
+      "bytes": 2856,
+      "sha256": "2e9c7ed15e224d6bb00fe4a95ac02edf6a6da270a2006e13dd466d94351e2229"
+    },
+    {
+      "path": "experiment/artifacts/interactive_observation_policy_v1_run1.md",
+      "kind": "interactive_observation_policy",
+      "transformed": false,
+      "bytes": 305,
+      "sha256": "f50f902f4e2cff38bc1ca62a76762276dea7d73fc777dfa4663d8818367d8ee7"
     }
   ],
   "limitations": [
