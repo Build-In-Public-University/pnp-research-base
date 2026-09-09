@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 9484,
-      "sha256": "74c912d3e607d8e14703e48696427dafa8a24e8301c0cb115790ab8666acca48",
+      "bytes": 10069,
+      "sha256": "be2776ab4e856275551581056d75b262ef065f7384626ceb197b813077531619",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -1688,6 +1688,70 @@
       "kind": "measured_calibration",
       "bytes": 472,
       "sha256": "c4b943972cd064a1d614c31e4308868b47f05ec0a547bdfdc336b3b49c93944b"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/fanout_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fanout_calibration",
+      "bytes": 4190,
+      "sha256": "3f7f6ee3294e65a53e24b5027f6cde5f9fae9ea5acc43d896e173a557c7756e4"
+    },
+    {
+      "path": "experiment/scripts/run_fanout_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fanout_calibration",
+      "bytes": 1631,
+      "sha256": "2060af0cc2e6f1fb0ef2cd111d8832a0a0097ebb5ea27905100d32e3326c9251"
+    },
+    {
+      "path": "experiment/tests/test_fanout_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fanout_calibration",
+      "bytes": 1263,
+      "sha256": "92b9785a47efd782fb95ee9758e166165d911a13a1613d6648be4dddad2c51a8"
+    },
+    {
+      "path": "experiment/docs/protocol-fanout-calibration-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fanout_calibration",
+      "bytes": 1092,
+      "sha256": "c142adf67fd2faaba85dbcf3d4035d7e0b50464e48c2c497b510a1dc57c5fc89"
+    },
+    {
+      "path": "experiment/docs/protocol-fanout-calibration-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fanout_calibration",
+      "bytes": 105,
+      "sha256": "5fb680d2261fdc6d07bd8be0975f892d83bbf77ceb8a55a411864fd30e4287a3"
+    },
+    {
+      "path": "experiment/docs/fanout-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fanout_calibration",
+      "bytes": 2303,
+      "sha256": "ec1e646aba6bebc00ad66aa5c642cc677f8a034b63b0ad203eb9e10a4a172830"
+    },
+    {
+      "path": "experiment/artifacts/fanout_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fanout_calibration",
+      "bytes": 14365,
+      "sha256": "38475828f0f07b8a8a19617185ce08e88c5da544cba9e98d6d41ef48cde21e66"
+    },
+    {
+      "path": "experiment/artifacts/fanout_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "fanout_calibration",
+      "bytes": 1341,
+      "sha256": "5fa37ae54cee80b91237253c17fd67e05673b69ab67baee0253a955c50ad851d"
     }
   ],
   "limitations": [

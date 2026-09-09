@@ -12,6 +12,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Dynamic dependency repair v1: executed, bounded synthetic repair/invalidation experiment; results in `docs/dynamic-v1-results.md`.
 - Dynamic dependency consequence v2: executed, bounded synthetic delayed-validation and stale-consequence experiment; results in `docs/dynamic-v2-results.md`.
 - Concrete calibration v1: measured local archive-manifest integrity replay; results in `docs/calibration-v1-results.md`.
+- Fan-out calibration v1: measured dependency geometry over layered archive-derived records; results in `docs/fanout-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -141,6 +142,17 @@ The first calibration is now complete for the archive manifest itself. Four
 one-file updates over 24 copied files were mechanically exact; full recompute
 hashed 96 file instances while indexed repair hashed 4. This is a local
 filesystem measurement, not a distributed timing or universal advantage claim.
+
+The fan-out calibration is also complete: 30 cells varied fan-out, graph depth,
+and assurance scope. Affected fraction ranged from 0.083 to 0.917, and indexed
+repair remained mechanically exact while repair scope followed fan-out × depth.
+Full assurance remained separate from affected-only assurance.
+
+```bash
+PYTHONPATH=src python3 scripts/run_fanout_v1.py \
+  --output artifacts/fanout_v1-local.json \
+  --summary artifacts/fanout_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_calibration_v1.py \
