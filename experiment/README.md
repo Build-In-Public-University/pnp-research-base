@@ -19,6 +19,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Archive-transition calibration v1: application-specific state-versus-transition interaction; results in `docs/archive-transition-interaction-v1-results.md`.
 - Archive release-contract calibration v1: actual manifest validation with a transition-aware migration rule; results in `docs/archive-release-contract-v1-results.md`.
 - History-sufficiency calibration v1: theorem witness and retained-state comparison; results in `docs/history-sufficiency-v1-results.md`.
+- Recursive history-sufficiency calibration v1: decision, update, and continuation factorization; results in `docs/recursive-history-sufficiency-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -189,6 +190,19 @@ current-state representation but have different contract outcomes. `current_only
 is therefore an exactness impossibility witness; event-log, transition-record,
 trusted-digest, and minimal contract-state representations distinguish the pair.
 The compact forms are trusted controls, not self-authenticating proofs.
+
+The recursive calibration turns the contract into a finite state machine with
+`clean`, `migration_missing`, and `migration_satisfied` states. Observation and
+update both factor through that state; exhaustive continuations through length
+6 pass (19,531 sequences), and induction supplies the all-finite-continuation
+claim. A trusted one-byte state code distinguishes the three semantic states;
+byte size is not an authenticity guarantee.
+
+```bash
+PYTHONPATH=src python3 scripts/run_recursive_history_v1.py \
+  --output artifacts/recursive_history_v1-local.json \
+  --summary artifacts/recursive_history_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_history_sufficiency_v1.py \

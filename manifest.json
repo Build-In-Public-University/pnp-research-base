@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 14259,
-      "sha256": "41156d6f47c602c048663457aeab25d2c74ebe9b67b51f5eb75565512ae1b612",
+      "bytes": 15039,
+      "sha256": "aa3cc1590ef0b259ad3948f2535404680441797052467a284a0bddf544a5372c",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2136,6 +2136,70 @@
       "kind": "history_sufficiency_calibration",
       "bytes": 517,
       "sha256": "d6532cd2dfeb8d5bbb35e03546a3a8872409218ef9955d70d05e7d4a59b0726d"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/recursive_history_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "recursive_history_sufficiency_calibration",
+      "bytes": 2215,
+      "sha256": "d1415f7c6a8de7bb81c733825f3253a66f9c1fb8b6e51f6c79594199d270f1ee"
+    },
+    {
+      "path": "experiment/scripts/run_recursive_history_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "recursive_history_sufficiency_calibration",
+      "bytes": 1587,
+      "sha256": "b6828326242c5db51bd8858ff6f0d8a3101b7b227095b17a509f96b0076f03ce"
+    },
+    {
+      "path": "experiment/tests/test_recursive_history_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "recursive_history_sufficiency_calibration",
+      "bytes": 897,
+      "sha256": "128d564b47633baff0c457f77f2fbf1503d2a4e5df312924de765afca417005e"
+    },
+    {
+      "path": "experiment/docs/protocol-recursive-history-sufficiency-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "recursive_history_sufficiency_calibration",
+      "bytes": 1245,
+      "sha256": "144039a1d4123d6e6a13d19f9747de0e344a49b00704b1e8f8f92e8a2a5761b7"
+    },
+    {
+      "path": "experiment/docs/protocol-recursive-history-sufficiency-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "recursive_history_sufficiency_calibration",
+      "bytes": 116,
+      "sha256": "cff31b1024183d7788f8b5f206f843494ebc032ffd0cdb1f6a202baa727dd321"
+    },
+    {
+      "path": "experiment/docs/recursive-history-sufficiency-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "recursive_history_sufficiency_calibration",
+      "bytes": 1809,
+      "sha256": "9ab430f4fd6f367c9269c2ca999c98504954a5aeaecb25ac04697974fd735674"
+    },
+    {
+      "path": "experiment/artifacts/recursive_history_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "recursive_history_sufficiency_calibration",
+      "bytes": 1426,
+      "sha256": "e13ef7b8297f565cc3e592292a8421c5bca8d07338147b17e717f7b06f36fb57"
+    },
+    {
+      "path": "experiment/artifacts/recursive_history_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "recursive_history_sufficiency_calibration",
+      "bytes": 762,
+      "sha256": "1983621f2b5cbf1a4ae8f0f8ce57337b58b2625cbbfa2d6b8df543151dc4f882"
     }
   ],
   "limitations": [
