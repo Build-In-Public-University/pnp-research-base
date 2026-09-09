@@ -9,10 +9,28 @@ The repository is deliberately adversarial. It must be able to show that the the
 ## Status
 
 - v2: executed, bounded synthetic algorithm experiments, not a complexity-theoretic result.
+- Dynamic dependency repair v1: executed, bounded synthetic repair/invalidation experiment; results in `docs/dynamic-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
-- Local only; no external publication or real parallel hardware.
+- No real parallel hardware or deployed validation service. Public archive publication is separate from experimental validity.
+
+## Latest: dynamic dependency repair
+
+`docs/dynamic-v1-results.md` records the next hard gate: recomputation versus
+selective repair, full reset, certificate validation and unchecked reuse under
+state churn, dependency-edge churn and hidden drift. The 144-cell sweep found
+47 wrong outputs for visible selective repair and 47 for visible full reset when
+the dependency change was hidden; certificate repair returned zero wrong outputs
+but had higher modeled operation cost than cold recomputation in this fixture.
+The unchecked control returned 1,044 wrong outputs. These are finite synthetic
+results, not runtime or P/NP evidence.
+
+```bash
+PYTHONPATH=src python3 scripts/run_dynamic.py \
+  --output artifacts/dynamic_v1-local.json \
+  --summary artifacts/dynamic_v1-local.md
+```
 
 ## Latest: observation, information and staged release
 
@@ -95,8 +113,10 @@ PYTHONPATH=src python3 scripts/run_history.py \
   --summary artifacts/history_v1_1-local-summary.md
 ```
 
-Changing dependency edges, learned policy adaptation and action-access boundaries
-remain open. Old v2 and gate receipts are unchanged.
+Changing dependency edges are now executed in dynamic v1. Delayed or partial
+certificate delivery, explicit stale-result consequences, learned policy
+adaptation and action-access boundaries remain open. Old v2, gate and history
+receipts are unchanged.
 
 ## Sources
 
