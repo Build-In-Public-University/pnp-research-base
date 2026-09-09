@@ -30,6 +30,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Loss-aware adaptive observation calibration v1: finite-loss stop-versus-observe decisions under common and rare residual risk; results in `docs/loss-aware-observation-v1-results.md`.
 - Dual-control observation/action calibration v1: compare immediate action, non-destructive inspection, and an informative intervention; results in `docs/dual-control-observation-action-v1-results.md`.
 - Dual-control policy phase diagram v1: sweep the fragile-state prior and verify the act/experiment/inspect/act policy regions; results in `docs/dual-control-policy-phase-diagram-v1-results.md`.
+- Action-relative value-of-information calibration v1: equal-entropy beliefs with different optimal policies under asymmetric intervention costs; results in `docs/action-relative-voi-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -272,6 +273,18 @@ The dual-control phase diagram sweeps the fragile-state prior at resolution
 from 0.012 to 0.399, inspection from 0.4 to 0.95, and immediate action again
 from 0.951 onward. The analytic crossings are 1/90, 0.4, and 0.95. This is a
 synthetic modeled-cost phase diagram.
+
+The action-relative value-of-information calibration compares p=0.1 and p=0.9.
+They have equal binary entropy and equal perfect-information risk reduction,
+but different touch costs because intervention risk is state-asymmetric. Touch
+is optimal at p=0.1; inspection is optimal at p=0.9. Entropy alone therefore
+does not determine the rational attention policy.
+
+```bash
+PYTHONPATH=src python3 scripts/run_action_relative_voi_v1.py \
+  --output artifacts/action_relative_voi_v1-local.json \
+  --summary artifacts/action_relative_voi_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_dual_control_policy_phase_diagram_v1.py \

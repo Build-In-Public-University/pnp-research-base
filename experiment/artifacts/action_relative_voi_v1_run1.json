@@ -1,0 +1,40 @@
+{
+  "beliefs": {
+    "p_0.1": {
+      "best_policy": "touch",
+      "costs": {
+        "immediate": 11.0,
+        "inspect": 6,
+        "touch": 3.0
+      },
+      "entropy_bits": 0.4689955935892812,
+      "p": 0.1,
+      "perfect_information_residual_risk": 0.0,
+      "stop_risk": 10.0,
+      "voi_perfect_information": 10.0
+    },
+    "p_0.9": {
+      "best_policy": "inspect",
+      "costs": {
+        "immediate": 10.999999999999998,
+        "inspect": 6,
+        "touch": 11.0
+      },
+      "entropy_bits": 0.4689955935892811,
+      "p": 0.9,
+      "perfect_information_residual_risk": 0.0,
+      "stop_risk": 9.999999999999998,
+      "voi_perfect_information": 9.999999999999998
+    }
+  },
+  "constants": {
+    "correct_action_cost": 1,
+    "inspect_total": 6,
+    "touch_damage_per_fragile": 10,
+    "touch_total_base": 2,
+    "wrong_loss": 100
+  },
+  "protocol_sha256": "bcb720a929504e9068c3d6bf9bd1e62d0c52b8d6d49b3aba6a70b9c3bf520ca5",
+  "source_sha256": "6e615c743071a33ba7f90d25eecab528d02fac5633224240072edb5114c9ca8f",
+  "units": "synthetic modeled cost"
+}

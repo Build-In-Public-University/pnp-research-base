@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 23053,
-      "sha256": "f6cddacde6885a38b6238aca9596c0fb66444b963733877227eda9e0f22f50a3",
+      "bytes": 23802,
+      "sha256": "6c5ba34b93d8670efba58c785ea3d24cecb9e7aefd6492f11dd387d8c9d018b6",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2784,6 +2784,62 @@
       "transformed": false,
       "bytes": 263,
       "sha256": "8aa47685ab3b9188c42614ef37b8120787f65cdefb7f6a6d91d4e24410f26b6b"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/action_relative_voi_v1.py",
+      "kind": "action_relative_voi",
+      "transformed": false,
+      "bytes": 638,
+      "sha256": "6e615c743071a33ba7f90d25eecab528d02fac5633224240072edb5114c9ca8f"
+    },
+    {
+      "path": "experiment/scripts/run_action_relative_voi_v1.py",
+      "kind": "action_relative_voi",
+      "transformed": false,
+      "bytes": 1056,
+      "sha256": "1389ad209d70864b35a2f39b0516f1f1b0b5ad9f04c972b1697aa4f8409dcac3"
+    },
+    {
+      "path": "experiment/tests/test_action_relative_voi_v1.py",
+      "kind": "action_relative_voi",
+      "transformed": false,
+      "bytes": 812,
+      "sha256": "a6760919346c27444fac57ffeb939344facc6d3b58ef52a0621716d4de729957"
+    },
+    {
+      "path": "experiment/docs/protocol-action-relative-voi-v1.md",
+      "kind": "action_relative_voi",
+      "transformed": false,
+      "bytes": 450,
+      "sha256": "bcb720a929504e9068c3d6bf9bd1e62d0c52b8d6d49b3aba6a70b9c3bf520ca5"
+    },
+    {
+      "path": "experiment/docs/protocol-action-relative-voi-v1.sha256",
+      "kind": "action_relative_voi",
+      "transformed": false,
+      "bytes": 106,
+      "sha256": "e802aa6b3331c00cdbb983cfa8e9f8b6e78a979ca6eb267a42d128fe5f53431d"
+    },
+    {
+      "path": "experiment/docs/action-relative-voi-v1-results.md",
+      "kind": "action_relative_voi",
+      "transformed": false,
+      "bytes": 1137,
+      "sha256": "00c66d88048a535d1e582d8c4a84a52200c2ae08dfad4a06caa1ad2416a732ba"
+    },
+    {
+      "path": "experiment/artifacts/action_relative_voi_v1_run1.json",
+      "kind": "action_relative_voi",
+      "transformed": false,
+      "bytes": 1073,
+      "sha256": "26fa54a5dc038881dfa3c9b1ae215e5f9b8e761098ac3bacfffe62f8ab829104"
+    },
+    {
+      "path": "experiment/artifacts/action_relative_voi_v1_run1.md",
+      "kind": "action_relative_voi",
+      "transformed": false,
+      "bytes": 244,
+      "sha256": "1c623c2ffcfb142d448a42e12cfeaa53dfb504decd8009830ccf69f82ee53fb6"
     }
   ],
   "limitations": [
