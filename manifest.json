@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 20661,
-      "sha256": "e8981d3fb9034a0e56dc657e6fea579459f6bbd8745f1d07e8af6c9c841d57bb",
+      "bytes": 21493,
+      "sha256": "0bd76f537a221001c101cc189744d1d5a6e6ce78fce767010aab97f9c6030e0a",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2616,6 +2616,62 @@
       "transformed": false,
       "bytes": 241,
       "sha256": "acae7b8d9ba3a1ac64b63e8ca052df53206db7d92411dd9cc65b42fac2eb15b8"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/loss_aware_observation_v1.py",
+      "kind": "loss_aware_observation",
+      "transformed": false,
+      "bytes": 1841,
+      "sha256": "fde53c1f54fa9dcba5717d104ab9f3b2dd97bc466fe5f3c6d749a45d58dad062"
+    },
+    {
+      "path": "experiment/scripts/run_loss_aware_observation_v1.py",
+      "kind": "loss_aware_observation",
+      "transformed": false,
+      "bytes": 1040,
+      "sha256": "a263c7831c3ba8975dd9467081653e0a6b151ba7350cc2070d2696e551716813"
+    },
+    {
+      "path": "experiment/tests/test_loss_aware_observation_v1.py",
+      "kind": "loss_aware_observation",
+      "transformed": false,
+      "bytes": 745,
+      "sha256": "63b07dda3b7e92a7ddfe8ff524aad50e8f8c09a082843ef0c097c61acabaef28"
+    },
+    {
+      "path": "experiment/docs/protocol-loss-aware-observation-v1.md",
+      "kind": "loss_aware_observation",
+      "transformed": false,
+      "bytes": 605,
+      "sha256": "90f46d2b62fa72b8c07ff39e0d6a32462e1cd5544880f75b5852fb04fd63005a"
+    },
+    {
+      "path": "experiment/docs/protocol-loss-aware-observation-v1.sha256",
+      "kind": "loss_aware_observation",
+      "transformed": false,
+      "bytes": 109,
+      "sha256": "b3ec310cc4f2689d099ee03587e3d3849fdbb6163f5e49f9a9411ba908788c18"
+    },
+    {
+      "path": "experiment/docs/loss-aware-observation-v1-results.md",
+      "kind": "loss_aware_observation",
+      "transformed": false,
+      "bytes": 1474,
+      "sha256": "d0ac6a7031335534c7a4ca8c767e28033ad6a10eb3252aadceb667cbc6edf75b"
+    },
+    {
+      "path": "experiment/artifacts/loss_aware_observation_v1_run1.json",
+      "kind": "loss_aware_observation",
+      "transformed": false,
+      "bytes": 1772,
+      "sha256": "d5dca10e8eb64995340eee8bd2578c2a0350f954c79d41d207e1859c72cb3135"
+    },
+    {
+      "path": "experiment/artifacts/loss_aware_observation_v1_run1.md",
+      "kind": "loss_aware_observation",
+      "transformed": false,
+      "bytes": 276,
+      "sha256": "9c4a78f6dc62d73816cacb611233a23cac4be3bedc0e8b81816f632c1bd3f1a6"
     }
   ],
   "limitations": [

@@ -1,0 +1,81 @@
+{
+  "energy_units": "synthetic modeled cost",
+  "protocol_sha256": "90f46d2b62fa72b8c07ff39e0d6a32462e1cd5544880f75b5852fb04fd63005a",
+  "scenarios": {
+    "common_high_loss": {
+      "exact_identification": false,
+      "first_cost": 1,
+      "local_cost": 2,
+      "loss": 20,
+      "policy_expected_cost": 4.6000000000000005,
+      "prior": {
+        "A": 0.2,
+        "B": 0.2,
+        "C": 0.2,
+        "D": 0.2,
+        "E": 0.2
+      },
+      "privileged_cost": 6,
+      "residual_choice": "observe_privileged",
+      "residual_posterior": {
+        "D": 0.5,
+        "E": 0.5
+      },
+      "residual_stop_risk": 10.0
+    },
+    "rare_low_loss": {
+      "exact_identification": false,
+      "first_cost": 1,
+      "local_cost": 2,
+      "loss": 20,
+      "policy_expected_cost": 1.06,
+      "prior": {
+        "A": 0.49,
+        "B": 0.49,
+        "C": 0.01,
+        "D": 0.009,
+        "E": 0.001
+      },
+      "privileged_cost": 6,
+      "residual_choice": "stop_safe",
+      "residual_posterior": {
+        "D": 0.9,
+        "E": 0.10000000000000002
+      },
+      "residual_stop_risk": 2.0000000000000004
+    }
+  },
+  "source_sha256": "fde53c1f54fa9dcba5717d104ab9f3b2dd97bc466fe5f3c6d749a45d58dad062",
+  "states": [
+    {
+      "first": "easy",
+      "name": "A",
+      "second": "unused",
+      "truth": "safe"
+    },
+    {
+      "first": "easy",
+      "name": "B",
+      "second": "unused",
+      "truth": "safe"
+    },
+    {
+      "first": "uncertain",
+      "name": "C",
+      "second": "clear",
+      "truth": "safe"
+    },
+    {
+      "first": "uncertain",
+      "name": "D",
+      "second": "residual",
+      "truth": "safe"
+    },
+    {
+      "first": "uncertain",
+      "name": "E",
+      "second": "residual",
+      "truth": "escalate"
+    }
+  ]
+}

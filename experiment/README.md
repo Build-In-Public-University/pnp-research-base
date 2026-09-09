@@ -27,6 +27,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Interactive observation-policy calibration v1: passive versus privileged/active energy identifiability under different authorized observation actions; results in `docs/interactive-observation-policy-v1-results.md`.
 - Adaptive observation-policy calibration v1: finite policy search for the minimum-cost sufficient channel composition; results in `docs/adaptive-observation-policy-v1-results.md`.
 - Branching adaptive observation-policy calibration v1: conditional stop/escalate policy with expected versus worst-case observation cost; results in `docs/branching-adaptive-observation-policy-v1-results.md`.
+- Loss-aware adaptive observation calibration v1: finite-loss stop-versus-observe decisions under common and rare residual risk; results in `docs/loss-aware-observation-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -250,6 +251,19 @@ observation, and one requires privileged telemetry. The policy is exact with
 worst-case modeled cost 9 and uniform-prior expected cost 3.4, versus cost 6
 for always using privileged telemetry. Expected and worst-case observation
 costs are therefore kept separate.
+
+The loss-aware observation calibration adds finite wrong-decision loss. In the
+common/high-loss scenario, residual risk 0.5 produces stop risk 10, so the
+policy buys privileged observation at cost 6. In the rare/low-loss scenario,
+residual risk 0.1 produces stop risk 2, so the policy acts safely without
+resolving the final state ambiguity. Expected costs are 4.6 and 1.06. This is
+a synthetic stopping-policy result, not hardware energy telemetry.
+
+```bash
+PYTHONPATH=src python3 scripts/run_loss_aware_observation_v1.py \
+  --output artifacts/loss_aware_observation_v1-local.json \
+  --summary artifacts/loss_aware_observation_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_branching_adaptive_observation_policy_v1.py \
