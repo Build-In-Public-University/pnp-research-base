@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 15039,
-      "sha256": "aa3cc1590ef0b259ad3948f2535404680441797052467a284a0bddf544a5372c",
+      "bytes": 15747,
+      "sha256": "fbf6b7fe2f176581b9bd16e5d35b2fd224a544533406391675ee6ca025456fbb",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2200,6 +2200,70 @@
       "kind": "recursive_history_sufficiency_calibration",
       "bytes": 762,
       "sha256": "1983621f2b5cbf1a4ae8f0f8ce57337b58b2625cbbfa2d6b8df543151dc4f882"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/contract_complexity_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "contract_relative_state_complexity_calibration",
+      "bytes": 1842,
+      "sha256": "05c7cccec06429f57ffd3598975e0c996572fe25c43a6868a620c301a32c525d"
+    },
+    {
+      "path": "experiment/scripts/run_contract_complexity_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "contract_relative_state_complexity_calibration",
+      "bytes": 1606,
+      "sha256": "1b968466881c0d1e5b7dd2b110daccccf27d98e53449bc3168b010327178b994"
+    },
+    {
+      "path": "experiment/tests/test_contract_complexity_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "contract_relative_state_complexity_calibration",
+      "bytes": 859,
+      "sha256": "8d0bb0ba708c51ed1e10aee4d1cdac4682f41cac148eadff4cab78567783e142"
+    },
+    {
+      "path": "experiment/docs/protocol-contract-relative-state-complexity-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "contract_relative_state_complexity_calibration",
+      "bytes": 1109,
+      "sha256": "4ea308d8fe79268e38f1a31c2cabc55323533995c273024579d2c0ea6e4d7cf8"
+    },
+    {
+      "path": "experiment/docs/protocol-contract-relative-state-complexity-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "contract_relative_state_complexity_calibration",
+      "bytes": 121,
+      "sha256": "8769e6a763d342270701d31f8780ae5c030c8e9fb2d51de45e88ff41172f0be5"
+    },
+    {
+      "path": "experiment/docs/contract-relative-state-complexity-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "contract_relative_state_complexity_calibration",
+      "bytes": 1787,
+      "sha256": "18f8455bcdbe100a4e553e5b45736f1999a6185b105c783f6c0ec1a5e27bf3ee"
+    },
+    {
+      "path": "experiment/artifacts/contract_complexity_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "contract_relative_state_complexity_calibration",
+      "bytes": 1464,
+      "sha256": "a1d8d1169476b30d8921f8568860e21934f2ed6a30a06e37168045a906179aca"
+    },
+    {
+      "path": "experiment/artifacts/contract_complexity_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "contract_relative_state_complexity_calibration",
+      "bytes": 400,
+      "sha256": "a0a3c416d3de0f58329f9e9f7895b6ad2c06c080e191123afdc05f5a2f571f9f"
     }
   ],
   "limitations": [

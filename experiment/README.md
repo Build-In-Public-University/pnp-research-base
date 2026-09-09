@@ -20,6 +20,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Archive release-contract calibration v1: actual manifest validation with a transition-aware migration rule; results in `docs/archive-release-contract-v1-results.md`.
 - History-sufficiency calibration v1: theorem witness and retained-state comparison; results in `docs/history-sufficiency-v1-results.md`.
 - Recursive history-sufficiency calibration v1: decision, update, and continuation factorization; results in `docs/recursive-history-sufficiency-v1-results.md`.
+- Contract-relative state complexity v1: future-equivalence classes and lifecycle cost tuple; results in `docs/contract-relative-state-complexity-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -197,6 +198,18 @@ update both factor through that state; exhaustive continuations through length
 6 pass (19,531 sequences), and induction supplies the all-finite-continuation
 claim. A trusted one-byte state code distinguishes the three semantic states;
 byte size is not an authenticity guarantee.
+
+Contract-relative state complexity is measured over the same finite machine.
+There are three reachable, pairwise future-distinguishable classes, so
+`K_G=3` and the ideal fixed-length semantic requirement is two bits. The
+receipt separates retained bytes from modeled observation, update, decision,
+and evidence counters; these are not wall-clock benchmarks.
+
+```bash
+PYTHONPATH=src python3 scripts/run_contract_complexity_v1.py \
+  --output artifacts/contract_complexity_v1-local.json \
+  --summary artifacts/contract_complexity_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_recursive_history_v1.py \
