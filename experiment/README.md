@@ -13,6 +13,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Dynamic dependency consequence v2: executed, bounded synthetic delayed-validation and stale-consequence experiment; results in `docs/dynamic-v2-results.md`.
 - Concrete calibration v1: measured local archive-manifest integrity replay; results in `docs/calibration-v1-results.md`.
 - Fan-out calibration v1: measured dependency geometry over layered archive-derived records; results in `docs/fanout-v1-results.md`.
+- Dense-coupling calibration v1: measured multi-input join and reverse-index costs; results in `docs/dense-coupling-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -147,6 +148,17 @@ The fan-out calibration is also complete: 30 cells varied fan-out, graph depth,
 and assurance scope. Affected fraction ranged from 0.083 to 0.917, and indexed
 repair remained mechanically exact while repair scope followed fan-out × depth.
 Full assurance remained separate from affected-only assurance.
+
+Dense coupling is now measured too. Across 30 cells, full edge checks were
+`12, 24, 48` for join widths `1, 2, 4`, while incremental checks were
+`fan-out × join width`; all results were mechanically exact. This exposes the
+approach to \(\rho=1\) without turning local timing into a universal claim.
+
+```bash
+PYTHONPATH=src python3 scripts/run_dense_coupling_v1.py \
+  --output artifacts/dense_coupling_v1-local.json \
+  --summary artifacts/dense_coupling_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_fanout_v1.py \

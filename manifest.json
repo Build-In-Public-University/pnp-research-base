@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 10069,
-      "sha256": "be2776ab4e856275551581056d75b262ef065f7384626ceb197b813077531619",
+      "bytes": 10674,
+      "sha256": "70e5001d1236372463a1b0e040af43de3a6bacc6aabbdbd7e1cdb0acc9e0f9d0",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -1752,6 +1752,70 @@
       "kind": "fanout_calibration",
       "bytes": 1341,
       "sha256": "5fa37ae54cee80b91237253c17fd67e05673b69ab67baee0253a955c50ad851d"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/dense_coupling_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dense_coupling_calibration",
+      "bytes": 2774,
+      "sha256": "c13b3d886e2d0243b130fbb2685cf3231d47c800a73e070524987ffa47ed26eb"
+    },
+    {
+      "path": "experiment/scripts/run_dense_coupling_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dense_coupling_calibration",
+      "bytes": 1564,
+      "sha256": "10375e756991c18df41afcb0ec3d8344eef9fee25f4d6c2eb02a387b7c8f84f9"
+    },
+    {
+      "path": "experiment/tests/test_dense_coupling_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dense_coupling_calibration",
+      "bytes": 1375,
+      "sha256": "8b415548b6fd188faf05436b0afac1d7835ee82bfa8835bd10739c2a38ffaea9"
+    },
+    {
+      "path": "experiment/docs/protocol-dense-coupling-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dense_coupling_calibration",
+      "bytes": 1245,
+      "sha256": "df90f099abb8f1b7f56303ea09d9caffe71d648cf80d5bdc933dfd4b953c215c"
+    },
+    {
+      "path": "experiment/docs/protocol-dense-coupling-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dense_coupling_calibration",
+      "bytes": 101,
+      "sha256": "a64bca388bdfc5c498affd8a2653fc5a38658aba6aeb739ffe7d3adc2552f2e0"
+    },
+    {
+      "path": "experiment/docs/dense-coupling-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dense_coupling_calibration",
+      "bytes": 2525,
+      "sha256": "38c828a2e6848c2edd641702ad32e4a6e6ef1dbebec8f99f7cf476cb4fa74f8c"
+    },
+    {
+      "path": "experiment/artifacts/dense_coupling_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dense_coupling_calibration",
+      "bytes": 14617,
+      "sha256": "92040a3ffc06db18e60380abe17322e042ceb5591738cfc4db5befb13459f411"
+    },
+    {
+      "path": "experiment/artifacts/dense_coupling_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "dense_coupling_calibration",
+      "bytes": 1293,
+      "sha256": "3577b51504c39a433e4953c7ea4a23ec84b26c819078d2d9363b51e75bfb8c06"
     }
   ],
   "limitations": [
