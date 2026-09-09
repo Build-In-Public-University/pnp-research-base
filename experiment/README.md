@@ -17,6 +17,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Overlapping-updates calibration v1: measured union versus summed invalidation sets; results in `docs/overlapping-updates-v1-results.md`.
 - Semantic-interaction calibration v1: explicit joint-constraint counterexample to fixed-union repair; results in `docs/semantic-interaction-v1-results.md`.
 - Archive-transition calibration v1: application-specific state-versus-transition interaction; results in `docs/archive-transition-interaction-v1-results.md`.
+- Archive release-contract calibration v1: actual manifest validation with a transition-aware migration rule; results in `docs/archive-release-contract-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -174,6 +175,19 @@ handled by singleton and state-complete repair. A simultaneous change activates
 an explicit `migration-approval` artifact that only transition-aware repair
 captures. The result is application-specific and bounded to the frozen release
 contract.
+
+The release-contract calibration uses the actual repository manifest and checks
+file presence, byte counts, and SHA-256 digests. Manifest-only and
+compatibility-only releases pass state checking. A simultaneous change passes
+the current-state checker but fails the independent transition oracle without
+`migration-approval`; the bound receipt restores validity. The migration rule
+is a newly declared research protocol, not existing production policy.
+
+```bash
+PYTHONPATH=src python3 scripts/run_archive_release_contract_v1.py \
+  --output artifacts/archive_release_contract_v1-local.json \
+  --summary artifacts/archive_release_contract_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_archive_transition_v1.py \

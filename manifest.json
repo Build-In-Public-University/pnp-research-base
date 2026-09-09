@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 12699,
-      "sha256": "a8cb3654db3b8ff2cc61feb71d1429fb0f19f4eabba5df502f69325def763edf",
+      "bytes": 13522,
+      "sha256": "e8bb1c73c5a0ddbeebd036382e43bb74c2f5a0bd8ecdfae24e3b8121f2a5f693",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2008,6 +2008,70 @@
       "kind": "archive_transition_interaction_calibration",
       "bytes": 518,
       "sha256": "7bbf15535b15c693943dccc55a2ff136c23b7c357bad57a984233e8dc18ba90a"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/archive_release_contract_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_release_contract_calibration",
+      "bytes": 3107,
+      "sha256": "d59142addb94d7ee5898703a2dc15d7122eda923c4956249ba46efa84f9b7b2e"
+    },
+    {
+      "path": "experiment/scripts/run_archive_release_contract_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_release_contract_calibration",
+      "bytes": 1460,
+      "sha256": "47890100905e47a5aaaa9de224e740a8d3112af54a99845b3de50be435dc12e7"
+    },
+    {
+      "path": "experiment/tests/test_archive_release_contract_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_release_contract_calibration",
+      "bytes": 753,
+      "sha256": "44181d85ef468237ba4412781b5b769fc58ebd1d8905742d530176079a011915"
+    },
+    {
+      "path": "experiment/docs/protocol-archive-release-contract-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_release_contract_calibration",
+      "bytes": 1178,
+      "sha256": "4210f3297163fc8a5d22608f714baaaabbbfa7763fe6be9a5133abd3577dd983"
+    },
+    {
+      "path": "experiment/docs/protocol-archive-release-contract-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_release_contract_calibration",
+      "bytes": 111,
+      "sha256": "6a22c8000e560ed12ef805ca8944364279a6fa53c7ccd2e78b42d6d99c930f82"
+    },
+    {
+      "path": "experiment/docs/archive-release-contract-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_release_contract_calibration",
+      "bytes": 2179,
+      "sha256": "2b250a29ddd14d91b4dcc32ad3699ccd26598aa6513584ca1077e3d38d66f074"
+    },
+    {
+      "path": "experiment/artifacts/archive_release_contract_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_release_contract_calibration",
+      "bytes": 1981,
+      "sha256": "5c2421ad52b22990d44109f09a53068819a697c0d69681b5027161c4c7ed47f1"
+    },
+    {
+      "path": "experiment/artifacts/archive_release_contract_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "archive_release_contract_calibration",
+      "bytes": 428,
+      "sha256": "da5771ed35eedfffe93e4c6bb4117b10fe033b3aa5404a941bd44d96abfbdb38"
     }
   ],
   "limitations": [
