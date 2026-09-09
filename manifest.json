@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 15747,
-      "sha256": "fbf6b7fe2f176581b9bd16e5d35b2fd224a544533406391675ee6ca025456fbb",
+      "bytes": 16446,
+      "sha256": "a69bee91e508888315e934e51bd30bfa2a5d19c170d55e6816178a118be8e5d6",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2264,6 +2264,70 @@
       "kind": "contract_relative_state_complexity_calibration",
       "bytes": 400,
       "sha256": "a0a3c416d3de0f58329f9e9f7895b6ad2c06c080e191123afdc05f5a2f571f9f"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/parameterized_state_scaling_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "parameterized_contract_state_scaling_calibration",
+      "bytes": 1273,
+      "sha256": "30a489665ef576f8ce1a2e74b0eb845a774380b7878b4434323146d96e11b6ca"
+    },
+    {
+      "path": "experiment/scripts/run_parameterized_state_scaling_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "parameterized_contract_state_scaling_calibration",
+      "bytes": 1605,
+      "sha256": "b6d5bdebf684b53186a36565ee525248e9741d879de200f6188a01f96c7cb066"
+    },
+    {
+      "path": "experiment/tests/test_parameterized_state_scaling_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "parameterized_contract_state_scaling_calibration",
+      "bytes": 886,
+      "sha256": "07c88d697d1a4eee747c3ca19629cc58491bcc196a7efb3fe1acc84ed9d59085"
+    },
+    {
+      "path": "experiment/docs/protocol-parameterized-contract-state-scaling-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "parameterized_contract_state_scaling_calibration",
+      "bytes": 850,
+      "sha256": "d1458a821642b7d6a834cd68b4a61542d5874e8868c849754a0ae0fb6e7f1bdb"
+    },
+    {
+      "path": "experiment/docs/protocol-parameterized-contract-state-scaling-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "parameterized_contract_state_scaling_calibration",
+      "bytes": 123,
+      "sha256": "299490252cb83bac81b6d106d1b45b1937980b1cde310ecca42ceb468deccbbd"
+    },
+    {
+      "path": "experiment/docs/parameterized-contract-state-scaling-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "parameterized_contract_state_scaling_calibration",
+      "bytes": 1636,
+      "sha256": "6d2e53abee583958e716d725d0a694dbf9580c03ee78ea184e21dbb0ddf038c7"
+    },
+    {
+      "path": "experiment/artifacts/parameterized_state_scaling_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "parameterized_contract_state_scaling_calibration",
+      "bytes": 2347,
+      "sha256": "1c5f564bd13b2866309286c48c81a88b4bbc1c93cbb91affe1dcc23b86aa9188"
+    },
+    {
+      "path": "experiment/artifacts/parameterized_state_scaling_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "parameterized_contract_state_scaling_calibration",
+      "bytes": 574,
+      "sha256": "3038befdf0f5586dac7cfdd2cd753655d2c98745e26967526719021e943df2b0"
     }
   ],
   "limitations": [
