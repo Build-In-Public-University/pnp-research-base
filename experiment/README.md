@@ -14,6 +14,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Concrete calibration v1: measured local archive-manifest integrity replay; results in `docs/calibration-v1-results.md`.
 - Fan-out calibration v1: measured dependency geometry over layered archive-derived records; results in `docs/fanout-v1-results.md`.
 - Dense-coupling calibration v1: measured multi-input join and reverse-index costs; results in `docs/dense-coupling-v1-results.md`.
+- Overlapping-updates calibration v1: measured union versus summed invalidation sets; results in `docs/overlapping-updates-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -153,6 +154,17 @@ Dense coupling is now measured too. Across 30 cells, full edge checks were
 `12, 24, 48` for join widths `1, 2, 4`, while incremental checks were
 `fan-out × join width`; all results were mechanically exact. This exposes the
 approach to \(\rho=1\) without turning local timing into a universal claim.
+
+Overlapping updates are measured separately. Across 24 cells, disjoint changes
+had zero overlap savings, while adjacent/clustered changes saved up to 9 repair
+records when join width was 4. Every indexed result remained mechanically exact.
+Repair scope followed the union of affected sets, not their isolated sum.
+
+```bash
+PYTHONPATH=src python3 scripts/run_overlap_v1.py \
+  --output artifacts/overlap_v1-local.json \
+  --summary artifacts/overlap_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_dense_coupling_v1.py \

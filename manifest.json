@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 10674,
-      "sha256": "70e5001d1236372463a1b0e040af43de3a6bacc6aabbdbd7e1cdb0acc9e0f9d0",
+      "bytes": 11279,
+      "sha256": "84c197cfd3bb6a64af9cf588ddccb2e5cdb46c38983d4ae26b5531ea2fd3ba5e",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -1816,6 +1816,70 @@
       "kind": "dense_coupling_calibration",
       "bytes": 1293,
       "sha256": "3577b51504c39a433e4953c7ea4a23ec84b26c819078d2d9363b51e75bfb8c06"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/overlap_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "overlapping_updates_calibration",
+      "bytes": 2546,
+      "sha256": "e36dbf5a5c0207cba20f81665adaaa935b64972a81c0a549c57c0d5c267cb083"
+    },
+    {
+      "path": "experiment/scripts/run_overlap_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "overlapping_updates_calibration",
+      "bytes": 1491,
+      "sha256": "ff55c4bc0ed2cffc8259002e115ac198c9a3a0e93f7b77950267e495d6a4b59c"
+    },
+    {
+      "path": "experiment/tests/test_overlap_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "overlapping_updates_calibration",
+      "bytes": 1020,
+      "sha256": "76c88cdd271fd262906e695694b585b7008493bc4169a87e92a8936e6cfc273f"
+    },
+    {
+      "path": "experiment/docs/protocol-overlapping-updates-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "overlapping_updates_calibration",
+      "bytes": 1035,
+      "sha256": "5577a18fd8c8cf548efd6ad2fb4c3f5e91a5ba799f1cbf167eab4ce1efa8d983"
+    },
+    {
+      "path": "experiment/docs/protocol-overlapping-updates-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "overlapping_updates_calibration",
+      "bytes": 106,
+      "sha256": "063714db9d53e1389b0fd9f535d716f89c39c00a668548b7732f20e70144df82"
+    },
+    {
+      "path": "experiment/docs/overlapping-updates-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "overlapping_updates_calibration",
+      "bytes": 2093,
+      "sha256": "52c20fbd527b398755c6cd45e25011a44c097af294f0bfa5c07c2e24883da492"
+    },
+    {
+      "path": "experiment/artifacts/overlap_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "overlapping_updates_calibration",
+      "bytes": 12625,
+      "sha256": "576b59f011531ca88deabccce27393080afae023173c168243eedebe097fe401"
+    },
+    {
+      "path": "experiment/artifacts/overlap_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "overlapping_updates_calibration",
+      "bytes": 1096,
+      "sha256": "2cea44a3c837b52da35e4a946437b7d4b2c1bf5bdcc12adba65cdbaf5fd43946"
     }
   ],
   "limitations": [
