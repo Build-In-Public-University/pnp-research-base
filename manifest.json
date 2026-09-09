@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 8893,
-      "sha256": "ffb7ece70ca74da8b21751cd6fb8b5c4251b0516a0656a2e9c9ab78794d9f3cb",
+      "bytes": 9484,
+      "sha256": "74c912d3e607d8e14703e48696427dafa8a24e8301c0cb115790ab8666acca48",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -1624,6 +1624,70 @@
       "source_sha256": null,
       "transformed": false,
       "kind": "dynamic_dependency_consequence_experiment"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/calibration_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "measured_calibration",
+      "bytes": 4571,
+      "sha256": "ea0b1bc53f65cfbfbd496e31ce83961c3cc671d567b2a3257189e37825691f21"
+    },
+    {
+      "path": "experiment/scripts/run_calibration_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "measured_calibration",
+      "bytes": 2049,
+      "sha256": "eaa40810bb3443446294236e8f88d0353f4a25f219534e682c5dab339241ef85"
+    },
+    {
+      "path": "experiment/tests/test_calibration_v1.py",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "measured_calibration",
+      "bytes": 1535,
+      "sha256": "ca732da0ab1f75977b628a226c4cf5dc45bec7b7234ab881243748bc4ef432ea"
+    },
+    {
+      "path": "experiment/docs/protocol-calibration-manifest-v1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "measured_calibration",
+      "bytes": 1995,
+      "sha256": "a40e91516bcd9eb284fe8ee8193cd4b7dfc8c247ce4d61178be77e2af2776779"
+    },
+    {
+      "path": "experiment/docs/protocol-calibration-manifest-v1.sha256",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "measured_calibration",
+      "bytes": 65,
+      "sha256": "f75e046238964e71ef7baeb4808ce5f3ecb2cefaeaee84f7b9a0cb064b17a370"
+    },
+    {
+      "path": "experiment/docs/calibration-v1-results.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "measured_calibration",
+      "bytes": 2509,
+      "sha256": "8bff474a4e67250618a1e085c93e8c596d6c81568b3065a00af9c4526db7aba1"
+    },
+    {
+      "path": "experiment/artifacts/calibration_v1_run1.json",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "measured_calibration",
+      "bytes": 4678,
+      "sha256": "b8944ac73aed4cfe5747504533bc2d5506a219d8035cfb9337da69a7cf310ddf"
+    },
+    {
+      "path": "experiment/artifacts/calibration_v1_run1.md",
+      "source_sha256": null,
+      "transformed": false,
+      "kind": "measured_calibration",
+      "bytes": 472,
+      "sha256": "c4b943972cd064a1d614c31e4308868b47f05ec0a547bdfdc336b3b49c93944b"
     }
   ],
   "limitations": [
