@@ -1,0 +1,238 @@
+{
+  "horizon": 4,
+  "protocol_sha256": "be13461cf84e1eaac7deb654d6a613039f0cc76cc36ab5adb5b5448e618d942c",
+  "rows": [
+    {
+      "cost": 0,
+      "d": 0,
+      "policy": [
+        "remote",
+        "remote",
+        "remote",
+        "remote"
+      ],
+      "start": "remote"
+    },
+    {
+      "cost": 6,
+      "d": 0,
+      "policy": [
+        "remote",
+        "remote",
+        "remote",
+        "remote"
+      ],
+      "start": "local"
+    },
+    {
+      "cost": 1.2000000000000002,
+      "d": 0.1,
+      "policy": [
+        "remote",
+        "remote",
+        "remote",
+        "remote"
+      ],
+      "start": "remote"
+    },
+    {
+      "cost": 7.2,
+      "d": 0.1,
+      "policy": [
+        "remote",
+        "remote",
+        "remote",
+        "remote"
+      ],
+      "start": "local"
+    },
+    {
+      "cost": 3.0,
+      "d": 0.25,
+      "policy": [
+        "remote",
+        "remote",
+        "remote",
+        "remote"
+      ],
+      "start": "remote"
+    },
+    {
+      "cost": 9.0,
+      "d": 0.25,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "local"
+    },
+    {
+      "cost": 6.0,
+      "d": 0.5,
+      "policy": [
+        "remote",
+        "remote",
+        "remote",
+        "remote"
+      ],
+      "start": "remote"
+    },
+    {
+      "cost": 10.0,
+      "d": 0.5,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "local"
+    },
+    {
+      "cost": 12,
+      "d": 1,
+      "policy": [
+        "remote",
+        "remote",
+        "remote",
+        "remote"
+      ],
+      "start": "remote"
+    },
+    {
+      "cost": 12,
+      "d": 1,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "local"
+    },
+    {
+      "cost": 24,
+      "d": 2,
+      "policy": [
+        "remote",
+        "remote",
+        "remote",
+        "remote"
+      ],
+      "start": "remote"
+    },
+    {
+      "cost": 16,
+      "d": 2,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "local"
+    },
+    {
+      "cost": 27.0,
+      "d": 2.25,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "remote"
+    },
+    {
+      "cost": 17.0,
+      "d": 2.25,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "local"
+    },
+    {
+      "cost": 30,
+      "d": 3,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "remote"
+    },
+    {
+      "cost": 20,
+      "d": 3,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "local"
+    },
+    {
+      "cost": 34,
+      "d": 4,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "remote"
+    },
+    {
+      "cost": 24,
+      "d": 4,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "local"
+    },
+    {
+      "cost": 50,
+      "d": 8,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "remote"
+    },
+    {
+      "cost": 40,
+      "d": 8,
+      "policy": [
+        "local",
+        "local",
+        "local",
+        "local"
+      ],
+      "start": "local"
+    }
+  ],
+  "running_costs": {
+    "local": "d+2",
+    "remote": "3d"
+  },
+  "source_sha256": "efc1039a73b332e4f84d70e64932152a8c2d6a530b7b5c86c5458c90a3ea90c9",
+  "switch_costs": {
+    "local->local": 0,
+    "local->remote": 6,
+    "remote->local": 10,
+    "remote->remote": 0
+  },
+  "units": "synthetic modeled cost"
+}

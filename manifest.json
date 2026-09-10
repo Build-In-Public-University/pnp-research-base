@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 24949,
-      "sha256": "81e602bb979a2f9866a5afd8d2a6ede62862923fb0f500e6976aebfdab47ffd3",
+      "bytes": 25144,
+      "sha256": "88caf4c8bb842248e7f44efc7810632083c40ddc590a484856321fd1119860bd",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -3008,6 +3008,62 @@
       "transformed": false,
       "bytes": 266,
       "sha256": "7c73774996cdf7e578a071bcf61fc2341090b101edec83293c4e897333fdb0d3"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/adaptive_morphology_hysteresis_v1.py",
+      "kind": "adaptive_morphology_hysteresis",
+      "transformed": false,
+      "bytes": 708,
+      "sha256": "efc1039a73b332e4f84d70e64932152a8c2d6a530b7b5c86c5458c90a3ea90c9"
+    },
+    {
+      "path": "experiment/scripts/run_adaptive_morphology_hysteresis_v1.py",
+      "kind": "adaptive_morphology_hysteresis",
+      "transformed": false,
+      "bytes": 1219,
+      "sha256": "910bb4c3a5c4b171bd6645fb448bcd89f35356910e478566ee51464e1133ea66"
+    },
+    {
+      "path": "experiment/tests/test_adaptive_morphology_hysteresis_v1.py",
+      "kind": "adaptive_morphology_hysteresis",
+      "transformed": false,
+      "bytes": 870,
+      "sha256": "508bbe69fafaaea2a3eed12235211e6389b4bb6c6fd976ed49e84af257ca615e"
+    },
+    {
+      "path": "experiment/docs/protocol-adaptive-morphology-hysteresis-v1.md",
+      "kind": "adaptive_morphology_hysteresis",
+      "transformed": false,
+      "bytes": 468,
+      "sha256": "be13461cf84e1eaac7deb654d6a613039f0cc76cc36ab5adb5b5448e618d942c"
+    },
+    {
+      "path": "experiment/docs/protocol-adaptive-morphology-hysteresis-v1.sha256",
+      "kind": "adaptive_morphology_hysteresis",
+      "transformed": false,
+      "bytes": 117,
+      "sha256": "e8cfd9af0ece5b83a0837e5ba33e7b9ea13e5cac2faddd69668b39001ebfb923"
+    },
+    {
+      "path": "experiment/docs/adaptive-morphology-hysteresis-v1-results.md",
+      "kind": "adaptive_morphology_hysteresis",
+      "transformed": false,
+      "bytes": 1164,
+      "sha256": "e441639226d792afdeec6308e1fbc24d7f355775a524efd60dc56d8ef57ea12d"
+    },
+    {
+      "path": "experiment/artifacts/adaptive_morphology_hysteresis_v1_run1.json",
+      "kind": "adaptive_morphology_hysteresis",
+      "transformed": false,
+      "bytes": 3760,
+      "sha256": "c153982481332797d0f9dabb8409f072bac8343fcf0a4b5eae56f659f0142fb9"
+    },
+    {
+      "path": "experiment/artifacts/adaptive_morphology_hysteresis_v1_run1.md",
+      "kind": "adaptive_morphology_hysteresis",
+      "transformed": false,
+      "bytes": 330,
+      "sha256": "47ac8215c9dc33bfac5241f1367bdf9ee8fcab0fbeb8b4cb15dedfee9d750b27"
     }
   ],
   "limitations": [
