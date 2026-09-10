@@ -1,0 +1,186 @@
+{
+  "crossover_remote_local": "n>3.5",
+  "invocation_costs": {
+    "fresh": 11,
+    "local_replica": 1,
+    "persistent_remote": 3
+  },
+  "protocol_sha256": "6828a81ad98f4fdb5cf764c135a1a43abb4473dd8b685bf90d68533b515d8fb9",
+  "rows": [
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 16.0,
+        "persistent_remote": 11.0
+      },
+      "best": "fresh",
+      "n": 1,
+      "totals": {
+        "fresh": 11,
+        "local_replica": 16,
+        "persistent_remote": 11
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 8.5,
+        "persistent_remote": 7.0
+      },
+      "best": "persistent_remote",
+      "n": 2,
+      "totals": {
+        "fresh": 22,
+        "local_replica": 17,
+        "persistent_remote": 14
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 6.0,
+        "persistent_remote": 5.666666666666667
+      },
+      "best": "persistent_remote",
+      "n": 3,
+      "totals": {
+        "fresh": 33,
+        "local_replica": 18,
+        "persistent_remote": 17
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 4.75,
+        "persistent_remote": 5.0
+      },
+      "best": "local_replica",
+      "n": 4,
+      "totals": {
+        "fresh": 44,
+        "local_replica": 19,
+        "persistent_remote": 20
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 4.0,
+        "persistent_remote": 4.6
+      },
+      "best": "local_replica",
+      "n": 5,
+      "totals": {
+        "fresh": 55,
+        "local_replica": 20,
+        "persistent_remote": 23
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 3.5,
+        "persistent_remote": 4.333333333333333
+      },
+      "best": "local_replica",
+      "n": 6,
+      "totals": {
+        "fresh": 66,
+        "local_replica": 21,
+        "persistent_remote": 26
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 3.142857142857143,
+        "persistent_remote": 4.142857142857143
+      },
+      "best": "local_replica",
+      "n": 7,
+      "totals": {
+        "fresh": 77,
+        "local_replica": 22,
+        "persistent_remote": 29
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 2.875,
+        "persistent_remote": 4.0
+      },
+      "best": "local_replica",
+      "n": 8,
+      "totals": {
+        "fresh": 88,
+        "local_replica": 23,
+        "persistent_remote": 32
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 2.6666666666666665,
+        "persistent_remote": 3.888888888888889
+      },
+      "best": "local_replica",
+      "n": 9,
+      "totals": {
+        "fresh": 99,
+        "local_replica": 24,
+        "persistent_remote": 35
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 2.5,
+        "persistent_remote": 3.8
+      },
+      "best": "local_replica",
+      "n": 10,
+      "totals": {
+        "fresh": 110,
+        "local_replica": 25,
+        "persistent_remote": 38
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 2.3636363636363638,
+        "persistent_remote": 3.727272727272727
+      },
+      "best": "local_replica",
+      "n": 11,
+      "totals": {
+        "fresh": 121,
+        "local_replica": 26,
+        "persistent_remote": 41
+      }
+    },
+    {
+      "averages": {
+        "fresh": 11.0,
+        "local_replica": 2.25,
+        "persistent_remote": 3.6666666666666665
+      },
+      "best": "local_replica",
+      "n": 12,
+      "totals": {
+        "fresh": 132,
+        "local_replica": 27,
+        "persistent_remote": 44
+      }
+    }
+  ],
+  "setups": {
+    "fresh": 0,
+    "local_replica": 15,
+    "persistent_remote": 8
+  },
+  "source_sha256": "6e56c3b75e0dfd411bef653dd2895427c02e5a9f4629716810054cbb865da6ea",
+  "units": "synthetic modeled cost"
+}

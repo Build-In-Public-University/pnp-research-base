@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 24561,
-      "sha256": "f0c7e560c9d227f42b2cf9a684fb4841f1ae258ce2edc8224e563559d1cf46aa",
+      "bytes": 24762,
+      "sha256": "0020aed3a7e251094903e0a074ded36dcefa4c9a84c175c9ae63e8edcfe4c47f",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2896,6 +2896,62 @@
       "transformed": false,
       "bytes": 169,
       "sha256": "2f7847765cfdcbbf4d8eaa38b0f2353d08d7a8a6378a83bbd0333c1fa5a83345"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/persistent_capability_reuse_v1.py",
+      "kind": "persistent_capability_reuse",
+      "transformed": false,
+      "bytes": 532,
+      "sha256": "6e56c3b75e0dfd411bef653dd2895427c02e5a9f4629716810054cbb865da6ea"
+    },
+    {
+      "path": "experiment/scripts/run_persistent_capability_reuse_v1.py",
+      "kind": "persistent_capability_reuse",
+      "transformed": false,
+      "bytes": 1035,
+      "sha256": "50d8f89c0ac855d56e84a2ba05c1405a83f5f47588341ca3dfb7fe3736674c99"
+    },
+    {
+      "path": "experiment/tests/test_persistent_capability_reuse_v1.py",
+      "kind": "persistent_capability_reuse",
+      "transformed": false,
+      "bytes": 612,
+      "sha256": "d398c37bde6ae569c490234cb53aa328a94fcd1093119a4b84d7e978b932e3bf"
+    },
+    {
+      "path": "experiment/docs/protocol-persistent-capability-reuse-v1.md",
+      "kind": "persistent_capability_reuse",
+      "transformed": false,
+      "bytes": 619,
+      "sha256": "6828a81ad98f4fdb5cf764c135a1a43abb4473dd8b685bf90d68533b515d8fb9"
+    },
+    {
+      "path": "experiment/docs/protocol-persistent-capability-reuse-v1.sha256",
+      "kind": "persistent_capability_reuse",
+      "transformed": false,
+      "bytes": 114,
+      "sha256": "5beb9ef2fc60b36d645d487b392e55f99142d7d7238f294e762fa089ff027c01"
+    },
+    {
+      "path": "experiment/docs/persistent-capability-reuse-v1-results.md",
+      "kind": "persistent_capability_reuse",
+      "transformed": false,
+      "bytes": 986,
+      "sha256": "8e508a87148508e2cd8858d12537949f01a550f88f02824acf3caccf43ae8e72"
+    },
+    {
+      "path": "experiment/artifacts/persistent_capability_reuse_v1_run1.json",
+      "kind": "persistent_capability_reuse",
+      "transformed": false,
+      "bytes": 3966,
+      "sha256": "0c350c87c5110c08b5f3c5ef8138b4a33f5e909d0e695881c7d9896b689af2fd"
+    },
+    {
+      "path": "experiment/artifacts/persistent_capability_reuse_v1_run1.md",
+      "kind": "persistent_capability_reuse",
+      "transformed": false,
+      "bytes": 567,
+      "sha256": "52ba0bfaf3e7555df5e5f8e359801449ce0147bb0c2ad9d3b8c72ff97160853a"
     }
   ],
   "limitations": [
