@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 25416,
-      "sha256": "72164b372a5a0b5834b880a3a4e35a0adb63b032f0d6555af22243363e6fa51f",
+      "bytes": 25615,
+      "sha256": "4f5fe3d5805b07217e4d96fdc4d1bd45d240b23eb31da481d85d00f5ef42f766",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -3120,6 +3120,62 @@
       "transformed": false,
       "bytes": 409,
       "sha256": "60d2ee08de7561323f7911483f24735e3e60e6e9bcc8ef3be5d7afcf2a63c9a4"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/morphology_transition_cost_phase_sweep_v1.py",
+      "kind": "morphology_transition_cost_phase_sweep",
+      "transformed": false,
+      "bytes": 2793,
+      "sha256": "7313f03fcf5ce1ea7473d163fb8ca7666807a8dc1c7c2112ed13ee6a1d9781a9"
+    },
+    {
+      "path": "experiment/scripts/run_morphology_transition_cost_phase_sweep_v1.py",
+      "kind": "morphology_transition_cost_phase_sweep",
+      "transformed": false,
+      "bytes": 1264,
+      "sha256": "058eb736ebb2e8fd62962b5b1a85fade584b22595a7ef11779a4b81a99837593"
+    },
+    {
+      "path": "experiment/tests/test_morphology_transition_cost_phase_sweep_v1.py",
+      "kind": "morphology_transition_cost_phase_sweep",
+      "transformed": false,
+      "bytes": 1013,
+      "sha256": "5de07986b7b1c3b0edd29ef6bcb62b6fd400b5b31f43c3c7242b631b2fe41964"
+    },
+    {
+      "path": "experiment/docs/protocol-morphology-transition-cost-phase-sweep-v1.md",
+      "kind": "morphology_transition_cost_phase_sweep",
+      "transformed": false,
+      "bytes": 541,
+      "sha256": "76b594c2f66927151450066201c4f83419a66d60df09650b5d12677b22e1f893"
+    },
+    {
+      "path": "experiment/docs/protocol-morphology-transition-cost-phase-sweep-v1.sha256",
+      "kind": "morphology_transition_cost_phase_sweep",
+      "transformed": false,
+      "bytes": 125,
+      "sha256": "afa3983b1620139dda03b366f3c9b4a14a1bdcd16d54f8de77ad6e54b71c7694"
+    },
+    {
+      "path": "experiment/docs/morphology-transition-cost-phase-sweep-v1-results.md",
+      "kind": "morphology_transition_cost_phase_sweep",
+      "transformed": false,
+      "bytes": 2201,
+      "sha256": "5d74705091a454d36d0b7a65ee76c1e618c9c33e9dc1edb1c9c9c21cb16fd857"
+    },
+    {
+      "path": "experiment/artifacts/morphology_transition_cost_phase_sweep_v1_run1.json",
+      "kind": "morphology_transition_cost_phase_sweep",
+      "transformed": false,
+      "bytes": 24443,
+      "sha256": "c47fe02e12c3d8174a05cf71540d9352cd333e1666cb2f4faf7a3436224479c7"
+    },
+    {
+      "path": "experiment/artifacts/morphology_transition_cost_phase_sweep_v1_run1.md",
+      "kind": "morphology_transition_cost_phase_sweep",
+      "transformed": false,
+      "bytes": 1810,
+      "sha256": "4ce9654579467dd976bbdd3fefc665f15b395608a5f3cee5e29b20bad1f698ca"
     }
   ],
   "limitations": [

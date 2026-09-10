@@ -36,6 +36,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Capability placement freshness calibration v1: add change-rate-dependent refresh/validation costs to the demand surface; results in `docs/capability-placement-freshness-v1-results.md`.
 - Adaptive morphology hysteresis calibration v1: add nonzero morphology switching costs and verify distinct enter/exit thresholds; results in `docs/adaptive-morphology-hysteresis-v1-results.md`.
 - Stochastic morphology switching calibration v1: compare stateless and hysteretic policies on a seeded wandering-demand path; preserves a negative result where fewer switches do not reduce cumulative cost; results in `docs/stochastic-morphology-switching-v1-results.md`.
+- Morphology transition-cost phase sweep v1: sweep entry/exit prices over a continuous demand path and operationalize lock-in; results in `docs/morphology-transition-cost-phase-sweep-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
