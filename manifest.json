@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 25615,
-      "sha256": "4f5fe3d5805b07217e4d96fdc4d1bd45d240b23eb31da481d85d00f5ef42f766",
+      "bytes": 25874,
+      "sha256": "eee8c6dbed03e7a917acb56984c6224dcbd4ab99d162c6f443179859cb382e0e",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -3176,6 +3176,55 @@
       "transformed": false,
       "bytes": 1810,
       "sha256": "4ce9654579467dd976bbdd3fefc665f15b395608a5f3cee5e29b20bad1f698ca"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/partially_observed_morphology_regret_v1.py",
+      "kind": "partially_observed_morphology_regret",
+      "transformed": false,
+      "bytes": 2325,
+      "sha256": "565d76964696eac6e5bb345d3658719bffcf0d9754dd51e6c4ed8e7e1374093f"
+    },
+    {
+      "path": "experiment/scripts/run_partially_observed_morphology_regret_v1.py",
+      "kind": "partially_observed_morphology_regret",
+      "transformed": false,
+      "bytes": 1233,
+      "sha256": "96b6998e9db35a37aaa974e02addc58ba2870793059d3a9d457fecaa85071b2d"
+    },
+    {
+      "path": "experiment/tests/test_partially_observed_morphology_regret_v1.py",
+      "kind": "partially_observed_morphology_regret",
+      "transformed": false,
+      "bytes": 662,
+      "sha256": "f46e819fd27ee9a49473702fe7f68a220cd1a26fe4932340c1b310c80747341f"
+    },
+    {
+      "path": "experiment/docs/protocol-partially-observed-morphology-regret-v1.md",
+      "kind": "partially_observed_morphology_regret",
+      "transformed": false,
+      "bytes": 712,
+      "sha256": "5ecb9caf765775c5a29a2d358e2ac2be0d8a8936ce641bdcbbe80bdcb90b1c7f"
+    },
+    {
+      "path": "experiment/docs/partially-observed-morphology-regret-v1-results.md",
+      "kind": "partially_observed_morphology_regret",
+      "transformed": false,
+      "bytes": 1021,
+      "sha256": "5b40cb5185a6926cf8a01500559a4571d6f78156d2e33fe5e78dc022c9c1fe72"
+    },
+    {
+      "path": "experiment/artifacts/partially_observed_morphology_regret_v1_run1.json",
+      "kind": "partially_observed_morphology_regret",
+      "transformed": false,
+      "bytes": 2266,
+      "sha256": "b071b4e5ec4b191917f6a8581f5c1cf30962eb7c797a62c6c4188e64b1a21dc7"
+    },
+    {
+      "path": "experiment/artifacts/partially_observed_morphology_regret_v1_run1.md",
+      "kind": "partially_observed_morphology_regret",
+      "transformed": false,
+      "bytes": 347,
+      "sha256": "c819c7ee7e22869570fdee7d428b7bb99d5047e2bba40e29eb4e8ecf1dd43390"
     }
   ],
   "limitations": [

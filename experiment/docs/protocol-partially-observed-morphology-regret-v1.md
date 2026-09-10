@@ -1,0 +1,3 @@
+# Partially observed morphology regret calibration v1
+
+A hidden regime theta is low or high with prior 1/2. Conditional demand observations are independent: low emits d=.5 with probability .7 and d=1.0 with .3; high emits d=1.0 with .3 and d=2.5 with .7. Horizon is 12 and switching costs are 4 in either direction. The online Bayes agent updates the exact posterior after each demand observation and uses finite-horizon dynamic programming. The heuristic switches at the instantaneous operating crossover d=1. The clairvoyant benchmark knows the realized future demand path and uses exact dynamic programming. A fixed seed selects the hidden regime and observations. All costs are synthetic modeled quantities.

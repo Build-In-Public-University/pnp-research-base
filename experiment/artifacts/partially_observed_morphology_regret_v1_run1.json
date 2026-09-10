@@ -1,0 +1,113 @@
+{
+  "cost_bayes": 45.0,
+  "cost_clairvoyant": 43.0,
+  "cost_heuristic": 72.0,
+  "demand_path": [
+    1.5,
+    1.5,
+    0.5,
+    1.5,
+    1.5,
+    1.5,
+    0.5,
+    1.5,
+    1.5,
+    1.5,
+    1.5,
+    0.5
+  ],
+  "demand_path_sha256": "5866886abace40a087cdf8289cdabc6284fce15df813b12e29e3c3f424d30d23",
+  "hidden_regime": "low",
+  "policy_regret": 27.0,
+  "protocol_sha256": "5ecb9caf765775c5a29a2d358e2ac2be0d8a8936ce641bdcbbe80bdcb90b1c7f",
+  "seed": 0,
+  "source_sha256": "565d76964696eac6e5bb345d3658719bffcf0d9754dd51e6c4ed8e7e1374093f",
+  "structural_regret": 29.0,
+  "trace": [
+    {
+      "bayes": "remote",
+      "d": 1.5,
+      "heuristic": "local",
+      "posterior_high": 0.4,
+      "t": 0
+    },
+    {
+      "bayes": "remote",
+      "d": 1.5,
+      "heuristic": "local",
+      "posterior_high": 0.3076923076923077,
+      "t": 1
+    },
+    {
+      "bayes": "remote",
+      "d": 0.5,
+      "heuristic": "remote",
+      "posterior_high": 0.4,
+      "t": 2
+    },
+    {
+      "bayes": "remote",
+      "d": 1.5,
+      "heuristic": "local",
+      "posterior_high": 0.3076923076923077,
+      "t": 3
+    },
+    {
+      "bayes": "remote",
+      "d": 1.5,
+      "heuristic": "local",
+      "posterior_high": 0.22857142857142856,
+      "t": 4
+    },
+    {
+      "bayes": "remote",
+      "d": 1.5,
+      "heuristic": "local",
+      "posterior_high": 0.16494845360824742,
+      "t": 5
+    },
+    {
+      "bayes": "remote",
+      "d": 0.5,
+      "heuristic": "remote",
+      "posterior_high": 0.22857142857142856,
+      "t": 6
+    },
+    {
+      "bayes": "remote",
+      "d": 1.5,
+      "heuristic": "local",
+      "posterior_high": 0.16494845360824742,
+      "t": 7
+    },
+    {
+      "bayes": "remote",
+      "d": 1.5,
+      "heuristic": "local",
+      "posterior_high": 0.11636363636363636,
+      "t": 8
+    },
+    {
+      "bayes": "remote",
+      "d": 1.5,
+      "heuristic": "local",
+      "posterior_high": 0.0807061790668348,
+      "t": 9
+    },
+    {
+      "bayes": "remote",
+      "d": 1.5,
+      "heuristic": "local",
+      "posterior_high": 0.05529157667386609,
+      "t": 10
+    },
+    {
+      "bayes": "remote",
+      "d": 0.5,
+      "heuristic": "remote",
+      "posterior_high": 0.0807061790668348,
+      "t": 11
+    }
+  ],
+  "uncertainty_regret": 2.0
+}
