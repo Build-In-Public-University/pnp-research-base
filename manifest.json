@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 24762,
-      "sha256": "0020aed3a7e251094903e0a074ded36dcefa4c9a84c175c9ae63e8edcfe4c47f",
+      "bytes": 24949,
+      "sha256": "81e602bb979a2f9866a5afd8d2a6ede62862923fb0f500e6976aebfdab47ffd3",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2952,6 +2952,62 @@
       "transformed": false,
       "bytes": 567,
       "sha256": "52ba0bfaf3e7555df5e5f8e359801449ce0147bb0c2ad9d3b8c72ff97160853a"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/capability_placement_freshness_v1.py",
+      "kind": "capability_placement_freshness",
+      "transformed": false,
+      "bytes": 505,
+      "sha256": "05ebca83ee33d6e9c8d12233d803b66e5e339fe3f4fe398802fe9a07567f1ce7"
+    },
+    {
+      "path": "experiment/scripts/run_capability_placement_freshness_v1.py",
+      "kind": "capability_placement_freshness",
+      "transformed": false,
+      "bytes": 1033,
+      "sha256": "d2f6ea3f3677bffac217bccc824dcb9bfbc8003a39531eab472f89cbbe5d6f16"
+    },
+    {
+      "path": "experiment/tests/test_capability_placement_freshness_v1.py",
+      "kind": "capability_placement_freshness",
+      "transformed": false,
+      "bytes": 644,
+      "sha256": "f69024c350746cd6a301dbf52ced55e326815fb20aae06f3e05f0e1cd2825b27"
+    },
+    {
+      "path": "experiment/docs/protocol-capability-placement-freshness-v1.md",
+      "kind": "capability_placement_freshness",
+      "transformed": false,
+      "bytes": 576,
+      "sha256": "52247558316cb476211a386d8eb30a5ab33aa8e6c93c8b71b2a691d46faf46aa"
+    },
+    {
+      "path": "experiment/docs/protocol-capability-placement-freshness-v1.sha256",
+      "kind": "capability_placement_freshness",
+      "transformed": false,
+      "bytes": 117,
+      "sha256": "e320ca31a5f37bebe3052a549dd4f9077d3073e0573b23da9b947e705788dcd6"
+    },
+    {
+      "path": "experiment/docs/capability-placement-freshness-v1-results.md",
+      "kind": "capability_placement_freshness",
+      "transformed": false,
+      "bytes": 1186,
+      "sha256": "8ca5c168c3013830431e829e486ab453fcf85669018caded179fe57b66540dcf"
+    },
+    {
+      "path": "experiment/artifacts/capability_placement_freshness_v1_run1.json",
+      "kind": "capability_placement_freshness",
+      "transformed": false,
+      "bytes": 10344,
+      "sha256": "7c786ff101dd46f8d4aea10e585c2c5c2ec48ad6492a3dd3b28d71cebf9602df"
+    },
+    {
+      "path": "experiment/artifacts/capability_placement_freshness_v1_run1.md",
+      "kind": "capability_placement_freshness",
+      "transformed": false,
+      "bytes": 266,
+      "sha256": "7c73774996cdf7e578a071bcf61fc2341090b101edec83293c4e897333fdb0d3"
     }
   ],
   "limitations": [

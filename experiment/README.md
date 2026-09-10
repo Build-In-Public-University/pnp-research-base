@@ -33,6 +33,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Action-relative value-of-information calibration v1: equal-entropy beliefs with different optimal policies under asymmetric intervention costs; results in `docs/action-relative-voi-v1-results.md`.
 - Capability-space routing calibration v1: discover, move, connect, transfer, and compose capabilities across nodes; results in `docs/capability-space-routing-v1-results.md`.
 - Persistent capability reuse calibration v1: compare fresh discovery, retained remote routes, and local replication under repeated demand; results in `docs/persistent-capability-reuse-v1-results.md`.
+- Capability placement freshness calibration v1: add change-rate-dependent refresh/validation costs to the demand surface; results in `docs/capability-placement-freshness-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
