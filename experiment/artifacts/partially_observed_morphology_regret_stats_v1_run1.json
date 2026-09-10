@@ -1,0 +1,929 @@
+{
+  "aggregate_policy_share": 0.983266012694749,
+  "aggregate_uncertainty_share": 0.01673398730525101,
+  "rows": [
+    {
+      "bayes": 45.0,
+      "clairvoyant": 43.0,
+      "heuristic": 72.0,
+      "policy_regret": 27.0,
+      "seed": 0,
+      "structural_regret": 29.0,
+      "uncertainty_regret": 2.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 1,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 41.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 2,
+      "structural_regret": 25.0,
+      "uncertainty_regret": 1.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 3,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 27.0,
+      "clairvoyant": 27.0,
+      "heuristic": 36.0,
+      "policy_regret": 9.0,
+      "seed": 4,
+      "structural_regret": 9.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 48.0,
+      "clairvoyant": 44.0,
+      "heuristic": 78.0,
+      "policy_regret": 30.0,
+      "seed": 5,
+      "structural_regret": 34.0,
+      "uncertainty_regret": 4.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 42.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 6,
+      "structural_regret": 24.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 21.0,
+      "clairvoyant": 21.0,
+      "heuristic": 24.0,
+      "policy_regret": 3.0,
+      "seed": 7,
+      "structural_regret": 3.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 8,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 9,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 42.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 10,
+      "structural_regret": 24.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 27.0,
+      "clairvoyant": 27.0,
+      "heuristic": 36.0,
+      "policy_regret": 9.0,
+      "seed": 11,
+      "structural_regret": 9.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 12,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 13,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 14,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 15,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 27.0,
+      "clairvoyant": 27.0,
+      "heuristic": 36.0,
+      "policy_regret": 9.0,
+      "seed": 16,
+      "structural_regret": 9.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 17,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 27.0,
+      "clairvoyant": 27.0,
+      "heuristic": 36.0,
+      "policy_regret": 9.0,
+      "seed": 18,
+      "structural_regret": 9.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 19,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 45.0,
+      "clairvoyant": 43.0,
+      "heuristic": 72.0,
+      "policy_regret": 27.0,
+      "seed": 20,
+      "structural_regret": 29.0,
+      "uncertainty_regret": 2.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 21,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 22,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 23,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 42.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 24,
+      "structural_regret": 24.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 25,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 40.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 26,
+      "structural_regret": 26.0,
+      "uncertainty_regret": 2.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 27,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 21.0,
+      "clairvoyant": 21.0,
+      "heuristic": 24.0,
+      "policy_regret": 3.0,
+      "seed": 28,
+      "structural_regret": 3.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 29,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 30,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 31,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 32,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 48.0,
+      "clairvoyant": 44.0,
+      "heuristic": 78.0,
+      "policy_regret": 30.0,
+      "seed": 33,
+      "structural_regret": 34.0,
+      "uncertainty_regret": 4.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 34,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 45.0,
+      "clairvoyant": 43.0,
+      "heuristic": 72.0,
+      "policy_regret": 27.0,
+      "seed": 35,
+      "structural_regret": 29.0,
+      "uncertainty_regret": 2.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 36,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 41.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 37,
+      "structural_regret": 25.0,
+      "uncertainty_regret": 1.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 38,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 27.0,
+      "clairvoyant": 27.0,
+      "heuristic": 36.0,
+      "policy_regret": 9.0,
+      "seed": 39,
+      "structural_regret": 9.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 40,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 41,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 42,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 43,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 27.0,
+      "clairvoyant": 27.0,
+      "heuristic": 36.0,
+      "policy_regret": 9.0,
+      "seed": 44,
+      "structural_regret": 9.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 24.0,
+      "clairvoyant": 24.0,
+      "heuristic": 30.0,
+      "policy_regret": 6.0,
+      "seed": 45,
+      "structural_regret": 6.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 46,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 21.0,
+      "clairvoyant": 21.0,
+      "heuristic": 24.0,
+      "policy_regret": 3.0,
+      "seed": 47,
+      "structural_regret": 3.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 48,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 49,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 50,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 51,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 41.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 52,
+      "structural_regret": 25.0,
+      "uncertainty_regret": 1.0
+    },
+    {
+      "bayes": 48.0,
+      "clairvoyant": 44.0,
+      "heuristic": 78.0,
+      "policy_regret": 30.0,
+      "seed": 53,
+      "structural_regret": 34.0,
+      "uncertainty_regret": 4.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 41.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 54,
+      "structural_regret": 25.0,
+      "uncertainty_regret": 1.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 55,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 42.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 56,
+      "structural_regret": 24.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 57,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 41.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 58,
+      "structural_regret": 25.0,
+      "uncertainty_regret": 1.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 42.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 59,
+      "structural_regret": 24.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 60,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 61,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 62,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 63,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 42.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 64,
+      "structural_regret": 24.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 65,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 66,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 67,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 42.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 68,
+      "structural_regret": 24.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 40.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 69,
+      "structural_regret": 26.0,
+      "uncertainty_regret": 2.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 70,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 71,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 72,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 21.0,
+      "clairvoyant": 21.0,
+      "heuristic": 24.0,
+      "policy_regret": 3.0,
+      "seed": 73,
+      "structural_regret": 3.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 74,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 75,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 76,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 77,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 78,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 27.0,
+      "clairvoyant": 27.0,
+      "heuristic": 36.0,
+      "policy_regret": 9.0,
+      "seed": 79,
+      "structural_regret": 9.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 80,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 81,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 82,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 83,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 42.0,
+      "clairvoyant": 40.0,
+      "heuristic": 66.0,
+      "policy_regret": 24.0,
+      "seed": 84,
+      "structural_regret": 26.0,
+      "uncertainty_regret": 2.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 85,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 86,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 27.0,
+      "clairvoyant": 27.0,
+      "heuristic": 36.0,
+      "policy_regret": 9.0,
+      "seed": 87,
+      "structural_regret": 9.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 88,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 89,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 90,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 91,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 92,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 93,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 39.0,
+      "clairvoyant": 39.0,
+      "heuristic": 60.0,
+      "policy_regret": 21.0,
+      "seed": 94,
+      "structural_regret": 21.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 36.0,
+      "clairvoyant": 36.0,
+      "heuristic": 54.0,
+      "policy_regret": 18.0,
+      "seed": 95,
+      "structural_regret": 18.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 96,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 97,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 33.0,
+      "clairvoyant": 33.0,
+      "heuristic": 48.0,
+      "policy_regret": 15.0,
+      "seed": 98,
+      "structural_regret": 15.0,
+      "uncertainty_regret": 0.0
+    },
+    {
+      "bayes": 30.0,
+      "clairvoyant": 30.0,
+      "heuristic": 42.0,
+      "policy_regret": 12.0,
+      "seed": 99,
+      "structural_regret": 12.0,
+      "uncertainty_regret": 0.0
+    }
+  ],
+  "seeds": 100,
+  "source_sha256": "0033081cd20c63e17bc429406c50b37929a111ec7b6200781b28c011be649133",
+  "summary": {
+    "policy_regret": {
+      "max": 30.0,
+      "mean": 17.04,
+      "median": 18.0,
+      "min": 3.0
+    },
+    "structural_regret": {
+      "max": 34.0,
+      "mean": 17.33,
+      "median": 18.0,
+      "min": 3.0
+    },
+    "uncertainty_regret": {
+      "max": 4.0,
+      "mean": 0.29,
+      "median": 0.0,
+      "min": 0.0
+    }
+  },
+  "telescoping_failures": 0
+}
