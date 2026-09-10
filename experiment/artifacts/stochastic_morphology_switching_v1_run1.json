@@ -1,0 +1,59 @@
+{
+  "agents": {
+    "adaptive": {
+      "cost": 1941.3999999999944,
+      "entries": 28,
+      "exits": 27,
+      "occupancy": {
+        "local": 234,
+        "remote": 266
+      },
+      "operating_cost": 1499.3999999999944,
+      "regret_vs_best_fixed": 103.60000000000059,
+      "switches": 55,
+      "transition_cost": 442
+    },
+    "stateless": {
+      "cost": 1615.3999999999944,
+      "entries": 29,
+      "exits": 29,
+      "occupancy": {
+        "local": 169,
+        "remote": 331
+      },
+      "operating_cost": 1499.3999999999944,
+      "regret_vs_best_fixed": -222.3999999999994,
+      "switches": 58,
+      "transition_cost": 116
+    },
+    "symmetric": {
+      "cost": 1609.3999999999944,
+      "entries": 28,
+      "exits": 27,
+      "occupancy": {
+        "local": 234,
+        "remote": 266
+      },
+      "operating_cost": 1499.3999999999944,
+      "regret_vs_best_fixed": -228.3999999999994,
+      "switches": 55,
+      "transition_cost": 110
+    }
+  },
+  "best_fixed_cost": 1837.7999999999938,
+  "demand_path_sha256": "8dfdb1885cee395b88aa87510421c8ac246efdb3a17795154667e0bf58311d05",
+  "demands": [
+    0.1,
+    1.0,
+    4.0
+  ],
+  "fixed_baseline": {
+    "local": 1837.7999999999938,
+    "remote": 2513.4000000000033
+  },
+  "periods": 500,
+  "protocol_sha256": "cc254e353e96ec8004cc792c9717cac85038da4d44e9f28b5a91eb0073b81205",
+  "seed": 1337,
+  "source_sha256": "0a85d4f866ede55cf03e5aa19fb23018333d7c49ce4092f032bb4c428eaa7d84",
+  "units": "synthetic modeled cost"
+}

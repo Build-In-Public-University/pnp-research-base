@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 25144,
-      "sha256": "88caf4c8bb842248e7f44efc7810632083c40ddc590a484856321fd1119860bd",
+      "bytes": 25416,
+      "sha256": "72164b372a5a0b5834b880a3a4e35a0adb63b032f0d6555af22243363e6fa51f",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -3064,6 +3064,62 @@
       "transformed": false,
       "bytes": 330,
       "sha256": "47ac8215c9dc33bfac5241f1367bdf9ee8fcab0fbeb8b4cb15dedfee9d750b27"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/stochastic_morphology_switching_v1.py",
+      "kind": "stochastic_morphology_switching",
+      "transformed": false,
+      "bytes": 1475,
+      "sha256": "0a85d4f866ede55cf03e5aa19fb23018333d7c49ce4092f032bb4c428eaa7d84"
+    },
+    {
+      "path": "experiment/scripts/run_stochastic_morphology_switching_v1.py",
+      "kind": "stochastic_morphology_switching",
+      "transformed": false,
+      "bytes": 1201,
+      "sha256": "132fa38c0b1bda483e35180f9f24ad0809b2cdb342d18786bfbfa578b522cf08"
+    },
+    {
+      "path": "experiment/tests/test_stochastic_morphology_switching_v1.py",
+      "kind": "stochastic_morphology_switching",
+      "transformed": false,
+      "bytes": 648,
+      "sha256": "c5d7489ab866384b5785e9259495a4894d74348a3670d024c10ca5e5a85a3a9e"
+    },
+    {
+      "path": "experiment/docs/protocol-stochastic-morphology-switching-v1.md",
+      "kind": "stochastic_morphology_switching",
+      "transformed": false,
+      "bytes": 526,
+      "sha256": "cc254e353e96ec8004cc792c9717cac85038da4d44e9f28b5a91eb0073b81205"
+    },
+    {
+      "path": "experiment/docs/protocol-stochastic-morphology-switching-v1.sha256",
+      "kind": "stochastic_morphology_switching",
+      "transformed": false,
+      "bytes": 118,
+      "sha256": "74304898e86d60cee39ab7406e274b6faebbe4a7c5d7884e9202c9f55c0bc46c"
+    },
+    {
+      "path": "experiment/docs/stochastic-morphology-switching-v1-results.md",
+      "kind": "stochastic_morphology_switching",
+      "transformed": false,
+      "bytes": 1430,
+      "sha256": "7a721028bf9810f64af74a6d2e05233036c7806de40a98a283d91d754b498515"
+    },
+    {
+      "path": "experiment/artifacts/stochastic_morphology_switching_v1_run1.json",
+      "kind": "stochastic_morphology_switching",
+      "transformed": false,
+      "bytes": 1496,
+      "sha256": "550504d74ba31c582961a4bec9ef4733e36c15e46db0b15056b7f2f76d44fcb5"
+    },
+    {
+      "path": "experiment/artifacts/stochastic_morphology_switching_v1_run1.md",
+      "kind": "stochastic_morphology_switching",
+      "transformed": false,
+      "bytes": 409,
+      "sha256": "60d2ee08de7561323f7911483f24735e3e60e6e9bcc8ef3be5d7afcf2a63c9a4"
     }
   ],
   "limitations": [
