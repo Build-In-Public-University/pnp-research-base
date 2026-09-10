@@ -31,6 +31,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Dual-control observation/action calibration v1: compare immediate action, non-destructive inspection, and an informative intervention; results in `docs/dual-control-observation-action-v1-results.md`.
 - Dual-control policy phase diagram v1: sweep the fragile-state prior and verify the act/experiment/inspect/act policy regions; results in `docs/dual-control-policy-phase-diagram-v1-results.md`.
 - Action-relative value-of-information calibration v1: equal-entropy beliefs with different optimal policies under asymmetric intervention costs; results in `docs/action-relative-voi-v1-results.md`.
+- Capability-space routing calibration v1: discover, move, connect, transfer, and compose capabilities across nodes; results in `docs/capability-space-routing-v1-results.md`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
@@ -279,6 +280,19 @@ They have equal binary entropy and equal perfect-information risk reduction,
 but different touch costs because intervention risk is state-asymmetric. Touch
 is optimal at p=0.1; inspection is optimal at p=0.9. Entropy alone therefore
 does not determine the rational attention policy.
+
+The capability-space routing calibration promotes reachable capabilities into
+the state. Starting at node `i` with `{parity}`, the least-cost route to the
+contract `{parity, group}` is `discover -> move -> connect -> transfer ->
+compose`, with modeled cost 11. Discovery changes capability knowledge;
+transfer changes the reachable capability set; composition closes the
+contract.
+
+```bash
+PYTHONPATH=src python3 scripts/run_capability_space_routing_v1.py \
+  --output artifacts/capability_space_routing_v1-local.json \
+  --summary artifacts/capability_space_routing_v1-local.md
+```
 
 ```bash
 PYTHONPATH=src python3 scripts/run_action_relative_voi_v1.py \

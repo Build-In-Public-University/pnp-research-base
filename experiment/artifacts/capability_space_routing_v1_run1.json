@@ -1,0 +1,45 @@
+{
+  "actions": {
+    "compose": 1,
+    "connect": 2,
+    "discover": 1,
+    "move": 5,
+    "transfer": 2
+  },
+  "best_cost": 11,
+  "best_path": [
+    "discover",
+    "move",
+    "connect",
+    "transfer",
+    "compose"
+  ],
+  "capability_acquisition": true,
+  "discovery_changes_capabilities": false,
+  "final_state": [
+    "j",
+    [
+      "group",
+      "parity"
+    ],
+    true,
+    true,
+    true
+  ],
+  "goal": [
+    "group",
+    "parity"
+  ],
+  "protocol_sha256": "e3e7c82bf3625cdc7c45cb5ef3bc4afbc2b4d877724743ccd5944c0524ac589d",
+  "source_sha256": "314af6d1580ee7880ece06cc139ebef26279a7c253d1783f9bb6dac11b42ab74",
+  "start": [
+    "i",
+    [
+      "parity"
+    ],
+    false,
+    false,
+    false
+  ],
+  "transfer_changes_capabilities": true
+}

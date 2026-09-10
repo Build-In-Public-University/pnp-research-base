@@ -472,8 +472,8 @@
     },
     {
       "path": "experiment/README.md",
-      "bytes": 23802,
-      "sha256": "6c5ba34b93d8670efba58c785ea3d24cecb9e7aefd6492f11dd387d8c9d018b6",
+      "bytes": 24561,
+      "sha256": "f0c7e560c9d227f42b2cf9a684fb4841f1ae258ce2edc8224e563559d1cf46aa",
       "source": "README.md",
       "kind": "committed_experiment_snapshot",
       "source_sha256": "d9f36e0220fe3bf7224967df2867b13ed1b7912c18e74296db86a6214682270f",
@@ -2840,6 +2840,62 @@
       "transformed": false,
       "bytes": 244,
       "sha256": "1c623c2ffcfb142d448a42e12cfeaa53dfb504decd8009830ccf69f82ee53fb6"
+    },
+    {
+      "path": "experiment/src/pnp_architecture/capability_space_routing_v1.py",
+      "kind": "capability_space_routing",
+      "transformed": false,
+      "bytes": 1386,
+      "sha256": "314af6d1580ee7880ece06cc139ebef26279a7c253d1783f9bb6dac11b42ab74"
+    },
+    {
+      "path": "experiment/scripts/run_capability_space_routing_v1.py",
+      "kind": "capability_space_routing",
+      "transformed": false,
+      "bytes": 1117,
+      "sha256": "ecb80d23d2822f813357e3d1a3f1c85e0a4378c4547b009e47573eab454ef358"
+    },
+    {
+      "path": "experiment/tests/test_capability_space_routing_v1.py",
+      "kind": "capability_space_routing",
+      "transformed": false,
+      "bytes": 710,
+      "sha256": "02fe5753b6d78e6ac0a52fe8da4aafa79e82a6bd82b145564a7dba5931e2359f"
+    },
+    {
+      "path": "experiment/docs/protocol-capability-space-routing-v1.md",
+      "kind": "capability_space_routing",
+      "transformed": false,
+      "bytes": 572,
+      "sha256": "e3e7c82bf3625cdc7c45cb5ef3bc4afbc2b4d877724743ccd5944c0524ac589d"
+    },
+    {
+      "path": "experiment/docs/protocol-capability-space-routing-v1.sha256",
+      "kind": "capability_space_routing",
+      "transformed": false,
+      "bytes": 111,
+      "sha256": "9ad1d1214610581d994076af2873f87d654a599cea647fb501b74b5f22df2c45"
+    },
+    {
+      "path": "experiment/docs/capability-space-routing-v1-results.md",
+      "kind": "capability_space_routing",
+      "transformed": false,
+      "bytes": 1082,
+      "sha256": "c3137f7e706d2006e893f21c71f2b9c60fc0786de7fc69a3ed8ef67d24b44694"
+    },
+    {
+      "path": "experiment/artifacts/capability_space_routing_v1_run1.json",
+      "kind": "capability_space_routing",
+      "transformed": false,
+      "bytes": 754,
+      "sha256": "0433c8e3aac6727ad6ca5e6e6fd668fe5a45f896fbb64617667cedc1a2d66bae"
+    },
+    {
+      "path": "experiment/artifacts/capability_space_routing_v1_run1.md",
+      "kind": "capability_space_routing",
+      "transformed": false,
+      "bytes": 169,
+      "sha256": "2f7847765cfdcbbf4d8eaa38b0f2353d08d7a8a6378a83bbd0333c1fa5a83345"
     }
   ],
   "limitations": [
