@@ -1,0 +1,75 @@
+{
+  "protocol_id": "google-borg-bigquery-v4",
+  "status": "remote_pressure_join_observation_24h",
+  "source": {
+    "dataset": "google-cluster-data",
+    "cell": "a",
+    "table": "clusterdata_2019_a.instance_events",
+    "license": "CC-BY",
+    "raw_rows_not_downloaded": true,
+    "window_microseconds": [
+      0,
+      86400000000
+    ],
+    "bucket_seconds": 300
+  },
+  "query": {
+    "sql_sha256": "4af5a2ac129035538f62a809547746e18ee82c0ca6f8cfd26e57b0a60de0b2b5",
+    "job_id": "bqjob_r61280c912a954735_000001a090d0e27e_1",
+    "query_project": "soulrm",
+    "location": "US",
+    "state": "DONE",
+    "bytes_processed": 54954173504,
+    "bytes_billed": 54954819584,
+    "slot_ms": 4898199,
+    "result_rows": 100
+  },
+  "diagnostics": {
+    "all_buckets": {
+      "bucket_count": 100,
+      "submit_events": 3985691,
+      "schedule_events": 3287210,
+      "schedule_submit_ratio": 0.8247528471223685,
+      "closed_attempts": 2522119,
+      "right_censored_attempts": 765091,
+      "peak_submit": [
+        1571641,
+        0
+      ],
+      "peak_schedule": [
+        968605,
+        0
+      ],
+      "peak_right_censored": [
+        731119,
+        0
+      ],
+      "median_bucket_p50_attempt_seconds": 388.958628
+    },
+    "excluding_startup_bucket_0": {
+      "bucket_count": 99,
+      "submit_events": 2414050,
+      "schedule_events": 2318605,
+      "schedule_submit_ratio": 0.9604627078975166,
+      "closed_attempts": 2284633,
+      "right_censored_attempts": 33972,
+      "peak_submit": [
+        86835,
+        91
+      ],
+      "peak_schedule": [
+        55491,
+        33
+      ],
+      "peak_right_censored": [
+        2524,
+        12
+      ],
+      "median_bucket_p50_attempt_seconds": 369.668255
+    },
+    "missing_bucket_indices": [
+      1
+    ]
+  },
+  "boundary": "This is an observational pressure join, not a controlled capacity intervention. Bucket 0 is a trace-startup boundary and is reported separately. The 24-hour window and right-censoring remain explicit. No causal bottleneck migration or stationarity claim is made."
+}
