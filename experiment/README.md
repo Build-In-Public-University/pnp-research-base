@@ -39,6 +39,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Morphology transition-cost phase sweep v1: sweep entry/exit prices over a continuous demand path and operationalize lock-in; results in `docs/morphology-transition-cost-phase-sweep-v1-results.md`.
 - Partially observed morphology regret calibration v1: compare heuristic, exact online Bayes, and clairvoyant morphology policies with an auditable policy/uncertainty regret decomposition; results in `docs/partially-observed-morphology-regret-v1-results.md`.
 - Partially observed morphology regret statistics v1: repeat the Bayesian regret fixture over 100 deterministic seeds and report distributional policy versus uncertainty gaps; results in `artifacts/partially_observed_morphology_regret_stats_v1_run1.md`.
+- Queue migration v1: prepared and executed bounded synthetic generation sweep plus capacity-release ladder; protocol in `docs/queue-migration-v1-protocol.md`, results in `docs/queue-migration-v1-results.md` and receipt in `artifacts/queue_migration_v1.json`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.
