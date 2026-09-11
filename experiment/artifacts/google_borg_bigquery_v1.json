@@ -1,0 +1,59 @@
+{
+  "protocol_id": "google-borg-bigquery-v1",
+  "status": "remote_aggregate_observation",
+  "source": {
+    "dataset": "google-cluster-data",
+    "cell": "a",
+    "table": "clusterdata_2019_a.collection_events",
+    "license": "CC-BY",
+    "raw_rows_not_downloaded": true
+  },
+  "query": {
+    "sql_sha256": "370fdc84c45da4b4ba3c3b1ed24d61f6a6564f4b3ac540207d1a76a8917c165d",
+    "job_id": "bqjob_r3d6da8ae3edfaa56_000001a0908cf859_1",
+    "project": "soulrm",
+    "location": "US",
+    "state": "DONE",
+    "bytes_processed": 332919056,
+    "bytes_billed": 333447168,
+    "slot_ms": 61519,
+    "result_rows": 100
+  },
+  "aggregate": {
+    "bucket_seconds": 300,
+    "bucket_min": 0,
+    "bucket_max": 100,
+    "bucket_count": 100,
+    "missing_bucket_indices": [
+      1
+    ],
+    "totals": {
+      "submit_count": 85403,
+      "queue_count": 2675,
+      "enable_count": 86542,
+      "schedule_count": 85685,
+      "evict_count": 0,
+      "fail_count": 435,
+      "finish_count": 12567,
+      "kill_count": 57371,
+      "lost_count": 0
+    },
+    "peak_submit": [
+      16515,
+      0
+    ],
+    "peak_queue_events": [
+      1614,
+      0
+    ],
+    "peak_finish": [
+      389,
+      20
+    ]
+  },
+  "artifacts": {
+    "aggregate_sha256": "83bea13122e260214aba51177ffbabc8c804fda898556238a384c1f83ebd0698",
+    "job_metadata_sha256": "c2bf6b6ea9bba9c0b21a30d565c0f4a68402b4206ea25b6bbbf9d706c50c4de9"
+  },
+  "boundary": "Remote aggregate only. Event counts and time buckets are observed; this does not establish a controlled capacity intervention, stationarity, or a universal queueing law."
+}
