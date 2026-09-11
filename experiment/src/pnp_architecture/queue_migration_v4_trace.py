@@ -18,10 +18,10 @@ TRACE_SHA256 = "dffc63dce4c36a12e28f5dce447ca997516a7ea4c099d3a46a5d96262053eb38
 MANIFEST_RECORDS_SHA256 = TRACE_SHA256
 
 
-def load_trace(path: Path) -> Dict[str, Any]:
+def load_trace(path: Path, expected_sha256: str = TRACE_SHA256) -> Dict[str, Any]:
     raw = path.read_bytes()
     digest = hashlib.sha256(raw).hexdigest()
-    if digest != TRACE_SHA256:
+    if digest != expected_sha256:
         raise ValueError(f"trace hash mismatch: {digest}")
     rows = [json.loads(line) for line in raw.splitlines() if line.strip()]
     timestamps = [row["timestamp"] for row in rows if isinstance(row.get("timestamp"), (int, float))]
@@ -149,8 +149,8 @@ def audit(row: Dict[str, Any]) -> None:
     assert stages[-1]["exited"] == row["completed"]
 
 
-def run(source: Path) -> Dict[str, Any]:
-    trace = load_trace(source)
+def run(source: Path, expected_sha256: str = TRACE_SHA256) -> Dict[str, Any]:
+    trace = load_trace(source, expected_sha256=expected_sha256)
     records = [simulate(trace, condition) for condition in conditions()]
     for row in records:
         audit(row)
@@ -181,13 +181,14 @@ def run(source: Path) -> Dict[str, Any]:
 def main(argv: Iterable[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", required=True)
+    parser.add_argument("--expected-sha256", default=TRACE_SHA256)
     parser.add_argument("--output", required=True)
     parser.add_argument("--summary", required=True)
     args = parser.parse_args(list(argv) if argv is not None else None)
     output, summary = Path(args.output), Path(args.summary)
     if output.exists() or summary.exists():
         raise SystemExit("refusing to overwrite an existing artifact")
-    receipt = run(Path(args.source))
+    receipt = run(Path(args.source), expected_sha256=args.expected_sha256)
     output.parent.mkdir(parents=True, exist_ok=True)
     summary.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
