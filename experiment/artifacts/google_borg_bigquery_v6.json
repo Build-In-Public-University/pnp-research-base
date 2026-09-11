@@ -1,0 +1,81 @@
+{
+  "protocol_id": "google-borg-bigquery-v6",
+  "status": "cross_cell_replication_observation_24h",
+  "protocol": "Frozen v3-v5 queries, first 24 hours, bucket 0 excluded from cross-cell correlations; cell b only was queried remotely and compared with previously receipted cell a.",
+  "source": {
+    "dataset": "google-cluster-data",
+    "cells": [
+      "a",
+      "b"
+    ],
+    "license": "CC-BY",
+    "raw_rows_not_downloaded": true,
+    "window_microseconds": [
+      0,
+      86400000000
+    ],
+    "bucket_seconds": 300
+  },
+  "cell_b_jobs": {
+    "cell_b_pressure": {
+      "job_id": "bqjob_r7a03b00f1446db8e_000001a090f43e1b_1",
+      "bytes_processed": 45662946112,
+      "bytes_billed": 45663387648,
+      "slot_ms": 8616648
+    },
+    "cell_b_utilization": {
+      "job_id": "bqjob_r4edd4483b0aac7a0_000001a090f468c2_1",
+      "bytes_processed": 232093539000,
+      "bytes_billed": 232093908992,
+      "slot_ms": 23846656
+    },
+    "cell_b_attempts": {
+      "job_id": "bqjob_r15592644fe36841e_000001a090f90774_1",
+      "bytes_processed": 45662946112,
+      "bytes_billed": 45663387648,
+      "slot_ms": 94423779
+    }
+  },
+  "sql_sha256": {
+    "attempts": "5f148fa2789cebeaa71b3d6b37e36edfccf97751fff8dde3b8932171d75b95d4",
+    "pressure": "729ec8c7b763bdcb1ee8111c0f750005d889912ee80b23f264686a26669de1c4",
+    "utilization": "91c9d290fabbddaec15cc183c3f92223a3ce30ead989840e5cbabaf1b9ed6b35"
+  },
+  "summaries": {
+    "cell_a": {
+      "attempts": 7820880,
+      "closed_attempts": 6646807,
+      "right_censored": 1174073,
+      "p50_s": 362.55466,
+      "p90_s": 4366.2881,
+      "p99_s": 44717.532258,
+      "schedule_submit": 0.9604627078975166,
+      "peak_cpu": 0.7037581472843258,
+      "peak_memory": 0.8835161202479987,
+      "corr_submit_cpu": 0.23796729849303558,
+      "corr_submit_memory": 0.2348466166034434,
+      "corr_schedule_cpu": 0.13280183566721343,
+      "corr_schedule_memory": 0.18854248037640836,
+      "corr_p50_cpu": -0.214806178985045,
+      "corr_p50_memory": -0.24308095207247749
+    },
+    "cell_b": {
+      "attempts": 9301457,
+      "closed_attempts": 8561541,
+      "right_censored": 739916,
+      "p50_s": 315.439397,
+      "p90_s": 4728.397513,
+      "p99_s": 49879.379297,
+      "schedule_submit": 0.9759475090853033,
+      "peak_cpu": 0.8286715719582514,
+      "peak_memory": 1.185674548160424,
+      "corr_submit_cpu": -0.13421478924325267,
+      "corr_submit_memory": 0.5016325700636777,
+      "corr_schedule_cpu": -0.10599160402196864,
+      "corr_schedule_memory": 0.5200187294360835,
+      "corr_p50_cpu": -0.11213461500480769,
+      "corr_p50_memory": 0.06971616102635086
+    }
+  },
+  "boundary": "This is cross-cell observational replication, not a controlled intervention. Usage is a capacity-normalized task-usage proxy and can exceed 1 under overcommit. The comparison does not establish causal queue migration or a universal law."
+}
