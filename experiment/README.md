@@ -42,6 +42,7 @@ The repository is deliberately adversarial. It must be able to show that the the
 - Queue migration v1: prepared and executed bounded synthetic generation sweep plus capacity-release ladder; protocol in `docs/queue-migration-v1-protocol.md`, results in `docs/queue-migration-v1-results.md` and receipt in `artifacts/queue_migration_v1.json`.
 - Queue migration v2: strengthened with five seeds, bounded variable arrivals, finite-window diagnostics, stage metrics, and independent flow audit; protocol in `docs/queue-migration-v2-protocol.md`, results in `docs/queue-migration-v2-results.md` and receipt in `artifacts/queue_migration_v2.json`.
 - Queue migration v3: independently implemented burst/on-off and jittered workload cross-check; protocol in `docs/queue-migration-v3-protocol.md`, results in `docs/queue-migration-v3-results.md` and receipt in `artifacts/queue_migration_v3.json`.
+- Queue migration v4: replayed a manifest-anchored anonymized archive trace using timestamps and role labels only; protocol in `docs/queue-migration-v4-protocol.md`, results in `docs/queue-migration-v4-results.md` and receipt in `artifacts/queue_migration_v4.json`.
 - Explicit graphs, message traversal, submitted-witness checks and actual 3-CNF enumeration.
 - Frozen specification: `docs/protocol-v2.md` and `docs/protocol-v2.sha256`.
 - Results: `artifacts/experiments_v2.json`; readable summary: `artifacts/experiments_v2-summary.md`.

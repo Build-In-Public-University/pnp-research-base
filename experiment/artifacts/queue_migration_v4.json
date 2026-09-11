@@ -1,0 +1,673 @@
+{
+  "protocol_id": "queue-migration-v4",
+  "status": "trace_derived_calibration",
+  "source_policy": "timestamps and role labels only; message content excluded",
+  "trace": {
+    "source_sha256": "dffc63dce4c36a12e28f5dce447ca997516a7ea4c099d3a46a5d96262053eb38",
+    "manifest_records_sha256": "dffc63dce4c36a12e28f5dce447ca997516a7ea4c099d3a46a5d96262053eb38",
+    "record_count": 1190,
+    "role_counts": {
+      "assistant": 518,
+      "tool": 621,
+      "user": 51
+    },
+    "start_timestamp": 1788869029.288251,
+    "end_timestamp": 1788898646.943052,
+    "bin_seconds": 60,
+    "horizon": 494,
+    "arrival_total": 1190,
+    "arrival_max_per_bin": 108
+  },
+  "conditions": [
+    {
+      "condition": "generation_sweep_cap1",
+      "condition_family": "generation_sweep_trace",
+      "capacities": {
+        "generation": 1,
+        "evaluation": 4,
+        "integration": 4,
+        "maintenance": 4,
+        "retirement": 4
+      },
+      "trace_demand": 1190,
+      "generated": 201,
+      "source_shortfall": 989,
+      "completed": 201,
+      "drained": true,
+      "ticks_executed": 495,
+      "bottleneck": "generation",
+      "stages": [
+        {
+          "stage": "generation",
+          "capacity": 1,
+          "entered": 201,
+          "exited": 201,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 0.406061,
+          "utilization": 0.406061,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "evaluation",
+          "capacity": 4,
+          "entered": 201,
+          "exited": 201,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 0.406061,
+          "utilization": 0.101515,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "integration",
+          "capacity": 4,
+          "entered": 201,
+          "exited": 201,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 0.406061,
+          "utilization": 0.101515,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "maintenance",
+          "capacity": 4,
+          "entered": 201,
+          "exited": 201,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 0.406061,
+          "utilization": 0.101515,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "retirement",
+          "capacity": 4,
+          "entered": 201,
+          "exited": 201,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 0.406061,
+          "utilization": 0.101515,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        }
+      ]
+    },
+    {
+      "condition": "generation_sweep_cap2",
+      "condition_family": "generation_sweep_trace",
+      "capacities": {
+        "generation": 2,
+        "evaluation": 4,
+        "integration": 4,
+        "maintenance": 4,
+        "retirement": 4
+      },
+      "trace_demand": 1190,
+      "generated": 337,
+      "source_shortfall": 853,
+      "completed": 337,
+      "drained": true,
+      "ticks_executed": 495,
+      "bottleneck": "generation",
+      "stages": [
+        {
+          "stage": "generation",
+          "capacity": 2,
+          "entered": 337,
+          "exited": 337,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 0.680808,
+          "utilization": 0.340404,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "evaluation",
+          "capacity": 4,
+          "entered": 337,
+          "exited": 337,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 0.680808,
+          "utilization": 0.170202,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "integration",
+          "capacity": 4,
+          "entered": 337,
+          "exited": 337,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 0.680808,
+          "utilization": 0.170202,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "maintenance",
+          "capacity": 4,
+          "entered": 337,
+          "exited": 337,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 0.680808,
+          "utilization": 0.170202,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "retirement",
+          "capacity": 4,
+          "entered": 337,
+          "exited": 337,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 0.680808,
+          "utilization": 0.170202,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        }
+      ]
+    },
+    {
+      "condition": "generation_sweep_cap4",
+      "condition_family": "generation_sweep_trace",
+      "capacities": {
+        "generation": 4,
+        "evaluation": 4,
+        "integration": 4,
+        "maintenance": 4,
+        "retirement": 4
+      },
+      "trace_demand": 1190,
+      "generated": 507,
+      "source_shortfall": 683,
+      "completed": 507,
+      "drained": true,
+      "ticks_executed": 495,
+      "bottleneck": "generation",
+      "stages": [
+        {
+          "stage": "generation",
+          "capacity": 4,
+          "entered": 507,
+          "exited": 507,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 1.024242,
+          "utilization": 0.256061,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "evaluation",
+          "capacity": 4,
+          "entered": 507,
+          "exited": 507,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 1.024242,
+          "utilization": 0.256061,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "integration",
+          "capacity": 4,
+          "entered": 507,
+          "exited": 507,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 1.024242,
+          "utilization": 0.256061,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "maintenance",
+          "capacity": 4,
+          "entered": 507,
+          "exited": 507,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 1.024242,
+          "utilization": 0.256061,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "retirement",
+          "capacity": 4,
+          "entered": 507,
+          "exited": 507,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 1.024242,
+          "utilization": 0.256061,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        }
+      ]
+    },
+    {
+      "condition": "generation_sweep_cap8",
+      "condition_family": "generation_sweep_trace",
+      "capacities": {
+        "generation": 8,
+        "evaluation": 4,
+        "integration": 4,
+        "maintenance": 4,
+        "retirement": 4
+      },
+      "trace_demand": 1190,
+      "generated": 647,
+      "source_shortfall": 543,
+      "completed": 647,
+      "drained": true,
+      "ticks_executed": 495,
+      "bottleneck": "evaluation",
+      "stages": [
+        {
+          "stage": "generation",
+          "capacity": 8,
+          "entered": 647,
+          "exited": 647,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 1.307071,
+          "utilization": 0.163384,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "evaluation",
+          "capacity": 4,
+          "entered": 647,
+          "exited": 647,
+          "max_queue": 24,
+          "average_queue": 0.931313,
+          "throughput": 1.307071,
+          "utilization": 0.326768,
+          "mean_wait": 1.712519,
+          "final_queue": 0
+        },
+        {
+          "stage": "integration",
+          "capacity": 4,
+          "entered": 647,
+          "exited": 647,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 1.307071,
+          "utilization": 0.326768,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "maintenance",
+          "capacity": 4,
+          "entered": 647,
+          "exited": 647,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 1.307071,
+          "utilization": 0.326768,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "retirement",
+          "capacity": 4,
+          "entered": 647,
+          "exited": 647,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 1.307071,
+          "utilization": 0.326768,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        }
+      ]
+    },
+    {
+      "condition": "capacity_ladder_evaluation",
+      "condition_family": "capacity_ladder_trace",
+      "capacities": {
+        "generation": 128,
+        "evaluation": 4,
+        "integration": 128,
+        "maintenance": 128,
+        "retirement": 128
+      },
+      "trace_demand": 1190,
+      "generated": 1190,
+      "source_shortfall": 0,
+      "completed": 1190,
+      "drained": true,
+      "ticks_executed": 495,
+      "bottleneck": "evaluation",
+      "stages": [
+        {
+          "stage": "generation",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "evaluation",
+          "capacity": 4,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 223,
+          "average_queue": 36.113131,
+          "throughput": 2.40404,
+          "utilization": 0.60101,
+          "mean_wait": 16.021849,
+          "final_queue": 0
+        },
+        {
+          "stage": "integration",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "maintenance",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "retirement",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        }
+      ]
+    },
+    {
+      "condition": "capacity_ladder_integration",
+      "condition_family": "capacity_ladder_trace",
+      "capacities": {
+        "generation": 128,
+        "evaluation": 128,
+        "integration": 4,
+        "maintenance": 128,
+        "retirement": 128
+      },
+      "trace_demand": 1190,
+      "generated": 1190,
+      "source_shortfall": 0,
+      "completed": 1190,
+      "drained": true,
+      "ticks_executed": 495,
+      "bottleneck": "integration",
+      "stages": [
+        {
+          "stage": "generation",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "evaluation",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "integration",
+          "capacity": 4,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 223,
+          "average_queue": 36.113131,
+          "throughput": 2.40404,
+          "utilization": 0.60101,
+          "mean_wait": 16.021849,
+          "final_queue": 0
+        },
+        {
+          "stage": "maintenance",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "retirement",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        }
+      ]
+    },
+    {
+      "condition": "capacity_ladder_maintenance",
+      "condition_family": "capacity_ladder_trace",
+      "capacities": {
+        "generation": 128,
+        "evaluation": 128,
+        "integration": 128,
+        "maintenance": 4,
+        "retirement": 128
+      },
+      "trace_demand": 1190,
+      "generated": 1190,
+      "source_shortfall": 0,
+      "completed": 1190,
+      "drained": true,
+      "ticks_executed": 495,
+      "bottleneck": "maintenance",
+      "stages": [
+        {
+          "stage": "generation",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "evaluation",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "integration",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "maintenance",
+          "capacity": 4,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 223,
+          "average_queue": 36.113131,
+          "throughput": 2.40404,
+          "utilization": 0.60101,
+          "mean_wait": 16.021849,
+          "final_queue": 0
+        },
+        {
+          "stage": "retirement",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        }
+      ]
+    },
+    {
+      "condition": "capacity_ladder_retirement",
+      "condition_family": "capacity_ladder_trace",
+      "capacities": {
+        "generation": 128,
+        "evaluation": 128,
+        "integration": 128,
+        "maintenance": 128,
+        "retirement": 4
+      },
+      "trace_demand": 1190,
+      "generated": 1190,
+      "source_shortfall": 0,
+      "completed": 1190,
+      "drained": true,
+      "ticks_executed": 495,
+      "bottleneck": "retirement",
+      "stages": [
+        {
+          "stage": "generation",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "evaluation",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "integration",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "maintenance",
+          "capacity": 128,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 0,
+          "average_queue": 0.0,
+          "throughput": 2.40404,
+          "utilization": 0.018782,
+          "mean_wait": 1.0,
+          "final_queue": 0
+        },
+        {
+          "stage": "retirement",
+          "capacity": 4,
+          "entered": 1190,
+          "exited": 1190,
+          "max_queue": 223,
+          "average_queue": 36.113131,
+          "throughput": 2.40404,
+          "utilization": 0.60101,
+          "mean_wait": 16.021849,
+          "final_queue": 0
+        }
+      ]
+    }
+  ],
+  "independent_audit": "passed",
+  "falsifiers": [
+    "source hash differs from manifest-anchored hash",
+    "stage flow conservation fails",
+    "trace replay fails to drain within the finite bound",
+    "high generation capacity does not expose downstream evaluation pressure when trace demand exceeds evaluation service",
+    "capacity release ladder fails to localize the deliberately constrained stage"
+  ],
+  "interpretation_boundary": "One anonymized archive trace replay only; no causal claim about the session participants, no stationarity claim, and no general deployment inference.",
+  "input_sha256": "dc6640a5c198e5bbbfea23a47114077b29da3179e4064e7fbcc5ad1304a3d57e"
+}
