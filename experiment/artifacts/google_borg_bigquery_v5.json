@@ -1,0 +1,80 @@
+{
+  "protocol_id": "google-borg-bigquery-v5",
+  "status": "remote_capacity_usage_join_observation_24h",
+  "source": {
+    "dataset": "google-cluster-data",
+    "cell": "a",
+    "pressure_table": "clusterdata_2019_a.instance_events",
+    "usage_table": "clusterdata_2019_a.instance_usage",
+    "capacity_table": "clusterdata_2019_a.machine_events",
+    "license": "CC-BY",
+    "raw_rows_not_downloaded": true,
+    "window_microseconds": [
+      0,
+      86400000000
+    ],
+    "bucket_seconds": 300
+  },
+  "queries": {
+    "pressure_join": {
+      "sql_sha256": "4af5a2ac129035538f62a809547746e18ee82c0ca6f8cfd26e57b0a60de0b2b5",
+      "job_id": "bqjob_r61280c912a954735_000001a090d0e27e_1",
+      "bytes_processed": 54954173504,
+      "bytes_billed": 54954819584
+    },
+    "utilization": {
+      "sql_sha256": "f93de4102a2234fd2f804c7d0b297e97ead8aa55b155fa8a661a8f58d52f3655",
+      "job_id": "bqjob_r3fafe877ddfa5dc4_000001a090d8b5dd_1",
+      "bytes_processed": 242417123288,
+      "bytes_billed": 242417139712
+    }
+  },
+  "analysis": {
+    "joined_buckets_excluding_startup": 99,
+    "correlations": {
+      "submit_events": {
+        "cpu_utilization_proxy": 0.2379673,
+        "memory_utilization_proxy": 0.23484662
+      },
+      "schedule_events": {
+        "cpu_utilization_proxy": 0.13280184,
+        "memory_utilization_proxy": 0.18854248
+      },
+      "closed_attempts": {
+        "cpu_utilization_proxy": 0.14171128,
+        "memory_utilization_proxy": 0.19665148
+      },
+      "right_censored_attempts": {
+        "cpu_utilization_proxy": -0.15988217,
+        "memory_utilization_proxy": -0.1221266
+      },
+      "p50_attempt_seconds": {
+        "cpu_utilization_proxy": -0.21480618,
+        "memory_utilization_proxy": -0.24308095
+      }
+    },
+    "peak_submit": [
+      86835.0,
+      91
+    ],
+    "peak_schedule": [
+      55491.0,
+      33
+    ],
+    "peak_p50_attempt_seconds": [
+      820.240824,
+      3
+    ],
+    "peak_cpu_proxy": [
+      0.7037581472843258,
+      7
+    ],
+    "peak_memory_proxy": [
+      0.8835161202479987,
+      38
+    ],
+    "capacity_cpu_total": 6835.6923828125,
+    "capacity_memory_total": 4103.9453125
+  },
+  "boundary": "Usage is summed task average usage normalized by static maximum machine capacity, so it is a proxy and may exceed physical utilization under overcommit. Bucket 0 is excluded from correlation because it is trace-start boundary contamination. Correlation is descriptive, not causal; no adaptive-headroom or universal queueing claim is made."
+}
