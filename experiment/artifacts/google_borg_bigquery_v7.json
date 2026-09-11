@@ -1,0 +1,233 @@
+{
+  "protocol_id": "google-borg-bigquery-v7",
+  "status": "remote_scheduler_stratification_observation_24h",
+  "source": {
+    "dataset": "google-cluster-data",
+    "cell": "b",
+    "table": "clusterdata_2019_b.instance_events",
+    "license": "CC-BY",
+    "raw_rows_not_downloaded": true,
+    "window_microseconds": [
+      0,
+      86400000000
+    ]
+  },
+  "query": {
+    "sql_sha256": "9d823c87f09fc29334fc0c43b1ac7e0836922aa2255abce138dca43271888c2f",
+    "job_id": "bqjob_r452ae371036fa639_000001a091092c51_1",
+    "query_project": "soulrm",
+    "location": "US",
+    "state": "DONE",
+    "bytes_processed": 102739916768,
+    "bytes_billed": 102740525056,
+    "slot_ms": 2071762,
+    "strata_rows": 92
+  },
+  "conservation": {
+    "started_attempts": {
+      "stratified": 9301457,
+      "v3_total": 9301457
+    },
+    "closed_attempts": {
+      "stratified": 8561541,
+      "v3_total": 8561541
+    },
+    "right_censored_attempts": {
+      "stratified": 739916,
+      "v3_total": 739916
+    },
+    "evicted_attempts": {
+      "stratified": 3240808,
+      "v3_total": 3240808
+    },
+    "failed_attempts": {
+      "stratified": 234495,
+      "v3_total": 234495
+    },
+    "finished_attempts": {
+      "stratified": 1443110,
+      "v3_total": 1443110
+    },
+    "killed_attempts": {
+      "stratified": 3608667,
+      "v3_total": 3608667
+    },
+    "lost_attempts": {
+      "stratified": 34461,
+      "v3_total": 34461
+    }
+  },
+  "top_strata": [
+    {
+      "priority": "0",
+      "scheduling_class": "0",
+      "collection_type": "0",
+      "cpu_request_bin": "<=0.1",
+      "memory_request_bin": "<=1",
+      "started_attempts": "3610163",
+      "closed_attempts": "3538617",
+      "right_censored_attempts": "71546",
+      "evicted_attempts": "2225200",
+      "failed_attempts": "2288",
+      "finished_attempts": "734",
+      "killed_attempts": "1309355",
+      "lost_attempts": "1040",
+      "p50_attempt_seconds": "225.702621",
+      "p90_attempt_seconds": "1394.030405"
+    },
+    {
+      "priority": "103",
+      "scheduling_class": "1",
+      "collection_type": "0",
+      "cpu_request_bin": "<=0.1",
+      "memory_request_bin": "<=1",
+      "started_attempts": "894465",
+      "closed_attempts": "826300",
+      "right_censored_attempts": "68165",
+      "evicted_attempts": "38774",
+      "failed_attempts": "6795",
+      "finished_attempts": "174630",
+      "killed_attempts": "600556",
+      "lost_attempts": "5545",
+      "p50_attempt_seconds": "839.53473",
+      "p90_attempt_seconds": "13596.251026"
+    },
+    {
+      "priority": "360",
+      "scheduling_class": "2",
+      "collection_type": "0",
+      "cpu_request_bin": "<=0.1",
+      "memory_request_bin": "<=1",
+      "started_attempts": "829364",
+      "closed_attempts": "818413",
+      "right_censored_attempts": "10951",
+      "evicted_attempts": "194924",
+      "failed_attempts": "46993",
+      "finished_attempts": "0",
+      "killed_attempts": "574274",
+      "lost_attempts": "2222",
+      "p50_attempt_seconds": "358.419139",
+      "p90_attempt_seconds": "2887.963948"
+    },
+    {
+      "priority": "101",
+      "scheduling_class": "2",
+      "collection_type": "1",
+      "cpu_request_bin": "<=0.1",
+      "memory_request_bin": "<=1",
+      "started_attempts": "792425",
+      "closed_attempts": "783373",
+      "right_censored_attempts": "9052",
+      "evicted_attempts": "0",
+      "failed_attempts": "0",
+      "finished_attempts": "781205",
+      "killed_attempts": "0",
+      "lost_attempts": "2168",
+      "p50_attempt_seconds": "366.341257",
+      "p90_attempt_seconds": "3192.871402"
+    },
+    {
+      "priority": "103",
+      "scheduling_class": "0",
+      "collection_type": "0",
+      "cpu_request_bin": "<=0.1",
+      "memory_request_bin": "<=1",
+      "started_attempts": "612616",
+      "closed_attempts": "516955",
+      "right_censored_attempts": "95661",
+      "evicted_attempts": "40195",
+      "failed_attempts": "87163",
+      "finished_attempts": "153398",
+      "killed_attempts": "233163",
+      "lost_attempts": "3036",
+      "p50_attempt_seconds": "2619.423833",
+      "p90_attempt_seconds": "30085.819918"
+    },
+    {
+      "priority": "0",
+      "scheduling_class": "2",
+      "collection_type": "0",
+      "cpu_request_bin": "<=0.1",
+      "memory_request_bin": "<=1",
+      "started_attempts": "433311",
+      "closed_attempts": "430802",
+      "right_censored_attempts": "2509",
+      "evicted_attempts": "207965",
+      "failed_attempts": "2007",
+      "finished_attempts": "3",
+      "killed_attempts": "220587",
+      "lost_attempts": "240",
+      "p50_attempt_seconds": "465.609529",
+      "p90_attempt_seconds": "3172.123251"
+    },
+    {
+      "priority": "105",
+      "scheduling_class": "0",
+      "collection_type": "0",
+      "cpu_request_bin": "<=0.1",
+      "memory_request_bin": "<=1",
+      "started_attempts": "371059",
+      "closed_attempts": "361291",
+      "right_censored_attempts": "9768",
+      "evicted_attempts": "187",
+      "failed_attempts": "6015",
+      "finished_attempts": "259176",
+      "killed_attempts": "95630",
+      "lost_attempts": "283",
+      "p50_attempt_seconds": "84.353722",
+      "p90_attempt_seconds": "2827.16578"
+    },
+    {
+      "priority": "25",
+      "scheduling_class": "2",
+      "collection_type": "0",
+      "cpu_request_bin": "<=0.1",
+      "memory_request_bin": "<=1",
+      "started_attempts": "357247",
+      "closed_attempts": "352056",
+      "right_censored_attempts": "5191",
+      "evicted_attempts": "348737",
+      "failed_attempts": "46",
+      "finished_attempts": "2574",
+      "killed_attempts": "527",
+      "lost_attempts": "172",
+      "p50_attempt_seconds": "252.821694",
+      "p90_attempt_seconds": "1810.81637"
+    },
+    {
+      "priority": "0",
+      "scheduling_class": "1",
+      "collection_type": "0",
+      "cpu_request_bin": "<=0.1",
+      "memory_request_bin": "<=1",
+      "started_attempts": "279217",
+      "closed_attempts": "278613",
+      "right_censored_attempts": "604",
+      "evicted_attempts": "93447",
+      "failed_attempts": "8",
+      "finished_attempts": "5",
+      "killed_attempts": "185101",
+      "lost_attempts": "52",
+      "p50_attempt_seconds": "139.81367",
+      "p90_attempt_seconds": "440.671548"
+    },
+    {
+      "priority": "200",
+      "scheduling_class": "3",
+      "collection_type": "0",
+      "cpu_request_bin": "<=0.1",
+      "memory_request_bin": "<=1",
+      "started_attempts": "213706",
+      "closed_attempts": "70296",
+      "right_censored_attempts": "143410",
+      "evicted_attempts": "988",
+      "failed_attempts": "7444",
+      "finished_attempts": "1755",
+      "killed_attempts": "54558",
+      "lost_attempts": "5551",
+      "p50_attempt_seconds": "6469.276054",
+      "p90_attempt_seconds": "59900.022828"
+    }
+  ],
+  "boundary": "Stratification is observational. Priority, scheduling class, collection type, and coarse resource-request bins are descriptors, not randomized interventions. No user, collection name, or constraint content is emitted. This does not establish causal priority effects or a universal queue law."
+}
